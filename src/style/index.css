@@ -1,3 +1,43 @@
+.a11y {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
 
+.MKmain {
+  width: 100vw;
+  background: pink;
+}
+
+.slide__imgWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: relative;
+  width: 1920px;
+  height: 370px;
+}
+.slide__img {
+  width: 100%;
+  height: 100%;
+}
+.slide__arrow--left {
+  position: fixed;
+  left: 10%;
+  top: 159px;
+}
+.slide__arrow--right {
+  transform: rotateY(180deg);
+  position: fixed;
+  right: 10%;
+  top: 159px;
+}
 
 /*# sourceMappingURL=index.css.map */
