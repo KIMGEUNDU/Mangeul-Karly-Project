@@ -13,20 +13,289 @@
 
 <body>
   <main class="MKmain">
+    <!-- 슬라이드 영역 컨테이너 -->
     <section class="slide">
-      <h2 class="slide__title a11y">슬라이드 광고</h2>
+      <h3 class="slide__title a11y">슬라이드 광고</h2>
 
-      <article class="slide__imgWrapper">
-        <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게" />
-        <img class="slide__img" src="image/banner02.svg" alt="이달의 카드 혜택" />
-        <img class="slide__img" src="image/banner03.svg" alt="컬리 퍼플 위크" />
-        <img class="slide__img" src="image/banner05.svg" alt="이 주의 특가 한눈에 보기" />
-      </article>
+        <article class="slide__imgWrapper">
+          <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게" />
 
-      <article class="slide__arrow">
-        <img src="image/Arrow.svg" alt="왼쪽 화살표" class="slide__arrow--left" />
-        <img src="image/Arrow.svg" alt="오른쪽 화살표" class="slide__arrow--right" />
+          <img class="slide__img" src="image/banner02.svg" alt="이달의 카드 혜택" />
+
+          <img class="slide__img" src="image/banner03.svg" alt="컬리 퍼플 위크" />
+
+          <img class="slide__img" src="image/banner05.svg" alt="이 주의 특가 한눈에 보기" />
+        </article>
+
+        <article class="slide__arrow">
+          <img src="image/Arrow.svg" alt="왼쪽 화살표" class="slide__arrow--left" />
+          <img src="image/Arrow.svg" alt="오른쪽 화살표" class="slide__arrow--right" />
+        </article>
+    </section>
+
+    <!-- 상품 설명 컨테이너 -->
+    <section class="sugge">
+      <h3 class="sugge__title a11y">상품 추천</h3>
+      <p class="sugge__name">이 상품 어때요?</p>
+
+      <div class="sugge__goodsBox">
+        <!-- 탱탱쫄면 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                [풀무원] 탱탱쫄면 (4개입)
+              </a>
+            </dt>
+            <!-- 탱쫄 가격 컨테이너 -->
+            <div class="sugge__goodsPriceBox">
+              <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+              <dd class="sugge__goodsCurrentPrice">4,980 원</dd>
+            </div>
+          </dl>
+          <!-- 탱쫄 상품 이미지 -->
+          <div class="sugge__goodsImgBox">
+            <dd class="sugge__goodsImges">
+              <a href="#" class="sugge__goodsLink">
+                <img class="sugge__goodsImg" src="image/product01.svg" alt="탱탱쫄면 상품 이미지" />
+              </a>
+              <a href="#" class="sugge__goodsBasketLink">
+                <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+              </a>
+            </dd>
+          </div>
+        </div>
+
+        <!-- 선쿠션 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                [온더바디] 죠르디 시카 자석 선쿠션
+              </a>
+            </dt>
+            <!-- 쿠션 가격 컨테이너 -->
+            <div class="sugge__goodsPriceBox">
+              <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+              <dd class="sugge__goodsCurrentPrice">32,500 원</dd>
+            </div>
+          </dl>
+          <!-- 쿠션 상품 이미지 -->
+          <div class="sugge__goodsImgBox">
+            <dd class="sugge__goodsImges">
+              <a href="#" class="sugge__goodsLink">
+                <img class="sugge__goodsImg" src="image/product02.svg" alt="선쿠션 상품 이미지" />
+              </a>
+              <a href="#" class="sugge__goodsBasketLink">
+                <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+              </a>
+            </dd>
+          </div>
+        </div>
+
+        <!-- 유기농 현미 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                유기농 밀키퀸 현미 4kg
+              </a>
+            </dt>
+            <!-- 현미 가격 컨테이너 -->
+            <div class="sugge__goodsPriceBox">
+              <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+              <dd class="sugge__goodsCurrentPrice">25,000 원</dd>
+            </div>
+          </dl>
+          <!-- 현미 상품 이미지 -->
+          <div class="sugge__goodsImgBox">
+            <dd class="sugge__goodsImges">
+              <a href="#" class="sugge__goodsLink">
+                <img class="sugge__goodsImg" src="image/product03.svg" alt="현미 상품 이미지" />
+              </a>
+              <a href="#" class="sugge__goodsBasketLink">
+                <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+              </a>
+            </dd>
+          </div>
+        </div>
+
+        <!-- 베이비 세탁세제 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                [프로쉬] 베이비 세탁세제
+              </a>
+            </dt>
+            <!-- 세제 가격 컨테이너 -->
+            <div class="sugge__goodsPriceBox">
+              <dd class="sugge__goodsLastPrice a11y">원래 가격</dd>
+              <dd class="sugge__goodsdelPrice"><del>24,000 원</del></dd>
+              <div class="sugge__goodsCurDisBox">
+                <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+                <dd class="sugge__goodsCurrentPrice">18,900 원</dd>
+                <dd class="sugge__goodsDiscount a11y">할인율</dd>
+                <dd class="sugge__goodsDiscountPercent">24%</dd>
+              </div>
+            </div>
+          </dl>
+          <!-- 세제 상품 이미지 -->
+          <div class="sugge__goodsImgBox">
+            <dd class="sugge__goodsImges">
+              <a href="#" class="sugge__goodsLink">
+                <img class="sugge__goodsImg" src="image/product04.svg" alt="세탁세제 상품 이미지" />
+              </a>
+              <a href="#" class="sugge__goodsBasketLink">
+                <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+              </a>
+            </dd>
+            <dd class="sugges__goodsArrow">
+              <a href="" class="arrow__link"><img class="sugge__arrow" src="image/arrow2.svg" alt="상품 더보기 화살표"
+                  aria-hidden="true" /></a>
+            </dd>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 중간 광고 컨테이너 -->
+    <section class="advert">
+      <article class="advertBox">
+        <a href="#" class="advert__link">
+          <img class="advert__img" src="image/line-banner1.svg" alt="10월의 퍼플 위크" />
+        </a>
       </article>
+    </section>
+
+
+    <!-- 상품 추천 컨테이너 -->
+    <section class="sugge">
+      <h3 class="sugge__title a11y">할인 상품 추천</h2>
+        <p class="sugge__name">놓치면 후회할 가격</p>
+
+        <div class="sugge__goodsBox">
+          <!-- 탱탱쫄면 -->
+          <div class="sugge__goods">
+            <dl class="sugge__goodsList">
+              <dt class="sugge__goodsTitle">
+                <a href="#" class="sugge__goodsTitleLink">
+                  [풀무원] 탱탱쫄면 (4개입)
+                </a>
+              </dt>
+              <!-- 탱쫄 가격 컨테이너 -->
+              <div class="sugge__goodsPriceBox">
+                <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+                <dd class="sugge__goodsCurrentPrice">4,980 원</dd>
+              </div>
+            </dl>
+            <!-- 탱쫄 상품 이미지 -->
+            <div class="sugge__goodsImgBox">
+              <dd class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product01.svg" alt="탱탱쫄면 상품 이미지" />
+                </a>
+                <a href="#" class="sugge__goodsBasketLink">
+                  <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <!-- 선쿠션 -->
+          <div class="sugge__goods">
+            <dl class="sugge__goodsList">
+              <dt class="sugge__goodsTitle">
+                <a href="#" class="sugge__goodsTitleLink">
+                  [온더바디] 죠르디 시카 자석 선쿠션
+                </a>
+              </dt>
+              <!-- 쿠션 가격 컨테이너 -->
+              <div class="sugge__goodsPriceBox">
+                <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+                <dd class="sugge__goodsCurrentPrice">32,500 원</dd>
+              </div>
+            </dl>
+            <!-- 쿠션 상품 이미지 -->
+            <div class="sugge__goodsImgBox">
+              <dd class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product02.svg" alt="선쿠션 상품 이미지" />
+                </a>
+                <a href="#" class="sugge__goodsBasketLink">
+                  <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <!-- 유기농 현미 -->
+          <div class="sugge__goods">
+            <dl class="sugge__goodsList">
+              <dt class="sugge__goodsTitle">
+                <a href="#" class="sugge__goodsTitleLink">
+                  유기농 밀키퀸 현미 4kg
+                </a>
+              </dt>
+              <!-- 현미 가격 컨테이너 -->
+              <div class="sugge__goodsPriceBox">
+                <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+                <dd class="sugge__goodsCurrentPrice">25,000 원</dd>
+              </div>
+            </dl>
+            <!-- 현미 상품 이미지 -->
+            <div class="sugge__goodsImgBox">
+              <dd class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product03.svg" alt="현미 상품 이미지" />
+                </a>
+                <a href="#" class="sugge__goodsBasketLink">
+                  <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+                </a>
+              </dd>
+            </div>
+          </div>
+
+          <!-- 베이비 세탁세제 -->
+          <div class="sugge__goods">
+            <dl class="sugge__goodsList">
+              <dt class="sugge__goodsTitle">
+                <a href="#" class="sugge__goodsTitleLink">
+                  [프로쉬] 베이비 세탁세제
+                </a>
+              </dt>
+              <!-- 세제 가격 컨테이너 -->
+              <div class="sugge__goodsPriceBox">
+                <dd class="sugge__goodsLastPrice a11y">원래 가격</dd>
+                <dd class="sugge__goodsdelPrice"><del>24,000 원</del></dd>
+                <div class="sugge__goodsCurDisBox">
+                  <dd class="sugge__goodsCurrentPrice a11y">현재 가격</dd>
+                  <dd class="sugge__goodsCurrentPrice">18,900 원</dd>
+                  <dd class="sugge__goodsDiscount a11y">할인율</dd>
+                  <dd class="sugge__goodsDiscountPercent">24%</dd>
+                </div>
+              </div>
+            </dl>
+            <!-- 세제 상품 이미지 -->
+            <div class="sugge__goodsImgBox">
+              <dd class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product04.svg" alt="세탁세제 상품 이미지" />
+                </a>
+                <a href="#" class="sugge__goodsBasketLink">
+                  <img class="sugge__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" aria-hidden="true" />
+                </a>
+              </dd>
+              <dd class="sugges__goodsArrow">
+                <a href="" class="arow__link">
+                  <img class="sugge__arrow" src="image/arrow2.svg" alt="상품 더보기 화살표" aria-hidden="true" />
+                </a>
+              </dd>
+            </div>
+          </div>
+
+        </div>
     </section>
   </main>
 </body>
