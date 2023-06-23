@@ -68,6 +68,7 @@
 
     &Title{
       padding-top: 15px;
+      height: 45px;
       &:hover{
         color: $primary-color;
         font-weight: 600;
@@ -75,7 +76,16 @@
     }
     
     &Link{
-    @include flexbox;
+      @include flexbox;
+      overflow: hidden;
+
+      &:hover>.sugge__goodsImg{
+        @include ImageScale;
+      }
+    }
+    
+    &Img{
+      object-fit: cover;
     };
 
     &PriceBox{

@@ -108,6 +108,13 @@
   transition-duration: $td;
 }
 
+@mixin ImageScale{
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(105%);
+}
+
+
 // Animation
 @mixin slideImg{
   animation-name: moveImage;
