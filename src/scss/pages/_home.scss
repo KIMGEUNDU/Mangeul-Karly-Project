@@ -9,19 +9,29 @@
     @include flexbox;
     @include slideImg;
     width: 400%;
+
+    &:hover+.slide__arrow--left,
+    &:hover~.slide__arrow--right{
+      transition-property: opacity;
+      transition-duration: 1s;
+      opacity: 1;
+    }
   }
 
   &__arrow--left{
     @include posLT(15%, 50%);
     transform: translateY(-50%);
-    // opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity: 0;
   }
 
   &__arrow--right{
     @include posRT(15%, 50%);
-    transform: translateY(-50%);
-    transform: rotate(180deg);
-    // opacity: 0;
+    transform: translateY(-50%) rotate(180deg);
+    transition-property: opacity;
+    transition-duration: 1s;
+    opacity : 0;
   }
 }
 

@@ -404,18 +404,28 @@ iframe {
   animation-iteration-count: infinite;
   width: 400%;
 }
+.slide__imgWrapper:hover + .slide__arrow--left, .slide__imgWrapper:hover ~ .slide__arrow--right {
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 1;
+}
 .slide__arrow--left {
   position: absolute;
   left: 15%;
   top: 50%;
   transform: translateY(-50%);
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 0;
 }
 .slide__arrow--right {
   position: absolute;
   right: 15%;
   top: 50%;
-  transform: translateY(-50%);
-  transform: rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+  transition-property: opacity;
+  transition-duration: 1s;
+  opacity: 0;
 }
 
 .sugge {
