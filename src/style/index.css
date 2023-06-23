@@ -368,29 +368,25 @@ iframe {
 }
 
 @keyframes moveTheme {
-  20% {
+  16% {
     transition: transform;
     transition-duration: 10s;
-    transform: translateX(-98.8%);
+    transform: translateX(-98.7%);
   }
-  40% {
+  32% {
     transform: translateX(-197.8%);
   }
-  60% {
+  48% {
     transform: translateX(-297.5%);
   }
-  80% {
+  64% {
     transform: translateX(-197.8%);
   }
-  100% {
+  80% {
     transform: translateX(-98.8%);
   }
-}
-@keyframes arrowInline {
   100% {
-    transition-property: display;
-    transition-duration: 1s;
-    display: inline;
+    transform: translateX(0);
   }
 }
 .MKmain {
@@ -398,24 +394,36 @@ iframe {
 }
 
 .slide__imgWrapper {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-  position: relative;
   animation-name: moveTheme;
   animation-duration: 35s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
 }
 .slide__imgWrapper:hover + .slide__arrow {
-  animation-name: arrowInline;
-  animation-duration: 0.5s;
-  animation-fill-mode: backwards;
+  display: inline;
 }
-.slide__img {
+.slide__imglink {
+  background: pink;
   width: 1920px;
   height: 370px;
+}
+.slide .slide__imglink:nth-child(2) {
+  background: yellow;
+}
+.slide .slide__imglink:nth-child(3) {
+  background: skyblue;
+}
+.slide .slide__imglink:nth-child(4) {
+  background: salmon;
+}
+.slide__img {
+  width: 200%;
+  height: 100%;
 }
 .slide__arrow {
   display: none;
@@ -439,7 +447,8 @@ iframe {
   margin-top: 30px;
 }
 .sugge__name {
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
@@ -529,6 +538,43 @@ iframe {
 }
 .advert__img {
   width: max-content;
+}
+
+.adBlock {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: #ffffff;
+  width: 100px;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  border: 1px solid #E1E1E1;
+  text-align: center;
+}
+.adBlock__topArrow {
+  width: 30px;
+}
+.adBlock__title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.adBlock__ImgBox {
+  width: 100%;
+  height: 300px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+.adBlock__linkImg {
+  margin-bottom: 8px;
+}
+.adBlock__bottomArrow {
+  width: 30px;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=index.css.map */

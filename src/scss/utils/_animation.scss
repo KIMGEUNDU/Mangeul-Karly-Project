@@ -1,27 +1,22 @@
 @keyframes moveTheme{
-  20%{
+  16%{
     transition: transform;
     transition-duration: 10s;
-    transform: translateX(-98.8%);
+    transform: translateX(-98.7%);
   }
-  40%{
+  32%{
     transform: translateX(-197.8%);
   }
-  60%{
+  48%{
     transform: translateX(-297.5%);
   } 
-  80%{
+  64%{
     transform: translateX(-197.8%);
   }
-  100%{
+  80%{
     transform: translateX(-98.8%);
   }
-}
-
-@keyframes arrowInline{
   100%{
-    transition-property: display;
-    transition-duration: 1s;
-    display: inline;
+    transform: translateX(0);
   }
 }

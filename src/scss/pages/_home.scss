@@ -8,22 +8,36 @@
 // 메인영역 슬라이드 컨테이너
 .slide{
   &__imgWrapper{
-    @include flexbox;
     @include pos;
+    @include flexbox;
     @include slideAni;
 
     &:hover + .slide__arrow{
-      @include arrowAfter;
-      // transition-property: display;
-      // transition-duration: 1s;
-      // display: inline;
-
+      display: inline;
     }
   }
 
-  &__img{
+  &__imglink{
+    background: pink;
     width: 1920px;
     height: 370px;
+  }
+  
+  .slide__imglink:nth-child(2){
+  background: yellow;
+  }
+
+  .slide__imglink:nth-child(3){
+    background: skyblue;
+}
+
+    .slide__imglink:nth-child(4){
+      background: salmon;
+      }
+
+  &__img{
+    width: 200%;
+    height: 100%;
   }
 
   &__arrow{
@@ -139,4 +153,43 @@
     width: max-content;
   };
 ;
+}
+
+//에드블록 영역
+.adBlock{
+  @include padding(8px);
+  background: $white;
+  width: 100px;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  border: 1px solid $gray2;
+  text-align: center;
+
+  &__topArrow{
+    width: 30px;
+  }
+
+  &__title{
+    @include paddingY(8px);
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__ImgBox{
+    width: 100%;
+    height: 300px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+
+  &__linkImg{
+    margin-bottom: 8px;
+  }
+
+  &__bottomArrow{
+    width: 30px;
+    transform: rotate(180deg);
+  }
 }

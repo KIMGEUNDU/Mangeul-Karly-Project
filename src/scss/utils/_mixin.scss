@@ -1,27 +1,33 @@
 //Padding
 @mixin padding($xy){
-  padding: $xy;
+  @include paddingX($xy);
+  @include paddingY($xy);
 }
 
 @mixin paddingY($tb){
-  padding: $tb;
+  padding-top: $tb;
+  padding-bottom: $tb;
 }
 
 @mixin paddingX($lr){
-  padding: $lr;
+  padding-left: $lr;
+  padding-right: $lr;
 }
 
 //Margin
 @mixin margin($xy){
-  margin: $xy;
+  @include marginX($xy);
+  @include marginY($xy);
 }
 
 @mixin marginY($tb){
-  margin: $tb;
+  margin-top: $tb;
+  margin-bottom: $tb;
 }
 
 @mixin marginX($lr){
-  margin: $lr;
+  margin-left: $lr;
+  margin-right: $lr;
 }
 
 // Center
@@ -110,9 +116,4 @@
   animation-iteration-count: infinite;
 }
 
-@mixin arrowAfter{
-  animation-name: arrowInline;
-  animation-duration:0.5s;
-  animation-fill-mode: backwards;
-}
 
