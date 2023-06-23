@@ -109,8 +109,8 @@
 }
 
 // Animation
-@mixin slideAni{
-  animation-name: moveTheme;
+@mixin slideImg{
+  animation-name: moveImage;
   animation-duration: 35s;
   animation-delay: 2s;
   animation-iteration-count: infinite;

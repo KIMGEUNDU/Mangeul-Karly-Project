@@ -1,20 +1,20 @@
-@keyframes moveTheme{
+@keyframes moveImage{
   16%{
     transition: transform;
     transition-duration: 10s;
-    transform: translateX(-99.8%);
+    transform: translateX(-25%);
   }
   32%{
-    transform: translateX(-199.8%);
+    transform: translateX(-50%);
   }
   48%{
-    transform: translateX(-299.3%);
+    transform: translateX(-75%);
   } 
   64%{
-    transform: translateX(-199.5%);
+    transform: translateX(-50%);
   }
   80%{
-    transform: translateX(-99.8%);
+    transform: translateX(-25%);
   }
   100%{
     transform: translateX(0);
