@@ -1,1 +1,37 @@
-// home.scss
+@use "./../utils" as *;
+
+.MKmain{
+  width: 100vw;
+  background: pink;
+}
+
+.slide{
+  &__title{}
+
+  &__imgWrapper{
+    @include flexbox;
+    @include pos;
+    //임시 가로세로
+    width: 1920px;
+    height: 370px;
+  }
+
+  &__img{
+  width: 100%;
+  height: 100%;
+  }
+
+  &__arrow{
+    &--left{
+      position: fixed;
+      left: 10%;
+      top: 159px;
+    }
+    &--right{
+      transform: rotateY(180deg);
+      position: fixed;
+      right: 10%;
+      top: 159px;
+    }
+  }
+}
