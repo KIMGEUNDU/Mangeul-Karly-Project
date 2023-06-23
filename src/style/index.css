@@ -406,17 +406,21 @@ iframe {
   height: max-content;
 }
 .slide__imgWrapper:hover + .slide__arrow {
-  display: inline;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
 }
 .slide__arrow {
-  display: none;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 0;
 }
-.slide__arrow--left {
+.slide__arrowBtn--left {
   position: absolute;
   left: 10%;
   top: 159px;
 }
-.slide__arrow--right {
+.slide__arrowBtn--right {
   transform: rotateY(180deg);
   position: absolute;
   right: 10%;
@@ -550,6 +554,7 @@ iframe {
   bottom: 50px;
   border: 1px solid #E1E1E1;
   text-align: center;
+  z-index: 500;
 }
 .adBlock__topArrow {
   width: 30px;

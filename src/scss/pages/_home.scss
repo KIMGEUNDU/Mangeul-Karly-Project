@@ -15,17 +15,21 @@
     height: max-content;
 
     &:hover + .slide__arrow{
-      display: inline;
+      transition-property: opacity;
+      transition-duration: 0.5s;
+      opacity: 1;
     }
   }
 
   &__arrow{
-    display: none;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+    opacity: 0;
 
-    &--left{
+    &Btn--left{
       @include posLT(10%, 159px);
     }
-    &--right{
+    &Btn--right{
       transform: rotateY(180deg);
       @include posRT(10%, 159px);
     }
@@ -154,6 +158,7 @@
   bottom: 50px;
   border: 1px solid $gray2;
   text-align: center;
+  z-index: 500;
 
   &__topArrow{
     width: 30px;
