@@ -408,15 +408,6 @@ iframe {
 .slide__imgWrapper:hover + .slide__arrow {
   display: inline;
 }
-.slide__imgLink {
-  display: block;
-  width: 1920px;
-  height: 370px;
-}
-.slide__img {
-  width: 200%;
-  height: 100%;
-}
 .slide__arrow {
   display: none;
 }
