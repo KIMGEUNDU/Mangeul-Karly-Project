@@ -30,6 +30,12 @@
   margin-right: auto;
 }
 
+@mixin basicWidth{
+  max-width: 1024px;
+  @include autoMargin;
+}
+
+
 // Flex
 @mixin flexbox( $fd:row, $fw: nowrap, $jc:flex-start, $ac:flex-start){
   display: flex;
@@ -93,5 +99,20 @@
 // Transition
 @mixin transition($tp: transform, $td: 1){ 
   transition-property: $tp;
-  transition-duration: $td s;
+  transition-duration: $td;
 }
+
+// Animation
+@mixin slideAni{
+  animation-name: moveTheme;
+  animation-duration: 35s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@mixin arrowAfter{
+  animation-name: arrowInline;
+  animation-duration:0.5s;
+  animation-fill-mode: backwards;
+}
+

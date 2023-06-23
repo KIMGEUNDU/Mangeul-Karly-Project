@@ -1,37 +1,142 @@
 @use "./../utils" as *;
 
+// 메인영역 컨테이너
 .MKmain{
-  width: 100vw;
-  background: pink;
+  font-family: Pretendard;
 }
 
+// 메인영역 슬라이드 컨테이너
 .slide{
-  &__title{}
-
   &__imgWrapper{
     @include flexbox;
     @include pos;
-    //임시 가로세로
+    @include slideAni;
+
+    &:hover + .slide__arrow{
+      @include arrowAfter;
+      // transition-property: display;
+      // transition-duration: 1s;
+      // display: inline;
+
+    }
+  }
+
+  &__img{
     width: 1920px;
     height: 370px;
   }
 
-  &__img{
-  width: 100%;
-  height: 100%;
-  }
-
   &__arrow{
+    display: none;
+
     &--left{
-      position: fixed;
-      left: 10%;
-      top: 159px;
+      @include posLT(10%, 159px);
     }
     &--right{
       transform: rotateY(180deg);
-      position: fixed;
-      right: 10%;
-      top: 159px;
+      @include posRT(10%, 159px);
     }
   }
+}
+
+// 메인영역상품 설명 컨테이너
+.sugge{
+  @include basicWidth;
+  margin-top: 30px;
+  &__name{
+    @include paddingY(30px);
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__goods{
+    @include flexbox($fd: column);
+    &Box{
+      @include flexbox($jc:center){
+        column-gap: 20px;
+      };
+    }
+
+    &Title{
+      padding-top: 15px;
+      &:hover{
+        color: $primary-color;
+        font-weight: 600;
+      }
+    };
+
+    &PriceBox{
+      padding-top: 20px;
+      @include flexbox($fw:wrap);
+    }
+
+    &delPrice{
+      color: $gray5;
+      font-size: 13px;
+    };
+
+    &CurDisBox{
+      @include flexbox;
+      padding-bottom: 10px;
+      order : -1;
+      width: 100%;
+    }
+
+    &CurrentPrice{
+      font-size: 18px;
+      font-weight: 600;
+    };
+
+    &DiscountPercent{
+      order: -1;
+      color: $accent-color;
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 10px;
+    }
+
+
+    &ImgBox{
+      @include pos;
+      order: -1;
+    };
+
+    &Imges{
+      @include pos;
+    };;
+
+    &BasketLink{
+    @include posRB(20px, 15px);
+    z-index: 10;
+    };
+    
+    .sugge__arrow{
+      @include posRT(-30px, 40%);
+      width: 60px;
+      height: auto;
+    }
+    
+    &BasketImg{
+      width: 40px;
+      height: auto;
+
+      &:hover{
+        transform: scale(110%);
+      }
+    };
+  }
+}
+
+// 중간 광고 영역
+.advert{
+  &Box{
+    margin: 80px auto;
+    max-width: 1024px;
+  };
+  
+  &__img{
+    width: max-content;
+  };
+;
 }
