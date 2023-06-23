@@ -10,8 +10,8 @@
   &__imgWrapper{
     @include pos;
     @include flexbox;
-    @include slideAni;
-    width: 100%;
+    // @include slideAni;
+    width: 400%;
     height: 300px;
 
     &:hover + .slide__arrow{
@@ -22,12 +22,8 @@
   &__imgLink{
     background: pink;
     display: block;
-    width: 100%;
-    height: 300px;
-    // width: 100%;
-    // height: 300px;
-    // width: 1920px;
-    // height: 370px;
+    width: 1920px;
+    height: 370px;
   }
 
   .slide__imgLink:nth-child(2){
