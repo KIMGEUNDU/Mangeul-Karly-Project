@@ -390,10 +390,10 @@ iframe {
   }
 }
 .slide {
+  position: relative;
   margin-bottom: 100px;
 }
 .slide__imgWrapper {
-  position: relative;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -415,16 +415,21 @@ iframe {
   transition-duration: 0.5s;
   opacity: 0;
 }
+.slide__arrowBtn:hover .slide__arrow--left, .slide__arrowBtn:hover .slide__arrow--right {
+  cursor: pointer;
+  opacity: 1;
+}
 .slide__arrowBtn--left {
   position: absolute;
   left: 10%;
-  top: 159px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .slide__arrowBtn--right {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg) translateY(-50%);
   position: absolute;
   right: 10%;
-  top: 159px;
+  top: 50%;
 }
 
 .sugge {

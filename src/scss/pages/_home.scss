@@ -1,14 +1,10 @@
 @use "./../utils" as *;
 
-// 메인영역 컨테이너
-.MKmain{
-}
-
 // 메인영역 슬라이드 컨테이너
 .slide{
+  @include pos;
   margin-bottom: 100px;
   &__imgWrapper{
-    @include pos;
     @include flexbox;
     @include slideImg;
     width: 400%;
@@ -26,12 +22,19 @@
     transition-duration: 0.5s;
     opacity: 0;
 
+    &Btn:hover .slide__arrow--left,
+    &Btn:hover .slide__arrow--right{
+      cursor: pointer;
+      opacity: 1;
+    }
+
     &Btn--left{
-      @include posLT(10%, 159px);
+      @include posLT(10%, 50%);
+      transform: translateY(-50%);
     }
     &Btn--right{
-      transform: rotateY(180deg);
-      @include posRT(10%, 159px);
+      transform: rotateY(180deg) translateY(-50%);
+      @include posRT(10%, 50%);
     }
   }
 }
