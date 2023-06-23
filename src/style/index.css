@@ -370,23 +370,26 @@ iframe {
   16% {
     transition: transform;
     transition-duration: 10s;
-    transform: translateX(-98.7%);
+    transform: translateX(-99.8%);
   }
   32% {
-    transform: translateX(-197.8%);
+    transform: translateX(-199.8%);
   }
   48% {
-    transform: translateX(-297.5%);
+    transform: translateX(-299.3%);
   }
   64% {
-    transform: translateX(-197.8%);
+    transform: translateX(-199.5%);
   }
   80% {
-    transform: translateX(-98.8%);
+    transform: translateX(-99.8%);
   }
   100% {
     transform: translateX(0);
   }
+}
+.slide {
+  margin-bottom: 100px;
 }
 .slide__imgWrapper {
   position: relative;
@@ -394,10 +397,6 @@ iframe {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-  animation-name: moveTheme;
-  animation-duration: 35s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
 }
 .slide__imgWrapper:hover + .slide__arrow {
   display: inline;
@@ -442,13 +441,12 @@ iframe {
   margin-top: 30px;
 }
 .sugge__name {
-  padding-top: 30px;
-  padding-bottom: 30px;
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 50px;
 }
-.sugge__goods {
+.sugge__goodsList {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -457,7 +455,7 @@ iframe {
 .sugge__goodsBox {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: flex-start;
   column-gap: 20px;
 }
@@ -468,16 +466,23 @@ iframe {
   color: #5F0080;
   font-weight: 600;
 }
+.sugge__goodsLink {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
 .sugge__goodsPriceBox {
   padding-top: 20px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: flex-start;
 }
 .sugge__goodsdelPrice {
   color: #898989;
   font-size: 13px;
+  order: 1;
 }
 .sugge__goodsCurDisBox {
   display: flex;
@@ -485,7 +490,6 @@ iframe {
   justify-content: flex-start;
   align-content: flex-start;
   padding-bottom: 10px;
-  order: -1;
   width: 100%;
 }
 .sugge__goodsCurrentPrice {
@@ -493,11 +497,11 @@ iframe {
   font-weight: 600;
 }
 .sugge__goodsDiscountPercent {
-  order: -1;
   color: #FA622F;
   font-size: 22px;
   font-weight: 600;
   padding-right: 10px;
+  order: -1;
 }
 .sugge__goodsImgBox {
   position: relative;
@@ -527,12 +531,12 @@ iframe {
   transform: scale(110%);
 }
 
-.advertBox {
-  margin: 80px auto;
+.advert {
   max-width: 1024px;
-}
-.advert__img {
-  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .adBlock {

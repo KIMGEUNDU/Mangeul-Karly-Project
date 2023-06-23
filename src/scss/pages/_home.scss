@@ -6,10 +6,11 @@
 
 // 메인영역 슬라이드 컨테이너
 .slide{
+  margin-bottom: 100px;
   &__imgWrapper{
     @include pos;
     @include flexbox;
-    @include slideAni;
+    // @include slideAni;
 
     &:hover + .slide__arrow{
       display: inline;
@@ -56,17 +57,21 @@
 .sugge{
   @include basicWidth;
   margin-top: 30px;
+
   &__name{
-    @include paddingY(30px);
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 50px;
   }
 
   &__goods{
-    @include flexbox($fd: column);
+    &List{
+      @include flexbox($fd:column);
+    }
+
     &Box{
-      @include flexbox($jc:center){
+      @include flexbox{
         column-gap: 20px;
       };
     }
@@ -77,22 +82,26 @@
         color: $primary-color;
         font-weight: 600;
       }
+    }
+    
+    &Link{
+    @include flexbox;
     };
 
     &PriceBox{
       padding-top: 20px;
-      @include flexbox($fw:wrap);
+      @include flexbox($fd:column);
     }
 
     &delPrice{
       color: $gray5;
       font-size: 13px;
+      order: 1;
     };
 
     &CurDisBox{
       @include flexbox;
       padding-bottom: 10px;
-      order : -1;
       width: 100%;
     }
 
@@ -102,13 +111,12 @@
     };
 
     &DiscountPercent{
-      order: -1;
       color: $accent-color;
       font-size: 22px;
       font-weight: 600;
       padding-right: 10px;
+      order: -1;
     }
-
 
     &ImgBox{
       @include pos;
@@ -143,15 +151,8 @@
 
 // 중간 광고 영역
 .advert{
-  &Box{
-    margin: 80px auto;
-    max-width: 1024px;
-  };
-  
-  &__img{
-    width: max-content;
-  };
-;
+  @include basicWidth;
+  @include marginY(100px);
 }
 
 //에드블록 영역
