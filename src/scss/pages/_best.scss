@@ -1,0 +1,371 @@
+@use "./../utils" as *;
+
+
+.MKBestPage{
+  @include basicWidth;
+}
+
+.best{
+  &__main{
+    @include flexbox{
+      column-gap: 50px;
+    }
+    @include pos;;
+  }
+
+  &__title{
+    @include paddingY(60px);
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  &__nav{
+    width: 220px;
+    height: max-content;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+  }
+
+  &__listItem{
+    @include pos;
+    &Title{
+      font-weight: 600;
+    }
+
+    &reset{
+      font-size: 10px;
+      color : $gray6;
+    }
+
+    &More{
+      @include posLT;
+      cursor: pointer;
+      top: 3px;
+      appearance: none;
+      width: 100%;
+      height: 100%;
+      background-image: url(/image/Direction=Down.png);
+      background-repeat: no-repeat;
+      background-position: 200px 8px;
+
+      &:checked{
+        background-image: url(/image/Direction=Up.svg);
+      }
+      
+    }
+    .brand{
+      background-image: url(/image/Direction=Up.svg);
+    &:checked{
+      background-image: url(/image/Direction=Down.png);
+      }
+    }
+  }
+
+  &__titleBox{
+    @include flexbox($jc:space-between);
+    @include paddingY(14px);
+    @include pos;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    cursor: pointer;
+
+    .reset{
+      @include posLT;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      font-size: 10px;
+      color : $gray6;
+      border: none;
+    }
+  }
+
+  &__brandName{
+    @include pos;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    padding-left:30px;
+
+    &Check{
+      @include posLT;
+      appearance: none;
+      background-image: url(/image/Check.svg);
+      background-repeat: no-repeat;
+      background-position: 0 8px;
+      background-size: 20px 20px;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+
+      &:checked{
+        background-image: url(/image/CheckTrue.svg);
+      }
+      }
+    &count{
+        font-size: 10px;
+        color : $gray6;
+      }
+  }
+
+  &__brandMore{
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 13px;
+    color : $gray6;
+  }
+}
+
+
+
+// 베스트 상품 컨테이너
+.best{
+  &__productContainer{
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  &__arran{
+    @include flexbox($jc:space-between);
+    padding-bottom: 20px;
+    font-size: 14px;
+
+    &Count{
+    font-weight: 600;
+    }
+    &Filter{
+      .filter{
+        &__list{
+          @include flexbox;
+        }
+        &__listItem{
+          @include paddingX(5px);
+          border-right: 1px solid $gray5;
+          color: $gray5;
+          font-weight: 600;
+
+          &:first-child{
+          color: $black;
+          font-weight: 600;
+          }
+
+          &:hover{
+            color: $primary-color;
+          }
+
+
+          &:last-child{
+            border-right: 0;
+          }
+          .qui{
+            color: $gray5;
+            font-size: 5px;
+            font-weight: 400;
+            border: 1.3px solid $gray5;
+            border-radius: 50%;
+            @include paddingX(4px);
+            @include paddingY(1px);
+            @include pos;
+
+            &:hover::after{
+              content: attr(data-toltip);
+              @include posLT(-40px, 30px);
+              @include padding(10px);
+              display:inline-block;
+              background: $white;
+              color: $gray7;
+              border: 1px solid $black;
+              font-size: 11px;
+              width: 250px;
+              height: auto;
+              line-height: 1.5;
+              z-index: 10;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // 베스트 상품 리스트
+  &__productBoxline{
+  @include flexbox($fd:column);
+  }
+
+  &__goods{
+    margin-bottom: 40px;
+    @include flexbox{
+      column-gap: 10px;
+    };
+    &List{
+      @include flexbox($fd:column);
+    }
+
+    &Box{
+      @include flexbox{
+        column-gap: 20px;
+      };
+    }
+
+    &delivery{
+      order: -1;
+      color: $gray5;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+
+    &Title{
+      padding-top: 10px;
+      height: 45px;
+      &:hover{
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+    
+    &Link{
+      @include flexbox;
+      overflow: hidden;
+
+      &:hover>.best__goodsImg{
+        @include ImageScale;
+      }
+    }
+    
+    &Img{
+      object-fit: cover;
+      @include transition(transform, 0.5s);
+      transform: scale(100%);
+    };
+
+    &PriceBox{
+      @include flexbox($fd:column);
+      padding-top: 10px;
+    }
+
+    &delPrice{
+      color: $gray5;
+      font-size: 13px;
+      order: 1;
+    };
+
+    &CurDisBox{
+      @include flexbox;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+
+    &CurrentPrice{
+      font-size: 18px;
+      font-weight: 600;
+    };
+
+    &DiscountPercent{
+      color: $accent-color;
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 10px;
+      order: -1;
+    }
+
+    &ImgBox{
+      @include pos;
+      order: -2;
+    };
+
+    &Imges{
+      @include pos;
+    }
+    
+    .basket{
+      @include posRB(20px, 15px);
+      z-index: 10;
+      appearance: none;
+      width: 40px;
+      height: 40px;
+      background-image: url(./../../image/Cart.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    };
+
+    &BasketLink{
+    @include posRB(20px, 15px);
+    z-index: 10;
+    };
+    
+    &BasketImg{
+      @include posRB(0px, 5px);
+      z-index: 10;
+      appearance: none;
+      width: 40px;
+      height: 40px;
+      background-image: url(./../../image/Cart.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(110%);
+      }
+    }
+    
+    &Summary{
+      margin-top: 10px;
+      color: $gray5;
+      font-size: 14px;
+    }
+    
+    &Sticker{
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+
+      .only{
+        @include sticker;
+        color: $primary-color;
+      }
+
+      .limit{
+        @include sticker;
+        color: $gray9;
+      }
+    };
+  }
+
+
+
+  // 베스트 상품 페이지 넘버
+  &__pageNum{
+    text-align: center;
+    line-height: 35px;
+    margin-top: 100px;
+
+    &Container{
+      display: inline-block;
+      border-collapse: collapse;
+      font-size: 16px;
+      
+      td{
+        width: 35px;
+        height: 35px;
+        border: 1px solid $gray2;
+
+        &:hover{
+          background: rgb(242, 242, 242);
+        }
+
+        &:nth-child(3){
+          background: rgb(242, 242, 242);
+          color: $primary-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

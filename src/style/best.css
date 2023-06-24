@@ -639,12 +639,37 @@ iframe {
   position: sticky;
   top: 0;
 }
+.best__listItem {
+  position: relative;
+}
 .best__listItemTitle {
   font-weight: 600;
 }
-.best__listItemMore {
+.best__listItemreset {
   font-size: 10px;
   color: #6B6B6B;
+}
+.best__listItemMore {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  top: 3px;
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/Direction=Down.png);
+  background-repeat: no-repeat;
+  background-position: 200px 8px;
+}
+.best__listItemMore:checked {
+  background-image: url(/image/Direction=Up.svg);
+}
+.best__listItem .brand {
+  background-image: url(/image/Direction=Up.svg);
+}
+.best__listItem .brand:checked {
+  background-image: url(/image/Direction=Down.png);
 }
 .best__titleBox {
   display: flex;
@@ -653,23 +678,44 @@ iframe {
   align-content: flex-start;
   padding-top: 14px;
   padding-bottom: 14px;
+  position: relative;
   border-bottom: 1px solid rgb(232, 232, 232);
   cursor: pointer;
 }
-.best__titleBox .zero {
-  transform: rotate(270deg);
-}
-.best__titleBox .deg {
-  transform: rotate(90deg);
-  height: 2px;
+.best__titleBox .reset {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-align: right;
+  font-size: 10px;
+  color: #6B6B6B;
+  border: none;
 }
 .best__brandName {
+  position: relative;
   padding-top: 8px;
   padding-bottom: 16px;
-  padding-left: 5px;
+  padding-left: 30px;
 }
 .best__brandNameCheck {
-  margin-right: 5px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  appearance: none;
+  background-image: url(/image/Check.svg);
+  background-repeat: no-repeat;
+  background-position: 0 8px;
+  background-size: 20px 20px;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.best__brandNameCheck:checked {
+  background-image: url(/image/CheckTrue.svg);
 }
 .best__brandNamecount {
   font-size: 10px;
@@ -851,6 +897,18 @@ iframe {
 .best__goodsImges {
   position: relative;
 }
+.best__goods .basket {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  z-index: 10;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  background-image: url(./../../image/Cart.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
 .best__goodsBasketLink {
   position: absolute;
   right: 20px;
@@ -858,8 +916,17 @@ iframe {
   z-index: 10;
 }
 .best__goodsBasketImg {
+  position: absolute;
+  right: 0px;
+  bottom: 5px;
+  z-index: 10;
+  appearance: none;
   width: 40px;
-  height: auto;
+  height: 40px;
+  background-image: url(./../../image/Cart.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
 }
 .best__goodsBasketImg:hover {
   transform: scale(110%);
