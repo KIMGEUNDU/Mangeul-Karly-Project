@@ -77,6 +77,8 @@
     
     &Img{
       object-fit: cover;
+      @include transition(transform, 0.5s);
+      transform: scale(100%);
     };
 
     &PriceBox{
@@ -150,6 +152,7 @@
 //에드블록 영역
 .adBlock{
   @include padding(8px);
+  @include flexbox($fd:column);
   background: $white;
   width: 100px;
   position: fixed;
@@ -160,7 +163,17 @@
   z-index: 500;
 
   &__topArrow{
-    width: 30px;
+    @include autoMargin;
+    width: 10px;
+    order: -1;
+    transform: rotate(270deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
   }
 
   &__title{
@@ -182,7 +195,16 @@
   }
 
   &__bottomArrow{
-    width: 30px;
-    transform: rotate(180deg);
+    @include autoMargin;
+    width: 10px;
+    margin-top: 10px;
+    transform: rotate(90deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
   }
 }
