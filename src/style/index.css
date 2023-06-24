@@ -563,7 +563,7 @@ iframe {
   width: 100px;
   position: fixed;
   right: 30px;
-  bottom: 50px;
+  bottom: 300px;
   border: 1px solid #E1E1E1;
   text-align: center;
   z-index: 500;
@@ -909,16 +909,10 @@ iframe {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.best__goodsBasketLink {
-  position: absolute;
-  right: 20px;
-  bottom: 15px;
-  z-index: 10;
-}
 .best__goodsBasketImg {
   position: absolute;
-  right: 0px;
-  bottom: 5px;
+  right: 10px;
+  bottom: 10px;
   z-index: 10;
   appearance: none;
   width: 40px;
@@ -927,6 +921,10 @@ iframe {
   background-repeat: no-repeat;
   background-size: 100%;
   cursor: pointer;
+}
+.best__goodsBasketImg:checked + .best__pop {
+  transition: opacity, 0.5s;
+  opacity: 1;
 }
 .best__goodsBasketImg:hover {
   transform: scale(110%);
