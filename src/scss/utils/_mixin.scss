@@ -1,3 +1,5 @@
+@use "./color" as *;
+
 //Padding
 @mixin padding($xy){
   @include paddingX($xy);
@@ -123,3 +125,10 @@
 }
 
 
+// 상품 스티커
+@mixin sticker{
+  @include paddingX(6px);
+  @include paddingY(5px);
+  border-radius: 4px;
+  background: rgb(237, 237, 237);
+}

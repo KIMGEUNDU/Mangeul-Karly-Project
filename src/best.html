@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png">
+  <link rel="stylesheet" href="./style/best.css" />
+  <title>망글망글 마켓칼리</title>
+</head>
+
+<body>
+  <!-- 베스트 상품 페이지 컨테이너 -->
+  <section class="MKBestPage">
+    <h3 class="best__title">베스트</h3>
+
+    <div class="best__main">
+      <section class="best__nav">
+        <h4 class="best__navTitle a11y">베스트 상품 네비게이션</h4>
+        <ul class="best__listWrapper">
+          <!-- 필터 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">필터</h5>
+              <span class="best__listItemMore">초기화</span>
+            </div>
+          </li>
+          <!-- 카테고리 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">카테고리</h5>
+              <span class="best__listItemMore deg">〉</span>
+            </div>
+          </li>
+          <!-- 브랜드 -->
+          <li class="best__listItem">
+            <div class="best__brandtitle">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">브랜드</h5>
+                <span class="best__listItemMore zero">〉</span>
+              </div>
+            </div>
+            <ul class="best__brandList">
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                감자밭 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                강남면옥 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                경남제약 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                경복궁 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                고래사 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                고메공방 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                고온어다이어트 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                교토마블 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                그래놀라 하우스 <span class="best__brandNamecount">1</span>
+              </li>
+              <li class="best__brandName">
+                <input class="best__brandNameCheck" type="checkbox">
+                그리츠 시그니처 램 <span class="best__brandNamecount">1</span>
+              </li>
+            </ul>
+            <a href="#" class="best__brandMore">브랜드 더보기 〉</a>
+          </li>
+          <!-- 가격 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">가격</h5>
+              <span class="best__listItemMore deg">〉</span>
+            </div>
+          </li>
+          <!-- 혜택 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">혜택</h5>
+              <span class="best__listItemMore deg">〉</span>
+            </div>
+          </li>
+          <!-- 유형 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">유형</h5>
+              <span class="best__listItemMore deg">〉</span>
+            </div>
+          </li>
+          <!-- 특정상품 제외 -->
+          <li class="best__listItem">
+            <div class="best__titleBox">
+              <h5 class="best__listItemTitle">특정상품 제외</h5>
+              <span class="best__listItemMore deg">〉</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 베스트 상품 컨테이너 -->
+      <div class="best__productContainer">
+        <!-- 상품 정보 정리 -->
+        <div class="best__arran">
+          <div class="best__arranCount">총 284건</div>
+          <!-- 상품 정보 필터 -->
+          <div class="best__arranFilter">
+            <ul class="filter__list">
+              <li class="filter__listItem">
+                <a href="#">추천순</a>
+                <sup class="qui"
+                  data-toltip="소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.">?</sup>
+              </li>
+              <li class="filter__listItem"><a href="#">신상품순</a></li>
+              <li class="filter__listItem"><a href="#">판매량순</a></li>
+              <li class="filter__listItem"><a href="#">혜택순</a></li>
+              <li class="filter__listItem"><a href="#">낮은 가격순</a></li>
+              <li class="filter__listItem"><a href="#">높은 가격순</a></li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- 베스트 상품 리스트 -->
+        <div class="best__productBox">
+          <div class="best__productBOXline">
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[라라스윗] 칼로리가 가벼운 아이스크림 12종 (택1)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 아이스크림 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>7,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">7,110 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10%</p>
+                  </div>
+                </dd>
+                <!-- 아이스크림 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/c981f3df-a122-4eca-9147-d66acdfe6509.jpg"
+                        alt="칼로리가 가벼운 아이스크림 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 아이스크림 설명 -->
+                <dd class="best__goodsSummary">
+                  마음 놓고 즐기는 달콤함
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[KF365] 양념 소불고기 1kg (냉장)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 소불고기 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>19,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">18,990 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">5%</p>
+                  </div>
+                </dd>
+                <!-- 소불고기 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/165304027922l0.jpg"
+                        alt="양념 소불고기 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 삼각주먹밥 설명 -->
+                <dd class="best__goodsSummary">
+                  달짝 지근한 양념 소불고기
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[이연복의 목란] 짬뽕 2인분 (맵기선택)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!--이연복 짬뽕 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">13,500 원</p>
+                  </div>
+                </dd>
+                <!-- 이연복 짬뽕 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1657518987370l0.jpg"
+                        alt="이연복의 목란 짬뽕 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 이연복 짬뽕 설명 -->
+                <dd class="best__goodsSummary">
+                  입맛에 맞게 고르는 인기 메뉴
+                </dd>
+              </dl>
+            </div>
+
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[라라스윗] 모나카 아이스크림 3종 (택1)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 모나카 아이스크림 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">9,400 원</p>
+                  </div>
+                </dd>
+                <!-- 모나카 아이스크림상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/1623c3e1-8702-4990-972b-7680839def54.jpg"
+                        alt="모나카 아이스크림 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 모나카 아이스크림 설명 -->
+                <dd class="best__goodsSummary">
+                  가볍게 누리는 달콤한 맛
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[오가마마] 바삭바삭 고구마칩 150g</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!--고구마칩 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">9,000 원</p>
+                  </div>
+                </dd>
+                <!-- 고구마칩 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/945d6195-852f-4719-ba12-a9d4d4478f1d.jpg"
+                        alt="고구마칩 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 고구마칩 설명 -->
+                <dd class="best__goodsSummary">
+                  얇아서 더 바삭한 고구마 과자
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[복음자리] 45도 과일잼 3종 (택1)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 과일잼 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>5,180 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">4,662 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10%</p>
+                  </div>
+                </dd>
+                <!-- 과일잼 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/2b49f9e7-cb67-459d-ad93-c3585dfc8555.jpg"
+                        alt="복음자리 과일잼 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 과일잼 설명 -->
+                <dd class="best__goodsSummary">
+                  오롯이 살린 과일의 풍미
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[제스프리] 뉴질랜드 골드키위 1.1kg (7~10입)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 골드키위 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>16,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">12,900 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">23%</p>
+                  </div>
+                </dd>
+                <!-- 골드키위 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1650348343574l0.jpg"
+                        alt="뉴질랜드 골드키위 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 삼각주먹밥 설명 -->
+                <dd class="best__goodsSummary">
+                  줏대있게 맛있는 삼각주먹밥
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[KF365] 국산 블루베리 200g</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 블루베리 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">8,990 원</p>
+                  </div>
+                </dd>
+                <!-- 블루베리 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/ee17bd9e-1561-46af-a7bb-d9731361a243.jpg"
+                        alt="국산 블루베리 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 블루베리 설명 -->
+                <dd class="best__goodsSummary">
+                  한 알 한 알 즐거움을 안겨줄
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[델리치오] 호주산 목초육 안심 스테이크 250g (냉장)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 목초육 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">4,950 원</p>
+                  </div>
+                </dd>
+                <!-- 목초육 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/01a2da11-572d-4c35-bfaa-919b362e5e30.jpeg"
+                        alt="호주산 안심 스테이크 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[Karly's] 동물복지 유정란 20구</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 유정란 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>9,990 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">8,991 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10%</p>
+                  </div>
+                </dd>
+                <!-- 유정란 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/product/image/ee5543e6-fb2f-4803-80f8-23704176d3ea.jpg"
+                        alt="동물복지 유정란 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 유정란 설명 -->
+                <dd class="best__goodsSummary">
+                  1구 당 판매가 : 499.5원
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[KF365] 춘천식 닭갈비 1kg (냉장)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 닭갈비 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">12,900 원</p>
+                  </div>
+                </dd>
+                <!-- 닭갈비 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653040325647l0.jpg"
+                        alt="춘천식 닭갈비 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[또보겠지떡볶이집] 떡볶이 1봉/2봉 (맵기선택)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 떡볶이 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>5,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">5,310 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10%</p>
+                  </div>
+                </dd>
+                <!-- 떡볶이 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/f3575442-22d2-4375-acad-1cd4e8a1cf37.jpg"
+                        alt="또보겠지 떡볶이 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 떡볶이 설명 -->
+                <dd class="best__goodsSummary">
+                  새롭게 재해석한 홍대 맛집 떡볶이
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+            </div>
+
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[백리향] 삼선짬뽕 2인분 (리뉴얼)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 삼선짬뽕 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>11,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">10,710 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10입</p>
+                  </div>
+                </dd>
+                <!-- 삼선짬뽕 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/24959c27-13da-4e38-a37f-185f4426a7de.jpg"
+                        alt="백리향 삼선짬뽕 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 삼각주먹밥 설명 -->
+                <dd class="best__goodsSummary">
+                  집으로 온 백리향의 히든 메뉴
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[리틀넥] 명란 크림 파스타</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 파스타 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>8,700 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">7,830 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">10%</p>
+                  </div>
+                </dd>
+                <!-- 파스타 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/bd3fea5c-38c0-4e7f-8e0a-669e51bd052b.jpg"
+                        alt="명란 크림 파스타 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 파스타 설명 -->
+                <dd class="best__goodsSummary">
+                  짭조름한 풍미가 부드럽게 녹아든
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[멘야하나비] 카레 마제소바 2인분</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 마제소바 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>14,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">13,708 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">8%</p>
+                  </div>
+                </dd>
+                <!-- 마제소바 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/06509774-6572-4967-b792-8da1f7f60898.jpg"
+                        alt="멘야하나비 마제소바 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 마제소바 설명 -->
+                <dd class="best__goodsSummary">
+                  카레의 짙은 풍미가 곁들여진
+                </dd>
+              </dl>
+            </div>
+
+            <div class="best__goods">
+
+              <!-- 첫번째상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[해태] 홈런볼 초코 4번들 164g</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 홈런볼 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>4,780 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">3,900 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">18%</p>
+                  </div>
+                </dd>
+                <!-- 홈런볼 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/ee6e3a75-5369-4918-a63a-575157d2d757.jpg"
+                        alt="홈런볼 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 홈런볼 설명 -->
+                <dd class="best__goodsSummary">
+                  폭신한 슈를 꽉 채운 달콤함
+                </dd>
+              </dl>
+
+              <!-- 두번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[마켓오네이처] 오! 그래놀라 퍼니 스낵 3종 (택1)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 오!그래놀라 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>5,980 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">5,200 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">13%</p>
+                  </div>
+                </dd>
+                <!-- 오!그래놀라 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/e66ec168-e057-47dd-a1da-38a034ccff85.jpg"
+                        alt="마켓오 네이처 오그래놀라 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 오!그래놀라 설명 -->
+                <dd class="best__goodsSummary">
+                  초코바나나 신규 출시!
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="only">Karly only</span>
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+
+              <!-- 세번째 상품 -->
+              <dl class="best__goodsList">
+                <dt class="best__goodsTitle">
+                  <a href="#" class="best__goodsTitleLink">
+                    <div>[피쉬셀] 프리미엄 생새우살 454g (냉동) (26/30 사이즈)</div>
+                  </a>
+                </dt>
+
+                <dd class="best__goodsdelivery">샛별배송</dd>
+
+                <!-- 생새우살 가격 컨테이너 -->
+                <dd class="best__goodsPriceBox">
+                  <p class="best__goodsLastPrice a11y">원래 가격</p>
+                  <p class="best__goodsdelPrice"><del>14,900 원</del></p>
+                  <div class="best__goodsCurDisBox">
+                    <p class="best__goodsCurrentPrice a11y">현재 가격</p>
+                    <p class="best__goodsCurrentPrice">11,550 원</p>
+                    <p class="best__goodsDiscount a11y">할인율</p>
+                    <p class="best__goodsDiscountPercent">22%</p>
+                  </div>
+                </dd>
+                <!-- 생새우살 상품 이미지 -->
+                <dd class="best__goodsImgBox">
+                  <p class="best__goodsImges">
+                    <a href="#" class="best__goodsLink">
+                      <img class="best__goodsImg"
+                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/4d615329-a172-4563-94cc-e22f906d9223.jpg"
+                        alt="프리미엄 생새우살 상세페이지" />
+                    </a>
+                    <a href="#" class="best__goodsBasketLink">
+                      <img class="best__goodsBasketImg" src="image/Cart.svg" alt="장바구니 담기" />
+                    </a>
+                  </p>
+                </dd>
+
+                <!-- 생새우살 설명 -->
+                <dd class="best__goodsSummary">
+                  큼직한 새우를 선별
+                </dd>
+
+                <dd class="best__goodsSticker">
+                  <span class="limit">한정수량</span>
+                </dd>
+              </dl>
+            </div>
+
+
+            <!-- 베스트 상품 페이지 넘버 -->
+            <div class="best__pageNum">
+              <table class="best__pageNumContainer">
+                <tr>
+                  <td><a href="#">≪</a></td>
+                  <td><a href="#">＜</a></td>
+                  <td><a href="#">1</a></td>
+                  <td><a href="#">2</a></td>
+                  <td><a href="#">3</a></td>
+                  <td><a href="#">4</a></td>
+                  <td><a href="#">＞</a></td>
+                  <td><a href="#">≫</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 에드블록 -->
+  <aside class="adBlock">
+    <h4 class="adBlock__title">최근 본 상품</h4>
+    <div class="adBlock__ImgBox">
+      <a href="#" class="adBlock__link">
+        <img class="adBlock__linkImg"
+          src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/63032c27-2f5d-4412-bdf0-306411a780e0.jpg"
+          alt="하겐다즈 스페셜 아이스크림 상세페이지" />
+      </a>
+      <a href="#" class="adBlock__link">
+        <img class="adBlock__linkImg"
+          src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653543441999l0.jpg"
+          alt="커피빈 바닐라 라떼 파우치 상세페이지" />
+      </a>
+      <a href="#" class="adBlock__link">
+        <img class="adBlock__linkImg"
+          src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/18eb7a26-cc76-4c5b-b30f-8c6a175e2917.jpg"
+          alt="폴바셋 푸딩 상세페이지" />
+      </a>
+    </div>
+    <p class="adBlock__topArrow" aria-label="최근 본 상품 더보기 위로"> 〉</p>
+    <p class="adBlock__bottomArrow" aria-label="최근 본 상품 더보기 아래로">〉</p>
+  </aside>
+</body>
+
+</html>
