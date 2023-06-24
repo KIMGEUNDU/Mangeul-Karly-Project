@@ -406,7 +406,7 @@ iframe {
 }
 .slide__imgWrapper:hover + .slide__arrow--left, .slide__imgWrapper:hover ~ .slide__arrow--right {
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   opacity: 1;
 }
 .slide__arrow--left {
@@ -415,16 +415,16 @@ iframe {
   top: 50%;
   transform: translateY(-50%);
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
   opacity: 0;
 }
 .slide__arrow--right {
   position: absolute;
   right: 15%;
   top: 50%;
-  transform: translateY(-50%) rotate(180deg);
   transition-property: opacity;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
+  transform: translateY(-50%) rotate(180deg);
   opacity: 0;
 }
 

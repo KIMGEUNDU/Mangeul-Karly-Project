@@ -12,25 +12,22 @@
 
     &:hover+.slide__arrow--left,
     &:hover~.slide__arrow--right{
-      transition-property: opacity;
-      transition-duration: 1s;
+      @include transition(opacity, 0.5s);
       opacity: 1;
     }
   }
 
   &__arrow--left{
     @include posLT(15%, 50%);
-    transform: translateY(-50%);
-    transition-property: opacity;
-    transition-duration: 1s;
+    @include transY(-50%);
+    @include transition(opacity, 0.5s);
     opacity: 0;
   }
 
   &__arrow--right{
     @include posRT(15%, 50%);
+    @include transition(opacity, 0.5s);
     transform: translateY(-50%) rotate(180deg);
-    transition-property: opacity;
-    transition-duration: 1s;
     opacity : 0;
   }
 }
