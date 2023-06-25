@@ -1097,6 +1097,9 @@ iframe {
   color: #5F0080;
   font-weight: 500;
 }
+.best__pageNumLink {
+  display: block;
+}
 
 .MKspecialPage {
   max-width: 1024px;
