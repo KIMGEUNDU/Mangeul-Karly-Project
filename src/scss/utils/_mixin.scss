@@ -1,14 +1,17 @@
 //Padding
 @mixin padding($xy){
-  padding: $xy;
+  @include paddingX($xy);
+  @include paddingY($xy);
 }
 
 @mixin paddingY($tb){
-  padding: $tb;
+  padding-top: $tb;
+  padding-bottom: $tb;
 }
 
 @mixin paddingX($lr){
-  padding: $lr;
+  padding-left: $lr;
+  padding-right: $lr;
 }
 
 //Margin
