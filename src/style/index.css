@@ -464,7 +464,7 @@ iframe {
 }
 
 .sugge {
-  max-width: 1024px;
+  max-width: 55%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -578,7 +578,7 @@ iframe {
 .advert {
   padding-left: 30px;
   padding-right: 30px;
-  max-width: 1024px;
+  max-width: 55%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 100px;
@@ -647,7 +647,7 @@ iframe {
 }
 
 .MKBestPage {
-  max-width: 1024px;
+  max-width: 55%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -659,9 +659,6 @@ iframe {
   align-content: flex-start;
   column-gap: 50px;
   position: relative;
-}
-.best__titleBox {
-  margin-top: 8px;
 }
 .best__title {
   padding-top: 60px;
@@ -708,49 +705,46 @@ iframe {
   background-image: url(/image/Direction=Up.svg);
 }
 .best__listItemMore:checked + .best__brandList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
-  height: 480px;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
+  height: 500px;
   opacity: 1;
 }
 .best__listItem .price:checked + .priceList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
-  height: 170px;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
+  height: 190px;
   opacity: 1;
 }
 .best__listItem .benefit:checked + .benefitList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
-  height: 80px;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
+  height: 100px;
   opacity: 1;
 }
 .best__listItem .specific:checked + .specificList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
-  height: 30px;
-  opacity: 1;
-}
-.best__listItem .brand:checked + .best__brandList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
-  height: 480px;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
+  height: 50px;
   opacity: 1;
 }
 .best__brandList {
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
   height: 0;
   opacity: 0;
+  padding-top: 0;
 }
 .best__brandName {
   position: relative;
   padding-top: 8px;
   padding-bottom: 16px;
   padding-left: 30px;
-}
-.best__brandName:first-child {
-  margin-top: 10px;
 }
 .best__brandNameCheck {
   position: absolute;
@@ -1036,7 +1030,7 @@ iframe {
 }
 
 .MKspecialPage {
-  max-width: 1024px;
+  max-width: 55%;
   margin-left: auto;
   margin-right: auto;
 }

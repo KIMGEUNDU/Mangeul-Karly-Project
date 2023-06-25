@@ -39,7 +39,7 @@
 }
 
 @mixin basicWidth{
-  max-width: 1024px;
+  max-width: 55%;
   @include autoMargin;
 }
 
@@ -117,8 +117,9 @@
 
 
 @mixin slideList{
-  transition-property: height, opacity;
-  transition-duration: 0.5s, 0.2s;
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
 }
 
 

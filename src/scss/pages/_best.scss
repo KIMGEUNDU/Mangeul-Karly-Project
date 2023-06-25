@@ -12,10 +12,6 @@
     @include pos;;
   }
 
-  &__titleBox{
-  margin-top: 8px;
-  }
-
   &__title{
     @include paddingY(60px);
     text-align: center;
@@ -65,35 +61,27 @@
 
       &:checked+.best__brandList{
         @include slideList;
-        height: 480px;
+        height: 500px;
         opacity: 1;
         } 
     }
 
     .price:checked+.priceList{
       @include slideList;
-      height: 170px;
+      height: 190px;
       opacity: 1;
     }
 
     .benefit:checked+.benefitList{
       @include slideList;
-      height: 80px;
+      height: 100px;
       opacity: 1;
     }
 
     .specific:checked+.specificList{
       @include slideList;
-      height: 30px;
+      height: 50px;
       opacity: 1;
-    }
-
-    .brand{
-    &:checked+.best__brandList{
-      @include slideList;
-      height: 480px;
-      opacity: 1;
-      }
     }
   }
 
@@ -101,6 +89,7 @@
     @include slideList;
     height: 0;
     opacity: 0;
+    padding-top: 0;
   }
 
   &__brandName{
@@ -108,10 +97,6 @@
     padding-top: 8px;
     padding-bottom: 16px;
     padding-left:30px;
-
-    &:first-child{
-      margin-top: 10px;
-    }
 
     &Check{
       @include posLT;
