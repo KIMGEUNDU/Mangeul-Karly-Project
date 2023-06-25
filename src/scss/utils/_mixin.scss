@@ -39,7 +39,7 @@
 }
 
 @mixin basicWidth{
-  max-width: 55%;
+  max-width: 1024px;
   @include autoMargin;
 }
 
