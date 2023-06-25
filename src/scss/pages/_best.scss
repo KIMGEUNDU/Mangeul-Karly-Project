@@ -12,6 +12,10 @@
     @include pos;;
   }
 
+  &__titleBox{
+  margin-top: 8px;
+  }
+
   &__title{
     @include paddingY(60px);
     text-align: center;
@@ -30,6 +34,11 @@
   &__listItem{
     @include pos;
     border-bottom: 1px solid rgb(232, 232, 232);
+
+    &:first-child{
+    padding-bottom: 5px;
+    }
+
     &Title{
       font-weight: 600;
     }
@@ -53,45 +62,56 @@
       &:checked{
         background-image: url(/image/Direction=Up.svg);
       }
-      
+
+      &:checked+.best__brandList{
+        @include slideList;
+        height: 480px;
+        opacity: 1;
+        } 
     }
+
+    .price:checked+.priceList{
+      @include slideList;
+      height: 170px;
+      opacity: 1;
+    }
+
+    .benefit:checked+.benefitList{
+      @include slideList;
+      height: 80px;
+      opacity: 1;
+    }
+
+    .specific:checked+.specificList{
+      @include slideList;
+      height: 30px;
+      opacity: 1;
+    }
+
     .brand{
-      background-image: url(/image/Direction=Up.svg);
-    &:checked{
-      background-image: url(/image/Direction=Down.png);
+    &:checked+.best__brandList{
+      @include slideList;
+      height: 480px;
+      opacity: 1;
       }
     }
   }
 
-  &__titleBox{
-    @include flexbox($jc:space-between);
-    @include paddingY(14px);
-    @include pos;
-    cursor: pointer;
-
-    &:nth-child(3){
-      border-bottom: 0 solid #000;
-    }
-
-    .reset{
-      @include posLT;
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-      background: transparent;
-      text-align: right;
-      font-size: 10px;
-      color : $gray6;
-      border: none;
-    }
+  &__brandList{
+    @include slideList;
+    height: 0;
+    opacity: 0;
   }
-
 
   &__brandName{
     @include pos;
     padding-top: 8px;
     padding-bottom: 16px;
     padding-left:30px;
+
+    &:first-child{
+      margin-top: 10px;
+    }
 
     &Check{
       @include posLT;
@@ -112,6 +132,24 @@
         font-size: 10px;
         color : $gray6;
       }
+  }
+
+  &__titleBox{
+    @include paddingY(14px);
+    @include pos;
+    cursor: pointer;
+    
+    .reset{
+      @include posLT;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      font-size: 10px;
+      color : $gray6;
+      border: none;
+    }
   }
 
   &__brandMore{

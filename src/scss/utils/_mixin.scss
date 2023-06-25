@@ -116,6 +116,12 @@
 }
 
 
+@mixin slideList{
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+}
+
+
 // Animation
 @mixin slideImg{
   animation-name: moveImage;

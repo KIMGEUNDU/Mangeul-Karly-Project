@@ -442,6 +442,7 @@ iframe {
   height: 26px;
   border-radius: 50%;
   background: rgb(255, 255, 255);
+  z-index: -1;
 }
 .slide__arrow--left {
   position: absolute;
@@ -659,6 +660,9 @@ iframe {
   column-gap: 50px;
   position: relative;
 }
+.best__titleBox {
+  margin-top: 8px;
+}
 .best__title {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -676,6 +680,9 @@ iframe {
 .best__listItem {
   position: relative;
   border-bottom: 1px solid rgb(232, 232, 232);
+}
+.best__listItem:first-child {
+  padding-bottom: 5px;
 }
 .best__listItemTitle {
   font-weight: 600;
@@ -700,43 +707,50 @@ iframe {
 .best__listItemMore:checked {
   background-image: url(/image/Direction=Up.svg);
 }
-.best__listItem .brand {
-  background-image: url(/image/Direction=Up.svg);
+.best__listItemMore:checked + .best__brandList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 480px;
+  opacity: 1;
 }
-.best__listItem .brand:checked {
-  background-image: url(/image/Direction=Down.png);
+.best__listItem .price:checked + .priceList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 170px;
+  opacity: 1;
 }
-.best__titleBox {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-content: flex-start;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  position: relative;
-  cursor: pointer;
+.best__listItem .benefit:checked + .benefitList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 80px;
+  opacity: 1;
 }
-.best__titleBox:nth-child(3) {
-  border-bottom: 0 solid #000;
+.best__listItem .specific:checked + .specificList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 30px;
+  opacity: 1;
 }
-.best__titleBox .reset {
-  position: absolute;
-  left: 0;
-  top: 0;
-  cursor: pointer;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  text-align: right;
-  font-size: 10px;
-  color: #6B6B6B;
-  border: none;
+.best__listItem .brand:checked + .best__brandList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 480px;
+  opacity: 1;
+}
+.best__brandList {
+  transition-property: height, opacity;
+  transition-duration: 0.5s, 0.2s;
+  height: 0;
+  opacity: 0;
 }
 .best__brandName {
   position: relative;
   padding-top: 8px;
   padding-bottom: 16px;
   padding-left: 30px;
+}
+.best__brandName:first-child {
+  margin-top: 10px;
 }
 .best__brandNameCheck {
   position: absolute;
@@ -757,6 +771,25 @@ iframe {
 .best__brandNamecount {
   font-size: 10px;
   color: #6B6B6B;
+}
+.best__titleBox {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  position: relative;
+  cursor: pointer;
+}
+.best__titleBox .reset {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  text-align: right;
+  font-size: 10px;
+  color: #6B6B6B;
+  border: none;
 }
 .best__brandMore {
   display: block;
