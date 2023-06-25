@@ -177,13 +177,13 @@
     .sugge__arrow{
       @include posRT(-25px, 43%);
       background: $white;
-      font-size: 20px;
+      color: $gray7;
+      font-size: 40px;
       border-radius: 50%;
       width: 50px;
       height: 50px;
       line-height: 48px;
       text-align: center;
-      font-weight: 500;
       box-shadow: 
       -1px 1px 8px $gray2,
       1px -1px 8px $gray2,;
