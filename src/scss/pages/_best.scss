@@ -282,17 +282,6 @@
       @include pos;
     }
     
-    .basket{
-      @include posRB(20px, 15px);
-      z-index: 10;
-      appearance: none;
-      width: 40px;
-      height: 40px;
-      background-image: url(./../../image/Cart.svg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    };;
-    
     &BasketImg{
       @include posRB(10px, 10px);
       z-index: 10;
@@ -304,10 +293,6 @@
       background-size: 100%;
       cursor: pointer;
 
-      &:checked + .best__pop{
-          transition: opacity, 0.5s;
-          opacity: 1;
-      }
 
       &:hover{
         transform: scale(110%);

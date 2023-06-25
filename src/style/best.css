@@ -337,6 +337,7 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   background-color: #fff;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 /* 유연한 미디어 */
@@ -979,6 +980,12 @@ iframe {
   background: rgb(242, 242, 242);
   color: #5F0080;
   font-weight: 500;
+}
+
+.MKspecialPage {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=best.css.map */
