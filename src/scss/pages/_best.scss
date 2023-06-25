@@ -61,7 +61,7 @@
 
       &:checked+.best__brandList{
         @include slideList;
-        height: 500px;
+        height: 490px;
         opacity: 1;
         } 
     }
@@ -249,7 +249,7 @@
 
     &Title{
       padding-top: 10px;
-      height: 45px;
+      height: 60px;
       &:hover{
         color: $primary-color;
         font-weight: 600;
@@ -273,7 +273,7 @@
 
     &PriceBox{
       @include flexbox($fd:column);
-      padding-top: 10px;
+      // padding-top: 10px;
     }
 
     &delPrice{
@@ -291,6 +291,7 @@
     &CurrentPrice{
       font-size: 18px;
       font-weight: 600;
+      line-height: 32px;
     };
 
     &DiscountPercent{

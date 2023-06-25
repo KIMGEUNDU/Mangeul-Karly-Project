@@ -732,7 +732,7 @@ iframe {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
-  height: 500px;
+  height: 490px;
   opacity: 1;
 }
 .best__listItem .price:checked + .priceList {
@@ -923,7 +923,7 @@ iframe {
 }
 .best__goodsTitle {
   padding-top: 10px;
-  height: 45px;
+  height: 60px;
 }
 .best__goodsTitle:hover {
   color: #5F0080;
@@ -952,7 +952,6 @@ iframe {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-  padding-top: 10px;
 }
 .best__goodsdelPrice {
   color: #898989;
@@ -970,6 +969,7 @@ iframe {
 .best__goodsCurrentPrice {
   font-size: 18px;
   font-weight: 600;
+  line-height: 32px;
 }
 .best__goodsDiscountPercent {
   color: #FA622F;
