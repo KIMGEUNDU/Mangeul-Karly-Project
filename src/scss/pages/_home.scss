@@ -10,11 +10,45 @@
     @include slideImg;
     width: 400%;
 
-    &:hover+.slide__arrow--left,
+    &:hover~.slide__arrow--left,
     &:hover~.slide__arrow--right{
       @include transition(opacity, 0.5s);
       opacity: 1;
     }
+  }
+
+  &__BtnWrapper{
+    @include pos;
+    @include posRB(350px, 30px);
+    z-index: 1;
+
+  }
+
+  &__Btn{
+    appearance: none; 
+    width: 70px;
+    height: 30px;
+    border: 2px solid $white;
+    border-radius: 50px;
+    background: transparent;
+
+    &:checked+.slide__BtnClick{
+      transition: transform, background-color;
+      transition-duration: 0.5s, 0.2s;
+      transform: translateX(40px);
+      background-color: rgb(179, 72, 191);
+    }
+  }
+
+  &__BtnClick{
+    @include posLT(2px, 2px);
+    @include transition(transform, 0.5s);
+    transform: translateX(0);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+  
   }
 
   &__arrow--left{

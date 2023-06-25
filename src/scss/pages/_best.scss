@@ -29,6 +29,7 @@
 
   &__listItem{
     @include pos;
+    border-bottom: 1px solid rgb(232, 232, 232);
     &Title{
       font-weight: 600;
     }
@@ -66,8 +67,11 @@
     @include flexbox($jc:space-between);
     @include paddingY(14px);
     @include pos;
-    border-bottom: 1px solid rgb(232, 232, 232);
     cursor: pointer;
+
+    &:nth-child(3){
+      border-bottom: 0 solid #000;
+    }
 
     .reset{
       @include posLT;
@@ -81,6 +85,7 @@
       border: none;
     }
   }
+
 
   &__brandName{
     @include pos;

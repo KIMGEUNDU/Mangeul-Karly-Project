@@ -17,8 +17,13 @@
     <section class="slide">
       <h3 class="slide__title a11y" tabindex="0">슬라이드 광고</h3>
 
+      <!-- 슬라이드 정지 버튼 -->
+      <div class="slide__BtnWrapper">
+        <input class="slide__Btn" type="checkbox" aria-label="슬라이드 정지 버튼" />
+        <span class="slide__BtnClick" aria-hidden="true"></span>
+      </div>
+
       <div class="slide__imgWrapper">
-        <button class="slide__stop a11y">슬라이드 광고 정지</button>
         <!-- 이미지에 링크 -->
         <a href="#" class="slide__imgLink">
           <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게 앵콜 특가 보러가기" />
