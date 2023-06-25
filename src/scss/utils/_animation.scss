@@ -20,3 +20,14 @@
     transform: translateX(0);
   }
 }
+
+@keyframes showModal{
+  50%{
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
