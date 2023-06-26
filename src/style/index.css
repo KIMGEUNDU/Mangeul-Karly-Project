@@ -404,22 +404,6 @@ iframe {
   position: relative;
   margin-bottom: 30px;
 }
-.slide__imgWrapper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  animation-name: moveImage;
-  animation-duration: 35s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  width: 400%;
-}
-.slide__imgWrapper:hover ~ .slide__arrow--left, .slide__imgWrapper:hover ~ .slide__arrow--right {
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  opacity: 1;
-}
 .slide__BtnWrapper {
   position: relative;
   position: absolute;
@@ -471,6 +455,22 @@ iframe {
   border-radius: 50px;
   z-index: -2;
 }
+.slide__imgWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  animation-name: moveImage;
+  animation-duration: 35s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  width: 400%;
+}
+.slide__imgWrapper:hover ~ .slide__arrow--left, .slide__imgWrapper:hover ~ .slide__arrow--right {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+}
 .slide__arrow--left {
   position: absolute;
   left: 15%;
@@ -504,18 +504,18 @@ iframe {
   text-align: center;
   margin-bottom: 50px;
 }
-.sugge__goodsList {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-}
 .sugge__goodsBox {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-content: flex-start;
   column-gap: 20px;
+}
+.sugge__goodsList {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
 .sugge__goodsTitle {
   padding-top: 15px;
@@ -524,24 +524,6 @@ iframe {
 .sugge__goodsTitle:hover {
   color: #5F0080;
   font-weight: 600;
-}
-.sugge__goodsLink {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  overflow: hidden;
-}
-.sugge__goodsLink:hover > .sugge__goodsImg {
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transform: scale(105%);
-}
-.sugge__goodsImg {
-  object-fit: cover;
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transform: scale(100%);
 }
 .sugge__goodsPriceBox {
   padding-top: 20px;
@@ -574,6 +556,18 @@ iframe {
   padding-right: 10px;
   order: -1;
 }
+.sugge__goodsLink {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  overflow: hidden;
+}
+.sugge__goodsLink:hover > .sugge__goodsImg {
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(105%);
+}
 .sugge__goodsImgBox {
   position: relative;
   order: -1;
@@ -581,11 +575,18 @@ iframe {
 .sugge__goodsImges {
   position: relative;
 }
-.sugge__goodsBasketLink {
-  position: absolute;
-  right: 20px;
-  bottom: 15px;
-  z-index: 10;
+.sugge__goodsImg {
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transform: scale(100%);
+}
+.sugge__goodsBasketImg {
+  width: 40px;
+  height: auto;
+}
+.sugge__goodsBasketImg:hover {
+  transform: scale(110%);
 }
 .sugge__goods .sugge__arrow {
   position: absolute;
@@ -601,12 +602,36 @@ iframe {
   text-align: center;
   box-shadow: -1px 1px 8px #E1E1E1, 1px -1px 8px #E1E1E1;
 }
-.sugge__goodsBasketImg {
-  width: 40px;
-  height: auto;
+.sugge__modal {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  background: #ffffff;
+  box-shadow: 0px 0px 0.13rem rgb(149, 128, 156);
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  z-index: 50;
+  text-align: center;
+  width: 350px;
+  height: 120px;
+  border-radius: 10px;
+  opacity: 0;
 }
-.sugge__goodsBasketImg:hover {
-  transform: scale(110%);
+.sugge .modalImg {
+  width: 100px;
+}
+.sugge .modalp {
+  font-size: 18px;
+  color: #2B2B2B;
+  text-shadow: 1px -1px 2px #ffffff;
+}
+.sugge .best__goodsBasketImg:checked + .sugge__modal {
+  animation-name: showModal;
+  animation-duration: 2.5s;
 }
 
 .advert {
@@ -680,61 +705,26 @@ iframe {
   color: #000000;
 }
 
-.sugge__modal {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  transition-property: opacity;
-  transition-duration: 0.5s;
-  background: #ffffff;
-  box-shadow: 0px 0px 0.13rem rgb(149, 128, 156);
-  position: fixed;
-  right: 30px;
-  bottom: 10px;
-  z-index: 50;
-  text-align: center;
-  width: 350px;
-  height: 120px;
-  border-radius: 10px;
-  opacity: 0;
-}
-
-.modalImg {
-  width: 100px;
-}
-
-.modalp {
-  font-size: 18px;
-  color: #2B2B2B;
-  text-shadow: 1px -1px 2px #ffffff;
-}
-
-.best__goodsBasketImg:checked + .sugge__modal {
-  animation-name: showModal;
-  animation-duration: 2.5s;
-}
-
 .MKBestPage {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.best__main {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-content: flex-start;
-  column-gap: 50px;
-  position: relative;
-}
 .best__title {
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
   font-weight: bold;
   font-size: 22px;
+}
+.best__main {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  column-gap: 50px;
 }
 .best__nav {
   width: 220px;
@@ -753,16 +743,12 @@ iframe {
 .best__listItemTitle {
   font-weight: 600;
 }
-.best__listItemreset {
-  font-size: 10px;
-  color: #6B6B6B;
-}
 .best__listItemMore {
   position: absolute;
   left: 0;
   top: 0;
-  cursor: pointer;
   top: 3px;
+  cursor: pointer;
   appearance: none;
   width: 100%;
   height: 100%;
