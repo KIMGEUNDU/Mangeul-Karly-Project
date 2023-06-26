@@ -7,8 +7,8 @@
   /* padding-left: rem(64px); */
 
   $sprites: Gift, Vegetable, Fruits, Fish, Meat, Main, Salad, Noodle, Water,
-    Bakery, Health, Wine, Traditional, Living, Skin, Hair, Kitchen, Electronic,
-    Pet, Baby, Travel;
+    Dessert, Bakery, Health, Wine, Traditional, Living, Skin, Hair, Kitchen,
+    Electronic, Pet, Baby, Travel;
   $x: 0;
   $y: 0;
   @each $sprite in $sprites {

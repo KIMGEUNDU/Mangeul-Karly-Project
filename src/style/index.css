@@ -11,6 +11,38 @@ legend {
   margin: -1px;
 }
 
+@keyframes moveImage {
+  16% {
+    transition: transform;
+    transition-duration: 10s;
+    transform: translateX(-25%);
+  }
+  32% {
+    transform: translateX(-50%);
+  }
+  48% {
+    transform: translateX(-75%);
+  }
+  64% {
+    transform: translateX(-50%);
+  }
+  80% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes showModal {
+  50% {
+    transition-property: opacity;
+    transition-duration: 0.1s;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .sprite {
   /* min-height: rem(60px); */
   background-image: url(../../image/MenuIcon.png);
@@ -45,41 +77,44 @@ legend {
 .spriteWater {
   background-position: 0 -160px;
 }
-.spriteBakery {
+.spriteDessert {
   background-position: 0 -180px;
 }
-.spriteHealth {
+.spriteBakery {
   background-position: 0 -200px;
 }
-.spriteWine {
+.spriteHealth {
   background-position: 0 -220px;
 }
-.spriteTraditional {
+.spriteWine {
   background-position: 0 -240px;
 }
-.spriteLiving {
+.spriteTraditional {
   background-position: 0 -260px;
 }
-.spriteSkin {
+.spriteLiving {
   background-position: 0 -280px;
 }
-.spriteHair {
+.spriteSkin {
   background-position: 0 -300px;
 }
-.spriteKitchen {
+.spriteHair {
   background-position: 0 -320px;
 }
-.spriteElectronic {
+.spriteKitchen {
   background-position: 0 -340px;
 }
-.spritePet {
+.spriteElectronic {
   background-position: 0 -360px;
 }
-.spriteBaby {
+.spritePet {
   background-position: 0 -380px;
 }
-.spriteTravel {
+.spriteBaby {
   background-position: 0 -400px;
+}
+.spriteTravel {
+  background-position: 0 -420px;
 }
 
 .MKmain {
@@ -200,6 +235,10 @@ legend {
   padding-left: 6px;
 }
 
+.memberOnly__help .divider__img {
+  background: transparent;
+}
+
 .memberOnly li {
   /* padding-left: 14px; */
 }
@@ -295,20 +334,6 @@ legend {
   line-height: 150%;
 }
 
-.sidemenu__list {
-  position: absolute;
-}
-
-.sidemenu__list li {
-  padding: 8px 0px 8px 12px;
-}
-
-.sidemenu__list li a {
-  display: block;
-  width: 286px;
-  padding-left: 30px;
-}
-
 .mainmenu__list > li ul {
   display: none;
 }
@@ -322,7 +347,26 @@ legend {
   opacity: 1;
 }
 
-.spriteGift .deliveryNotice {
+.sidemenu__list {
+  position: absolute;
+}
+
+.sidemenu__list > li:hover {
+  background: #E1E1E1;
+  color: #5F0080;
+}
+
+.sidemenu__list li {
+  padding: 8px 0px 8px 12px;
+}
+
+.sidemenu__list li a {
+  display: block;
+  width: 235px;
+  padding-left: 30px;
+}
+
+.deliveryNotice {
   border: 1px solid black;
   border-radius: 18px;
   width: 95px;

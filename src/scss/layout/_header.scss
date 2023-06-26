@@ -90,6 +90,10 @@
   padding-left: 6px;
 }
 
+.memberOnly__help .divider__img {
+  background: transparent;
+}
+
 .memberOnly li {
   /* padding-left: 14px; */
 }
@@ -193,20 +197,6 @@
   line-height: 150%;
 }
 
-.sidemenu__list {
-  position: absolute;
-}
-
-.sidemenu__list li {
-  padding: 8px 0px 8px 12px;
-}
-
-.sidemenu__list li a {
-  display: block;
-  width: 286px;
-  padding-left: 30px;
-}
-
 .mainmenu__list > li ul {
   display: none;
 }
@@ -219,12 +209,26 @@
     opacity: 1;
   }
 }
+.sidemenu__list {
+  position: absolute;
+}
+
+.sidemenu__list > li:hover {
+  background: $gray2;
+  color: $primary-color;
+}
+
+.sidemenu__list li {
+  padding: 8px 0px 8px 12px;
+}
+
+.sidemenu__list li a {
+  display: block;
+  width: 235px;
+  padding-left: 30px;
+}
 
 // sprite 이미지
-
-.spriteGift
-
-
 
 // 샛별 배송 버튼
 
