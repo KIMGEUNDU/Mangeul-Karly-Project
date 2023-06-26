@@ -1,34 +1,216 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>망글망글 마켓칼리</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://res.kurly.com/icons/favicon-16x16.png"
+    />
+    <script
+      src="http://kit.fontawesome.com//77ad8525ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <header class="appHeader">
+    <h1 class="logo">
+      <a href="/" class="logo__link" aria-label="market karly"></a>
+    </h1>
+    <div class="pageCategory">
+      <h2 class="marketPage">
+        <a href="/">마켓칼리 </a>
+      </h2>
+      <h2 class="beautyPage">
+        <span class="beauty__divider" aria-hidden="true">ㅣ</span
+        ><a href="/">뷰티칼리</a><sup class="beautyPage__new">N</sup>
+      </h2>
+    </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>망글망글 마켓칼리</title>
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-  <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png">
-  <link rel="stylesheet" href="/style/index.css" />
-</head>
+    <ul class="memberOnly">
+      <li class="memberOnly__membership">
+        <a href="/">회원가입</a>
+      </li>
+      <li class="memberOnly__login">
+        <span class="divider" aria-hidden="true">ㅣ</span
+        ><a href="/">로그인 </a>
+      </li>
+      <li class="memberOnly__help">
+        <span class="divider" aria-hidden="true">ㅣ</span
+        ><a href="/"> 고객센터 </a
+        ><span class="divider__img"
+          ><img src="./image/Icon_down 1.svg" alt="고객센터 상세 메뉴 버튼"
+        /></span>
+      </li>
+    </ul>
 
-<body>
-  <main class="MKmain">
-    <section class="slide">
-      <h2 class="slide__title a11y">슬라이드 광고</h2>
+    <form
+      action="https://formspree.io/f/xeqwwbwk"
+      method="POST"
+      class="searchForm"
+    >
+      <fieldset>
+        <legend>검색 폼</legend>
+        <div class="searchForm__group">
+          <div class="formInput">
+            <label for="search" class="a11y formInput__label">검색어</label>
+            <input
+              type="search"
+              id="search"
+              name="search"
+              required
+              class="formInput__input"
+              placeholder="검색어를 입력해주세요"
+            />
+            <button id="submit" class="submit"></button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
 
-      <article class="slide__imgWrapper">
-        <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게" />
-        <img class="slide__img" src="image/banner02.svg" alt="이달의 카드 혜택" />
-        <img class="slide__img" src="image/banner03.svg" alt="컬리 퍼플 위크" />
-        <img class="slide__img" src="image/banner05.svg" alt="이 주의 특가 한눈에 보기" />
-      </article>
+    <ul class="memberOnly__icon">
+      <li class="icon__location">
+        <a href="/" class="icon__link" aria-label="location"
+          ><img src="./image/Location.svg" alt="위치 아이콘"
+        /></a>
+      </li>
+      <li class="icon__heart">
+        <a href="/" class="icon__link" aria-label="heart"
+          ><img src="./image/Heart.svg" alt="좋아요 아이콘"
+        /></a>
+      </li>
+      <li class="icon__cart">
+        <a href="/" class="icon__link" aria-label="cart"
+          ><img src="./image/Cart.svg" alt="장바구니 아이콘"
+        /></a>
+      </li>
+    </ul>
+  </header>
 
-      <article class="slide__arrow">
-        <img src="image/Arrow.svg" alt="왼쪽 화살표" class="slide__arrow--left" />
-        <img src="image/Arrow.svg" alt="오른쪽 화살표" class="slide__arrow--right" />
-      </article>
-    </section>
-  </main>
-</body>
+  <nav class="main__menu">
+    <h2 class="a11y">메인 메뉴</h2>
+    <div class="container">
+      <div class="hamberger__wrapper">
+        <ul class="mainmenu__list">
+          <li class="mainmenu__name">
+            <a href="" class="haberger__link">
+              <span class="hamberger__img"></span>
+              <span class="hamberger__name">카테고리</span>
+            </a>
+            <ul class="sidemenu__list sprite">
+              <li class="spriteGift"><a href="/">선물하기</a></li>
+              <li class="spriteVegetable"><a href="/">채소</a></li>
+              <li class="sprite spriteFruits"><a href="/">과일·견과·쌀</a></li>
+              <li class="sprite spriteFish">
+                <a href="/">수산·해산·건어물</a>
+              </li>
+              <li class="sprite spriteMeat"><a href="/">정육·계란</a></li>
+              <li class="sprite spriteMain">
+                <a href="/">국·반찬·메인요리</a>
+              </li>
+              <li class="sprite spriteSalad"><a href="/">샐러드·간편식</a></li>
+              <li class="sprite spriteNoodle"><a href="/">면·양념·오일</a></li>
+              <li class="sprite spriteWater">
+                <a href="/">생수·음료·우유·커피</a>
+              </li>
+              <li class="sprite spriteBakery">
+                <a href="/">베이커리·치즈·델리</a>
+              </li>
+              <li class="sprite spriteHealth"><a href="/">건강식품</a></li>
+              <li class="sprite spriteWine"><a href="/">와인</a></li>
+              <li class="sprite spriteTraditional"><a href="/">전통주</a></li>
+              <li class="sprite spriteLiving">
+                <a href="/">생활용품·리빙·캠핑</a>
+              </li>
+              <li class="sprite spriteSkin">
+                <a href="/">스킨케어·메이크업</a>
+              </li>
+              <li class="sprite spriteHair"><a href="/">헤어·바디·구강</a></li>
+              <li class="sprite spriteKitchen"><a href="/">주방용품</a></li>
+              <li class="sprite spriteElectronic"><a href="/">가전제품</a></li>
+              <li class="sprite spritePet"><a href="/">반려동물</a></li>
+              <li class="sprite spriteBaby">
+                <a href="/">베이비·키즈·완구</a>
+              </li>
+              <li class="sprite spriteTravel"><a href="/">여행·티켓</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">신상품</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">베스트</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">알뜰쇼핑</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">특가/혜택</a>
+          </li>
+        </ul>
+      </div>
+      <div class="deliveryNotice">
+        <a href="/" class="deliveryNotice__link"
+          ><span class="deliveryTime">샛별·낮</span
+          ><span class="deliveryDetail"> 배송안내</span></a
+        >
+      </div>
+    </div>
+  </nav>
+  <body>
+    <!-- <main class="MKmain">
+      <section class="slide">
+        <h2 class="slide__title a11y">슬라이드 광고</h2>
 
+        <article class="slide__imgWrapper">
+          <img
+            class="slide__img"
+            src="image/banner01.svg"
+            alt="컬리 과일 과게"
+          />
+          <img
+            class="slide__img"
+            src="image/banner02.svg"
+            alt="이달의 카드 혜택"
+          />
+          <img
+            class="slide__img"
+            src="image/banner03.svg"
+            alt="컬리 퍼플 위크"
+          />
+          <img
+            class="slide__img"
+            src="image/banner05.svg"
+            alt="이 주의 특가 한눈에 보기"
+          />
+        </article>
+
+        <article class="slide__arrow">
+          <img
+            src="image/Arrow.svg"
+            alt="왼쪽 화살표"
+            class="slide__arrow--left"
+          />
+          <img
+            src="image/Arrow.svg"
+            alt="오른쪽 화살표"
+            class="slide__arrow--right"
+          />
+        </article>
+      </section>
+    </main> -->
+  </body>
 </html>
