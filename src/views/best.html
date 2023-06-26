@@ -13,68 +13,72 @@
 
 <body>
   <!-- 베스트 상품 페이지 컨테이너 -->
-  <section class="MKBestPage">
-    <h3 class="best__title" aria-label="베스트 상품 페이지">베스트</h3>
+  <section class="MKBestPage" role="region">
+    <h3 class=" best__title" aria-label="베스트 상품 페이지">베스트</h3>
 
     <!-- 베스트 상품 박스 -->
     <div class="best__main">
       <!-- 상품 필터 컨테이너 -->
       <section class="best__nav">
         <h4 class="best__navTitle a11y" Tabindex="0">베스트 상품 필터 설정</h4>
-        <ul class="best__listWrapper">
 
+        <ul class="best__listWrapper" aria-expanded="true" aria-controls="filter" role="menubar">
           <!-- 필터 -->
           <li class="best__listItem">
             <div class="best__titleBox">
               <h5 class="best__listItemTitle">필터</h5>
-              <button class="filter__reset" type="reset" aria-label="상품 전체 필터 초기화" Tabindex="0">초기화</button>
+              <button class="filter__reset" type="reset" aria-label="상품 전체 필터 초기화" Tabindex="0"
+                role="button">초기화</button>
             </div>
           </li>
 
           <!-- 카테고리 -->
           <li class="best__listItem">
             <div class="best__titleBox">
-              <h5 class="best__listItemTitle">카테고리</h5>
-              <input class="best__listItemMore" type="checkbox" aria-label="상품별 카테고리" />
-              <ul class="best__slideList">
+              <h5 class="best__listItemTitle" aria-label="상품별 카테고리">카테고리</h5>
+              <input class="best__listItemMore" type="checkbox" role="menu" aria-haspopup="true"
+                id="categori" />
+              <ul class="best__slideList" aria-expanded="false" aria-controls="filterList1" aria-labelledby="categori">
                 <li class="best__slideName">
                   샐러드&#183;간편식 <span class="best__slideNamecount">75</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="샐러드·간편식 제품 개수 75개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-checked="true"
+                    aria-label="샐러드·간편식 제품 개수 75개">
                 </li>
                 <li class="best__slideName">
                   국&#183;반찬&#183;메인요리 <span class="best__slideNamecount">56</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="국·반찬·메인요리 제품 개수 56개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="국·반찬·메인요리 제품 개수 56개">
                 </li>
                 <li class="best__slideName">
                   정육&#183;계란 <span class="best__slideNamecount">39</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="정육·계란 제품 개수 39개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="정육·계란 제품 개수 39개">
                 </li>
                 <li class="best__slideName">
                   과일&#183;견과&#183;쌀 <span class="best__slideNamecount">30</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="과일·견과·쌀 제품 개수 30개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="과일·견과·쌀 제품 개수 30개">
                 </li>
                 <li class="best__slideName">
                   간식&#183;과자&#183;떡 <span class="best__slideNamecount">19</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="간식·과자·떡 제품 개수 19개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="간식·과자·떡 제품 개수 19개">
                 </li>
                 <li class="best__slideName">
                   베이커리&#183;치즈&#183;델리 <span class="best__slideNamecount">18</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="베이커리·치즈·델리 제품 개수 18개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="베이커리·치즈·델리 제품 개수 18개">
                 </li>
                 <li class="best__slideName">
                   수산&#183;해산&#183;건어물 <span class="best__slideNamecount">15</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="수산·해산·건어물 제품 개수 15개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="수산·해산·건어물 제품 개수 15개">
                 </li>
                 <li class="best__slideName">
                   생수&#183;음료&#183;우유&#183;커피 <span class="best__slideNamecount">13</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="생수·음료·우유·커피 제품 개수 13개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
+                    aria-label="생수·음료·우유·커피 제품 개수 13개">
                 </li>
                 <li class="best__slideName">
                   헤어&#183;바디&#183;구강 <span class="best__slideNamecount" aria-label="헤어·바디·구강 제품 개수 11개">11</span>
-                  <input class="best__slideNameCheck" type="checkbox">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox">
                 </li>
                 <li class="best__slideName">
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="면·양념·오일 제품 개수 11개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="면·양념·오일 제품 개수 11개">
                   면양념&#183;오일 <span class="best__slideNamecount">11</span>
                 </li>
                 <li class="best__slideMore">
@@ -90,46 +94,48 @@
             <div class="best__brandtitle">
               <div class="best__titleBox">
                 <h5 class="best__listItemTitle">브랜드</h5>
-                <input class="best__listItemMore brand" type="checkbox" aria-label="브랜드별 필터 카테고리" />
-                <ul class="best__slideList">
+                <input class="best__listItemMore brand" type="checkbox" aria-label="브랜드별 필터 카테고리" role="menu"
+                  aria-haspopup="true" />
+                <ul class="best__slideList" aria-expanded="false" aria-controls="filterList2">
                   <li class="best__slideName">
                     감자밭 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="감자밭 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="감자밭 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     강남면옥 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="강남면옥 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="강남면옥 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     경남제약 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="경남제약 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="경남제약 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     경복궁 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="경복궁 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="경복궁 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     고래사 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="고래사 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="고래사 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     고메공방 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="고메공방 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="고메공방 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     고온어다이어트 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="고온어다이어트 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="고온어다이어트 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     교토마블 <span class="best__slideNamecount">1</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="교토마블 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="교토마블 제품 개수 1개">
                   </li>
                   <li class="best__slideName">
                     그래놀라 하우스 <span class="best__slideNamecount" aria-label="그래놀라 하우스 제품 개수 1개">1</span>
-                    <input class="best__slideNameCheck" type="checkbox">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox">
                   </li>
                   <li class="best__slideName">
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="그리츠 시그니처 램 제품 개수 1개">
+                    <input class="best__slideNameCheck" role="menuitem" type="checkbox"
+                      aria-label="그리츠 시그니처 램 제품 개수 1개">
                     그리츠 시그니처 램 <span class="best__slideNamecount">1</span>
                   </li>
                   <li class="best__slideMore">
@@ -145,25 +151,28 @@
           <li class="best__listItem">
             <div class="best__titleBox">
               <h5 class="best__listItemTitle">가격</h5>
-              <input class="best__listItemMore price" type="checkbox" aria-label="가격별 필터" />
-              <ul class="best__slideList priceList">
+              <input class="best__listItemMore price" type="checkbox" aria-label="가격별 필터" role="menu"
+                aria-haspopup="true" />
+              <ul class="best__slideList priceList" aria-expanded="false" aria-controls="filterList3">
                 <li class="best__slideName">
                   7&#44;640원 미만 <span class="best__slideNamecount">72</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="7&#44;640원 미만 제품 개수 72개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
+                    aria-label="7&#44;640원 미만 제품 개수 72개">
                 </li>
                 <li class="best__slideName">
                   7&#44;640원&#126;11&#44;000원 <span class="best__slideNamecount">72</span>
-                  <input class="best__slideNameCheck" type="checkbox"
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
                     aria-label="7&#44;640원&#126;11&#44;000원 제품 개수 72개">
                 </li>
                 <li class="best__slideName">
                   11&#44;000원&#126;15&#44;900원 <span class="best__slideNamecount">73</span>
-                  <input class="best__slideNameCheck" type="checkbox"
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
                     aria-label="11&#44;000원&#126;15&#44;900원 제품 개수 73개">
                 </li>
                 <li class="best__slideName">
                   15&#44;900원 이상 <span class="best__slideNamecount">73</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="15&#44;900원 이상 제품 개수 73개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
+                    aria-label="15&#44;900원 이상 제품 개수 73개">
                 </li>
               </ul>
             </div>
@@ -172,15 +181,16 @@
           <li class="best__listItem">
             <div class="best__titleBox">
               <h5 class="best__listItemTitle">혜택</h5>
-              <input class="best__listItemMore benefit" type="checkbox" aria-label="혜택별 필터 " />
-              <ul class="best__slideList benefitList">
-                <li class="best__slideName">
+              <input class="best__listItemMore benefit" type="checkbox" aria-label="혜택별 필터 카테고리" role="menu"
+                aria-haspopup="true" />
+              <ul class="best__slideList benefitList" aria-expanded="false" aria-controls="filterList4">
+                <li class=" best__slideName">
                   할인상품 <span class="best__slideNamecount">106</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="할인상품 제품 개수 106개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="할인상품 제품 개수 106개">
                 </li>
                 <li class="best__slideName">
                   한정수량 <span class="best__slideNamecount">4</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="한정수량 제품 개수 4개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="한정수량 제품 개수 4개">
                 </li>
               </ul>
             </div>
@@ -189,15 +199,17 @@
           <li class="best__listItem">
             <div class="best__titleBox">
               <h5 class="best__listItemTitle">유형</h5>
-              <input class="best__listItemMore  benefit" type="checkbox" aria-label="유형별 필터 " />
-              <ul class="best__slideList benefitList">
+              <input class="best__listItemMore  benefit" type="checkbox" aria-label="유형별 필터 카테고리" role="menu"
+                aria-haspopup="true" />
+              <ul class="best__slideList benefitList" aria-expanded="false" aria-controls="filterList5">
                 <li class="best__slideName">
                   Karly Only <span class="best__slideNamecount">121</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="Karly Only 제품 개수 121개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox"
+                    aria-label="Karly Only 제품 개수 121개">
                 </li>
                 <li class="best__slideName">
                   희소가치 프로젝트 <span class="best__slideNamecount">2</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="희소가치 프로젝트 제품 개수 2개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="희소가치 프로젝트 제품 개수 2개">
                 </li>
               </ul>
             </div>
@@ -206,11 +218,12 @@
           <li class="best__listItem">
             <div class="best__titleBox">
               <h5 class="best__listItemTitle">특정상품 제외</h5>
-              <input class="best__listItemMore specific" type="checkbox" aria-label="특정상품 제외 필터 열기" />
-              <ul class="best__slideList specificList">
+              <input class="best__listItemMore specific" type="checkbox" aria-label="특정상품 제외 카테고리" role="menu"
+                aria-haspopup="true" />
+              <ul class="best__slideList specificList" aria-expanded="false" aria-controls="filterList6">
                 <li class="best__slideName">
                   반려동물 상품 <span class="best__slideNamecount">2</span>
-                  <input class="best__slideNameCheck" type="checkbox" aria-label="반려동물 상품 제품 개수 2개">
+                  <input class="best__slideNameCheck" role="menuitem" type="checkbox" aria-label="반려동물 상품 제품 개수 2개">
                 </li>
               </ul>
             </div>
@@ -245,8 +258,8 @@
 
 
         <!-- 베스트 상품 리스트 컨테이너 -->
-        <div class="best__productBox">
-          <div class="best__productBOXline">
+        <div class="best__productBox" role="region">
+          <div class=" best__productBOXline">
             <div class="best__goods">
               <!-- 첫번째상품 -->
               <dl class="best__goodsList">
