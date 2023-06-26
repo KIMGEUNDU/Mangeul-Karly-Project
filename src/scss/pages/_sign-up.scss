@@ -1,0 +1,57 @@
+@use "../utils" as *;
+
+.signUp {
+  @include basicWidth;
+  @include paddingY(rem(80px));
+  width: rem(640px);
+  
+  &__title {
+    font-size: rem(24px);
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: rem(16px);
+  }
+
+  &__required {
+    font-size: rem(12px);
+    text-align: right;
+    font-weight: 700;
+    margin-bottom: rem(10px);
+  }
+}
+
+.requiredIcon {
+  color: $accent-color;
+}
+
+.info__list {
+  border-top: 2px solid $gray10;
+  border-bottom: 2px solid $gray10;
+
+  .info__item {
+    @include paddingY(rem(20px));
+    @include flexbox;
+    gap: rem(8px);
+  }
+}
+
+.info__item > label {
+  width: rem(140px);
+  font-weight: 600;
+  @include paddingX(rem(4px));
+  @include paddingY(rem(10px));
+}
+
+.info__item > input {
+  width: rem(334px);
+  font-weight: 600;
+  @include paddingX(rem(20px));
+  @include paddingY(rem(10px));
+  line-height: 160%;
+}
+
+.info__item > button {
+  width: rem(144px);
+  font-weight: 600;
+}
+

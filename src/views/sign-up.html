@@ -13,74 +13,74 @@
   <body>
     <section class="signUp">
       <h3 class="signUp__title" tabindex="0">회원가입</h3>
-      <p class="signUp__required"><sup class="requiredIcon">&#42; </sup>필수입력항목</p>
+      <p class="signUp__required"><sup class="requiredIcon">&#42;</sup>필수입력항목</p>
       <form action="url" class="signUp__form" method="post">
-        <div class="signUp__info">
-          <div>
+        <div class="info__list">
+          <div class="info__item">
             <label for="userId">아이디<sup class="requiredIcon">&#42;</sup></label>
-            <input type="text" class="signUp__userId" id="userId" aria-label="아이디 입력란" placeholder="아이디를 입력해주세요&#46;" maxlength="24" required />
+            <input type="text" class="info__userId" id="userId" aria-label="아이디 입력란" placeholder="아이디를 입력해주세요&#46;" maxlength="24" required />
             <button>중복확인</button>
           </div>
-          <div>
+          <div class="info__item">
             <label for="userPassword">비밀번호<sup class="requiredIcon">&#42;</sup></label>
-            <input type="password" class="signUp__userPassword" id="userPassword" aria-label="비밀번호 입력란" placeholder="비밀번호를 입력해주세요&#46;" minlength="8" maxlength="16" required />
+            <input type="password" class="info__userPassword" id="userPassword" aria-label="비밀번호 입력란" placeholder="비밀번호를 입력해주세요&#46;" minlength="8" maxlength="16" required />
           </div>
-          <div>
+          <div class="info__item">
             <label for="userPasswordRepeat">비밀번호 확인<sup class="requiredIcon">&#42;</sup></label>
-            <input type="password" class="signUp__userPasswordRepeat" id="userPasswordRepeat" aria-label="비밀번호 확인 입력란" placeholder="비밀번호를 한번 더 입력해주세요&#46;" minlength="8" maxlength="16" required />
+            <input type="password" class="info__userPasswordRepeat" id="userPasswordRepeat" aria-label="비밀번호 확인 입력란" placeholder="비밀번호를 한번 더 입력해주세요&#46;" minlength="8" maxlength="16" required />
           </div>
-          <div>
+          <div class="info__item">
             <label for="userName">이름<sup class="requiredIcon">&#42;</sup></label>
-            <input type="text" class="signUp__userName" id="userName" aria-label="이름 입력란" placeholder="이름을 입력해주세요&#46;" maxlength="32" required />
+            <input type="text" class="info__userName" id="userName" aria-label="이름 입력란" placeholder="이름을 입력해주세요&#46;" maxlength="32" required />
           </div>
-          <div>
+          <div class="info__item">
             <label for="userEmail">이메일<sup class="requiredIcon">&#42;</sup></label>
-            <input type="email" class="signUp__userEmail" id="userEmail" aria-label="이메일 입력란" placeholder="예) marketkarly@karly&#46;com" required />
+            <input type="email" class="info__userEmail" id="userEmail" aria-label="이메일 입력란" placeholder="예) marketkarly@karly&#46;com" required />
             <button>중복확인</button>
           </div>
-          <div>
+          <div class="info__item">
             <label for="userPhone">휴대폰<sup class="requiredIcon">&#42;</sup></label>
-            <input type="tel" class="signUp__userPhone" id="userPhone" aria-label="휴대폰 번호 입력란" placeholder="숫자만 입력해주세요&#46;" required />
-            <button>인증번호 받기</button>
+            <input type="tel" class="info__userPhone" id="userPhone" aria-label="휴대폰 번호 입력란" placeholder="숫자만 입력해주세요&#46;" required />
+            <button>인증번호 받기</button> 
           </div>
-          <div>
+          <div class="info__item">
             <label for="userAddress">주소<sup class="requiredIcon">&#42;</sup></label>
             <div class="userAddress__wrapper">
-              <input type="hidden" class="signUp__userAddress" id="userAddress" required />
+              <input type="hidden" class="info__userAddress" id="userAddress" required />
               <button><span class="fas fa-search" aria-hidden="true"></span>주소 검색</button>
               <p class="userAddress__info">배송지에 따라 상품 정보가 달라질 수 있습니다&#46;</p>
             </div>
           </div>
-          <div>
+          <div class="info__item">
             <label>성별</label>
-            <div class="signUp__userGenderWrapper">
+            <div class="info__userGenderWrapper">
               <label for="userGender__man">남자</label>
-              <input type="radio" class="signUp__userGender" id="userGender__man" />
+              <input type="radio" class="info__userGender" id="userGender__man" />
               <label for="userGender__woman">여자</label>
-              <input type="radio" class="signUp__userGender" id="userGender__woman" />
+              <input type="radio" class="info__userGender" id="userGender__woman" />
               <label for="userGender__none">선택안함</label>
-              <input type="radio" class="signUp__userGender" id="userGender__none" />
+              <input type="radio" class="info__userGender" id="userGender__none" />
             </div>
           </div>
-          <div>
+          <div class="info__item">
             <label for="userBirth">생년월일</label>
-            <input type="date" class="signUp__userBirth" id="userBirth" />
+            <input type="date" class="info__userBirth" id="userBirth" />
           </div>
-          <div>
+          <div class="info__item">
             <label>추가입력 사항</label>
-            <div class="signUp__userOptionWrapper">
+            <div class="info__userOptionWrapper">
               <label for="userRecommenderButton">친구초대 추천인 아이디</label>
-              <input type="radio" class="signUp__userRecommenderButton" id="userRecommenderButton" />
+              <input type="radio" class="info__userRecommenderButton" id="userRecommenderButton" />
               <label for="userEventButton">참여 이벤트명</label>
-              <input type="radio" class="signUp__userEventButton" id="userEventButton" />
+              <input type="radio" class="info__userEventButton" id="userEventButton" />
             </div>
             <div>
-              <input type="text" class="signUp__userRecommenderId" id="userRecommenderId" placeholder="추천인 아이디를 입력해 주세요&#46;" />
+              <input type="text" class="info__userRecommenderId" id="userRecommenderId" placeholder="추천인 아이디를 입력해 주세요&#46;" />
               <p>가입 후 7일 내 첫 주문 배송완료 시&#44; 친구초대 이벤트 적립금이 지급됩니다&#46;</p>
               <button>아이디 확인</button>
             </div>
             <div>
-              <input type="text" class="signUp__userEventname" id="userEventname" placeholder="참여 이벤트명을 입력해 주세요&#46;" />
+              <input type="text" class="info__userEventname" id="userEventname" placeholder="참여 이벤트명을 입력해 주세요&#46;" />
               <p>
                 추천인 아이디와 참여 이벤트명중 하나만 선택 가능합니다&#46;<br />
                 가입 이후는 수정이 불가능 합니다&#46;<br />
@@ -90,39 +90,39 @@
           </div>
         </div>
 
-        <div class="signUp__terms">
-          <div class="terms__allConsent">
-            <input type="checkbox" class="terms__allConsentCheck" id="allConsent" />
-            <label for="allConsent">전체 동의합니다&#46;</label>
+        <div class="consent__container">
+          <div class="consent__all">
+            <input type="checkbox" class="consent__allCheck" id="consentAll" />
+            <label for="consentAll">전체 동의합니다&#46;</label>
             <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다&#46;</p>
           </div>
-          <div class="terms__termsUseConsent">
-            <input type="checkbox" class="terms__termsUseConsentCheck" id="termsUseConsent" required />
-            <label for="termsUseConsent">이용약관 동의</label>
-            <a href="#" class="terms__termsUse__Link">약관보기 <span class="fas fa-greater-than fa-xs"></span></a>
+          <div class="consent__termsUse">
+            <input type="checkbox" class="consent__termsUseCheck" id="termsUse" required />
+            <label for="termsUse">이용약관 동의</label>
+            <a href="#" class="consent__termsUse__Link">약관보기 <span class="fas fa-greater-than fa-xs"></span></a>
           </div>
-          <div class="terms__privacyRequiredConsent">
-            <input type="checkbox" class="terms__privacyRequiredConsentCheck" id="privacyRequiredConsent" required />
-            <label for="privacyRequiredConsent">개인정보 수집&middot;이용 동의 <span class="text-gray">&#40;필수&#41;</span></label>
-            <a href="#" class="terms__privacyRequired__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
+          <div class="consent__privacyRequired">
+            <input type="checkbox" class="consent__privacyRequiredCheck" id="privacyRequired" required />
+            <label for="privacyRequired">개인정보 수집&middot;이용 동의 <span class="text-gray">&#40;필수&#41;</span></label>
+            <a href="#" class="consent__privacyRequired__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
           </div>
-          <div class="terms__privacySelectedConsent">
-            <input type="checkbox" class="terms__privacySelectedConsentCheck" id="privacySelectedConsent" />
-            <label for="privacySelectedConsent">개인정보 수집&middot;이용 동의 <span class="text-gray">&#40;선택&#41;</span></label>
-            <a href="#" class="terms__privacySelected__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
+          <div class="consent__privacySelected">
+            <input type="checkbox" class="consent__privacySelectedCheck" id="privacySelected" />
+            <label for="privacySelected">개인정보 수집&middot;이용 동의 <span class="text-gray">&#40;선택&#41;</span></label>
+            <a href="#" class="consent__privacySelected__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
           </div>
-          <div class="terms__marketingConsent">
-            <input type="checkbox" class="terms__marketingConsentCheck" id="marketingConsent" />
-            <label for="marketingConsent">무료배송&#44; 할인쿠폰 등 혜택/정보 수신 동의 <span class="text-gray">&#40;선택&#41;</span></label>
-            <div class="terms__marketingMethod">
-              <input type="checkbox" class="terms__marketingSmsCheck" id="marketingSmsCheck" />
+          <div class="consent__marketing">
+            <input type="checkbox" class="consent__marketingCheck" id="marketing" />
+            <label for="marketing">무료배송&#44; 할인쿠폰 등 혜택/정보 수신 동의 <span class="text-gray">&#40;선택&#41;</span></label>
+            <div class="consent__marketingMethod">
+              <input type="checkbox" class="consent__marketingSmsCheck" id="marketingSmsCheck" />
               <label for="marketingSmsCheck">SMS</label>
-              <input type="checkbox" class="terms__marketingEmailCheck" id="marketingEmailCheck" />
+              <input type="checkbox" class="consent__marketingEmailCheck" id="marketingEmailCheck" />
               <label for="marketingEmailCheck">이메일</label>
               <p class="marketingExplane">동의 시 한달간 &#91;5&#37;적립&#93;&#43;&#91;2만원 이상 무료배송&#93;첫 주문 후 안내</p>
             </div>
-            <div class="terms__ageCheck">
-              <input type="checkbox" class="terms__ageCheck" id="ageCheck" required />
+            <div class="consent__ageCheck">
+              <input type="checkbox" class="consent__ageCheck" id="ageCheck" required />
               <label for="ageCheck">본인은 만 14세 이상입니다&#46; <span class="text-gray">&#40;필수&#41;</span></label>
             </div>
           </div>
