@@ -11,6 +11,77 @@ legend {
   margin: -1px;
 }
 
+.sprite {
+  /* min-height: rem(60px); */
+  background-image: url(../../image/MenuIcon.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  /* padding-left: rem(64px); */
+}
+.spriteGift {
+  background-position: 0 0;
+}
+.spriteVegetable {
+  background-position: 0 -20px;
+}
+.spriteFruits {
+  background-position: 0 -40px;
+}
+.spriteFish {
+  background-position: 0 -60px;
+}
+.spriteMeat {
+  background-position: 0 -80px;
+}
+.spriteMain {
+  background-position: 0 -100px;
+}
+.spriteSalad {
+  background-position: 0 -120px;
+}
+.spriteNoodle {
+  background-position: 0 -140px;
+}
+.spriteWater {
+  background-position: 0 -160px;
+}
+.spriteBakery {
+  background-position: 0 -180px;
+}
+.spriteHealth {
+  background-position: 0 -200px;
+}
+.spriteWine {
+  background-position: 0 -220px;
+}
+.spriteTraditional {
+  background-position: 0 -240px;
+}
+.spriteLiving {
+  background-position: 0 -260px;
+}
+.spriteSkin {
+  background-position: 0 -280px;
+}
+.spriteHair {
+  background-position: 0 -300px;
+}
+.spriteKitchen {
+  background-position: 0 -320px;
+}
+.spriteElectronic {
+  background-position: 0 -340px;
+}
+.spritePet {
+  background-position: 0 -360px;
+}
+.spriteBaby {
+  background-position: 0 -380px;
+}
+.spriteTravel {
+  background-position: 0 -400px;
+}
+
 .MKmain {
   width: 100vw;
   background: pink;
@@ -204,6 +275,10 @@ legend {
   color: #333333;
 }
 
+.hamberger__wrapper {
+  position: relative;
+}
+
 .hamberger__img {
   background: url(../../image/Hamburger.svg) no-repeat center;
   padding-right: 12px;
@@ -220,8 +295,18 @@ legend {
   line-height: 150%;
 }
 
+.sidemenu__list {
+  position: absolute;
+}
+
 .sidemenu__list li {
   padding: 8px 0px 8px 12px;
+}
+
+.sidemenu__list li a {
+  display: block;
+  width: 286px;
+  padding-left: 30px;
 }
 
 .mainmenu__list > li ul {
@@ -233,26 +318,11 @@ legend {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
-  height: 20px;
+  /* height: 20px; */
   opacity: 1;
-  padding-top: 10;
 }
 
-/* .sprite {
-  background: url(../../image/MenuIcon.png) no-repeat 24px 24px;
-  background-size: 24px;
-  /* width: 24px;
-  height: 24px; 
-} 
-
-.spriteGift {
-  background-position: 0 -10;
-}
-
-.spriteVegetable {
-  background-position: 0 -230px;
-} */
-.deliveryNotice {
+.spriteGift .deliveryNotice {
   border: 1px solid black;
   border-radius: 18px;
   width: 95px;
