@@ -1,3 +1,5 @@
+@use "./color" as *;
+
 //Padding
 @mixin padding($xy){
   @include paddingX($xy);
@@ -16,15 +18,18 @@
 
 //Margin
 @mixin margin($xy){
-  margin: $xy;
+  @include marginX($xy);
+  @include marginY($xy);
 }
 
 @mixin marginY($tb){
-  margin: $tb;
+  margin-top: $tb;
+  margin-bottom: $tb;
 }
 
 @mixin marginX($lr){
-  margin: $lr;
+  margin-left: $lr;
+  margin-right: $lr;
 }
 
 // Center
@@ -105,17 +110,38 @@
   transition-duration: $td;
 }
 
+@mixin ImageScale{
+  @include transition(transform, 0.5s);
+  transform: scale(105%);
+}
+
+
+@mixin slideList{
+  transition-property: height, opacity, padding-top;
+  transition-duration: 0.5s, 0.2s, 0.5s;
+  padding-top: 15px;
+}
+
+
 // Animation
-@mixin slideAni{
-  animation-name: moveTheme;
+@mixin slideImg{
+  animation-name: moveImage;
   animation-duration: 35s;
   animation-delay: 2s;
   animation-iteration-count: infinite;
 }
 
-@mixin arrowAfter{
-  animation-name: arrowInline;
-  animation-duration:0.5s;
-  animation-fill-mode: backwards;
+@mixin showModal{
+  animation-name: showModal;
+  animation-duration: 2.5s;
 }
 
+
+
+// 상품 스티커
+@mixin sticker{
+  @include paddingX(6px);
+  @include paddingY(5px);
+  border-radius: 4px;
+  background: rgb(237, 237, 237);
+}
