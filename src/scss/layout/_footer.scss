@@ -1,32 +1,43 @@
-.service__info {
-    max-width: 2024px;
-    display: flex;
-    margin-left: 100px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #000000;
-    margin: 50px 70px; 
-    line-height: 20px;
-    
-}
+@use "./../utils" as *;
 
-.address {
-    font-style: none;
+.service__info {
+    @include basicWidth;
+    display: flex;
+    margin-left: 190px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-around;
+
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 13px;
+    font-weight: 900;
 }
 
+.inquery__center {
+    margin: 20px 0;
+}
 
-.address__number {
-    font-size: 30px;
+.inquery__number {
+    font-size: 25px;
     font-weight: 900;
-
 }
 
 .inquery__time {
+    margin: 7px 0 0 10px;
     font-size: 12px;
-    font-weight: 600;
+}
+
+.inquery__mail {
+    margin: 20px 0;
+}
+
+.inquery__email {
+    font-size: 12px;
+
 }
 
 .inquery__list {
@@ -34,35 +45,77 @@ h3 {
 }
 
 .inquery__title {
-    background: white;
-    border: 1px solid black;
-    width: 90px;
-    height: 25px;
+    border: 1px solid gray;
+    width: 100px;
+    height: 30px;
     margin-top: 10px;
     font-size: 12px;
-    font-weight: 500;
     text-align: center;
     line-height: 2.5;
 }
 
 .text__bold {
     font-size: 12px;
-    margin: 10px;
-} 
-.address__data {
-    margin: 10px;
+
 }
+
+.address__data {
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+.sns__logo img {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+
+}
+
+
 .address__info {
     margin-left: 100px;
 }
-.info__link{
+
+.info__link {
     display: flex;
-    flex-direction: wrap;
+    padding: 30px 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    column-gap: 10px;
 }
-.another__footer {
+
+.footer__logo {
+    margin: 0 0 0 200px;
     display: flex;
     font-size: 10px;
+    column-gap: 10px;
+    line-height: 160%
 }
 
+.another__logo {
+    display: flex;
+    margin-top: 10px;
 
- 
+}
+
+.another__logo img {
+    width: 30px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.another__logo .toss__logo {
+    width: 80px;
+
+}
+
+.last__footer {
+    margin: 30px 30px;
+    font-size: 10px;
+    text-align: center;
+    height: 80px;
+    background: #f7f7f7;
+    line-height: 10px;
+    line-height: 160%;
+}
