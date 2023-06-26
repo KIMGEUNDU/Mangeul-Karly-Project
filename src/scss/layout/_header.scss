@@ -1,5 +1,4 @@
 @use "./../utils" as *;
-@use "./../components" as *;
 
 // 헤더
 
@@ -11,7 +10,7 @@
   row-gap: 32px;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  max-width: 1024px;
+  @include basicWidth;
 }
 
 // 로고 및 젬족
@@ -94,10 +93,6 @@
   background: transparent;
 }
 
-.memberOnly li {
-  /* padding-left: 14px; */
-}
-
 // 구분선
 
 .divider {
@@ -143,7 +138,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: red; */
   grid-area: 2/12/2/13;
 }
 
@@ -152,7 +146,6 @@
 .container {
   display: flex;
   justify-content: space-between;
-  /* background: green; */
   max-width: 1024px;
   height: 72px;
   align-items: center;
@@ -162,7 +155,6 @@
 }
 
 .menu__wrapper {
-  /* background: yellow; */
   display: flex;
   width: 600px;
 }
@@ -205,7 +197,6 @@
   ul {
     display: block;
     @include slideList;
-    /* height: 20px; */
     opacity: 1;
   }
 }
@@ -239,14 +230,12 @@
   height: 27px;
   font-size: 12px;
   line-height: 160%;
-  /* background: pink; */
   padding: 4px;
   letter-spacing: -0.32px;
   color: rgb(102, 102, 102);
 }
 
 .deliveryNotice a {
-  /* background: yellow; */
   font-size: 12px;
   padding: 4px;
 }

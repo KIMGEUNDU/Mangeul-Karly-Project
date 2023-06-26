@@ -1,3 +1,5 @@
+@use "unit" as *;
+
 // 스프라이트 배경이미지
 .sprite {
   /* min-height: rem(60px); */
@@ -15,6 +17,6 @@
     &#{$sprite} {
       background-position: $x $y;
     }
-    $y: $y - 20px;
+    $y: $y - rem(20px);
   }
 }

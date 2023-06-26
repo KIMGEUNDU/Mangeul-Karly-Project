@@ -54,67 +54,67 @@ legend {
   background-position: 0 0;
 }
 .spriteVegetable {
-  background-position: 0 -20px;
+  background-position: 0 -1.25rem;
 }
 .spriteFruits {
-  background-position: 0 -40px;
+  background-position: 0 -2.5rem;
 }
 .spriteFish {
-  background-position: 0 -60px;
+  background-position: 0 -3.75rem;
 }
 .spriteMeat {
-  background-position: 0 -80px;
+  background-position: 0 -5rem;
 }
 .spriteMain {
-  background-position: 0 -100px;
+  background-position: 0 -6.25rem;
 }
 .spriteSalad {
-  background-position: 0 -120px;
+  background-position: 0 -7.5rem;
 }
 .spriteNoodle {
-  background-position: 0 -140px;
+  background-position: 0 -8.75rem;
 }
 .spriteWater {
-  background-position: 0 -160px;
+  background-position: 0 -10rem;
 }
 .spriteDessert {
-  background-position: 0 -180px;
+  background-position: 0 -11.25rem;
 }
 .spriteBakery {
-  background-position: 0 -200px;
+  background-position: 0 -12.5rem;
 }
 .spriteHealth {
-  background-position: 0 -220px;
+  background-position: 0 -13.75rem;
 }
 .spriteWine {
-  background-position: 0 -240px;
+  background-position: 0 -15rem;
 }
 .spriteTraditional {
-  background-position: 0 -260px;
+  background-position: 0 -16.25rem;
 }
 .spriteLiving {
-  background-position: 0 -280px;
+  background-position: 0 -17.5rem;
 }
 .spriteSkin {
-  background-position: 0 -300px;
+  background-position: 0 -18.75rem;
 }
 .spriteHair {
-  background-position: 0 -320px;
+  background-position: 0 -20rem;
 }
 .spriteKitchen {
-  background-position: 0 -340px;
+  background-position: 0 -21.25rem;
 }
 .spriteElectronic {
-  background-position: 0 -360px;
+  background-position: 0 -22.5rem;
 }
 .spritePet {
-  background-position: 0 -380px;
+  background-position: 0 -23.75rem;
 }
 .spriteBaby {
-  background-position: 0 -400px;
+  background-position: 0 -25rem;
 }
 .spriteTravel {
-  background-position: 0 -420px;
+  background-position: 0 -26.25rem;
 }
 
 .MKmain {
@@ -156,6 +156,8 @@ legend {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo {
@@ -239,10 +241,6 @@ legend {
   background: transparent;
 }
 
-.memberOnly li {
-  /* padding-left: 14px; */
-}
-
 .divider {
   color: #d9d9d9;
 }
@@ -282,14 +280,12 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: red; */
   grid-area: 2/12/2/13;
 }
 
 .container {
   display: flex;
   justify-content: space-between;
-  /* background: green; */
   max-width: 1024px;
   height: 72px;
   align-items: center;
@@ -299,7 +295,6 @@ legend {
 }
 
 .menu__wrapper {
-  /* background: yellow; */
   display: flex;
   width: 600px;
 }
@@ -343,7 +338,6 @@ legend {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
-  /* height: 20px; */
   opacity: 1;
 }
 
@@ -373,14 +367,12 @@ legend {
   height: 27px;
   font-size: 12px;
   line-height: 160%;
-  /* background: pink; */
   padding: 4px;
   letter-spacing: -0.32px;
   color: rgb(102, 102, 102);
 }
 
 .deliveryNotice a {
-  /* background: yellow; */
   font-size: 12px;
   padding: 4px;
 }
