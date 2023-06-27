@@ -440,14 +440,14 @@
   right: 20px;
   top: 160px;
   width: 80px;
-  height: 3500px;
+  height: 3600px;
 }
 
 .adBlock{
   @include padding(7px);
   @include flexbox($fd:column);
   position: sticky;
-  top: 200px;
+  top: 250px;
   background: $white;
   width:  80px;
   height: 350px;
