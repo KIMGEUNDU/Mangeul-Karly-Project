@@ -62,29 +62,29 @@
       }
 
       // 브랜드, 카테고리 리스트 열기
-      &:checked + .best__slideList {
+      &:checked +.best__slideList__wrapper > .best__slideList{
         @include slideList;
-        height: 490px;
+        height: 500px;
         opacity: 1;
       }
     }
 
     // 가격 리스트 열기
-    .price:checked + .priceList {
+    .price:checked+.best__slideList__wrapper >.priceList{
       @include slideList;
       height: 190px;
       opacity: 1;
     }
 
     // 혜택, 유형 리스트 열기
-    .benefit:checked + .benefitList {
+    .benefit:checked+.best__slideList__wrapper >.benefitList{
       @include slideList;
       height: 100px;
       opacity: 1;
     }
 
     // 특정상품 열기
-    .specific:checked + .specificList {
+    .specific:checked+.best__slideList__wrapper >.specificList{
       @include slideList;
       height: 50px;
       opacity: 1;
@@ -431,5 +431,73 @@
 
   &__goodsBasketImg:checked + .best__modal {
     @include showModal;
+  }
+}
+
+//에드블록 컨테이너
+.stickyBest--absolute{
+  @include posRT;
+  right: 20px;
+  top: 160px;
+  width: 80px;
+  height: 3600px;
+}
+
+.adBlock{
+  @include padding(7px);
+  @include flexbox($fd:column);
+  position: sticky;
+  top: 250px;
+  background: $white;
+  width:  80px;
+  height: 350px;
+  border: 1px solid $gray2;
+  text-align: center;
+  z-index: 500;
+
+  &__topArrow{
+    @include autoMargin;
+    width: 10px;
+    order: -1;
+    transform: rotate(270deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
+  }
+
+  &__title{
+    @include paddingY(8px);
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__ImgBox{
+    width: 100%;
+    height: 300px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+
+  &__linkImg{
+    margin-bottom: 3px;
+  }
+
+  &__bottomArrow{
+    @include autoMargin;
+    width: 10px;
+    margin-top: 10px;
+    transform: rotate(90deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
   }
 }

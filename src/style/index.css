@@ -841,28 +841,28 @@ legend {
 .best__listItemMore:checked {
   background-image: url(/image/Direction=Up.svg);
 }
-.best__listItemMore:checked + .best__slideList {
+.best__listItemMore:checked + .best__slideList__wrapper > .best__slideList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
-  height: 490px;
+  height: 500px;
   opacity: 1;
 }
-.best__listItem .price:checked + .priceList {
+.best__listItem .price:checked + .best__slideList__wrapper > .priceList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   height: 190px;
   opacity: 1;
 }
-.best__listItem .benefit:checked + .benefitList {
+.best__listItem .benefit:checked + .best__slideList__wrapper > .benefitList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   height: 100px;
   opacity: 1;
 }
-.best__listItem .specific:checked + .specificList {
+.best__listItem .specific:checked + .best__slideList__wrapper > .specificList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
@@ -1194,6 +1194,77 @@ legend {
 .best__goodsBasketImg:checked + .best__modal {
   animation-name: showModal;
   animation-duration: 2.5s;
+}
+
+.stickyBest--absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 20px;
+  top: 160px;
+  width: 80px;
+  height: 3500px;
+}
+
+.adBlock {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: sticky;
+  top: 200px;
+  background: #ffffff;
+  width: 80px;
+  height: 350px;
+  border: 1px solid #E1E1E1;
+  text-align: center;
+  z-index: 500;
+}
+.adBlock__topArrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  order: -1;
+  transform: rotate(270deg);
+  color: #A6A6A6;
+  font-weight: 600;
+}
+.adBlock__topArrow:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.adBlock__title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.adBlock__ImgBox {
+  width: 100%;
+  height: 300px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+.adBlock__linkImg {
+  margin-bottom: 3px;
+}
+.adBlock__bottomArrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  margin-top: 10px;
+  transform: rotate(90deg);
+  color: #A6A6A6;
+  font-weight: 600;
+}
+.adBlock__bottomArrow:hover {
+  cursor: pointer;
+  color: #000000;
 }
 
 .MKspecialPage {
