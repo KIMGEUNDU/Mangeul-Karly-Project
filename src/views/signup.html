@@ -11,6 +11,130 @@
   </head>
 
   <body>
+    <header class="appHeader">
+      <h1 class="logo">
+        <a href="/" class="logo__link" aria-label="market karly"></a>
+      </h1>
+      <div class="pageCategory">
+        <h2 class="marketPage">
+          <a href="/">마켓칼리 </a>
+        </h2>
+        <h2 class="beautyPage"><span class="beauty__divider" aria-hidden="true">ㅣ</span><a href="/">뷰티칼리</a><sup class="beautyPage__new">N</sup></h2>
+      </div>
+
+      <ul class="memberOnly">
+        <li class="memberOnly__membership">
+          <a href="/views/signup.html">회원가입</a>
+        </li>
+        <li class="memberOnly__login"><span class="divider" aria-hidden="true">ㅣ</span><a href="/views/login.html">로그인 </a></li>
+        <li class="memberOnly__help">
+          <span class="divider" aria-hidden="true">ㅣ</span><a href="/"> 고객센터 <i class="fas fa-caret-down"></i></a>
+        </li>
+      </ul>
+
+      <form action="https://formspree.io/f/xeqwwbwk" method="POST" class="searchForm">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <div class="searchForm__group">
+            <div class="formInput">
+              <label for="search" class="a11y formInput__label">검색어</label>
+              <input type="search" id="search" name="search" required class="formInput__input" placeholder="검색어를 입력해주세요" />
+              <button id="submit" class="submit"></button>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <ul class="memberOnly__icon">
+        <li class="icon__location">
+          <a href="/" class="icon__link" aria-label="location"><img src="/image/Location.svg" alt="위치 아이콘" /></a>
+        </li>
+        <li class="icon__heart">
+          <a href="/" class="icon__link" aria-label="heart"><img src="/image/Heart.svg" alt="좋아요 아이콘" /></a>
+        </li>
+        <li class="icon__cart">
+          <a href="/" class="icon__link" aria-label="cart"><img src="/image/Cart_header.svg" alt="장바구니 아이콘" /></a>
+        </li>
+      </ul>
+    </header>
+
+    <nav class="main__menu">
+      <h2 class="a11y">메인 메뉴</h2>
+      <div class="container" role="menu">
+        <div class="hamberger__wrapper">
+          <ul class="mainmenu__list">
+            <li class="mainmenu__name">
+              <a href="" class="haberger__link">
+                <span class="hamberger__img"></span>
+                <span class="hamberger__name">카테고리</span>
+              </a>
+              <ul class="sidemenu__list">
+                <li>
+                  <a href="/" class="sprite spriteGift" aria-hidden="true">선물하기</a>
+                </li>
+                <li><a href="/" class="sprite spriteVegetable">채소</a></li>
+                <li><a href="/" class="sprite spriteFruits">과일·견과·쌀</a></li>
+                <li>
+                  <a href="/" class="sprite spriteFish">수산·해산·건어물</a>
+                </li>
+                <li><a href="/" class="sprite spriteMeat">정육·계란</a></li>
+                <li>
+                  <a href="/" class="sprite spriteMain">국·반찬·메인요리</a>
+                </li>
+                <li><a href="/" class="sprite spriteSalad">샐러드·간편식</a></li>
+                <li><a href="/" class="sprite spriteNoodle">면·양념·오일</a></li>
+                <li>
+                  <a href="/" class="sprite spriteWater">생수·음료·우유·커피</a>
+                </li>
+                <li>
+                  <a href="/" class="sprite spriteDessert">간식·과자·떡</a>
+                </li>
+                <li>
+                  <a href="/" class="sprite spriteBakery">베이커리·치즈·델리</a>
+                </li>
+                <li><a href="/" class="sprite spriteHealth">건강식품</a></li>
+                <li><a href="/" class="sprite spriteWine">와인</a></li>
+                <li><a href="/" class="sprite spriteTraditional">전통주</a></li>
+                <li>
+                  <a href="/" class="sprite spriteLiving">생활용품·리빙·캠핑</a>
+                </li>
+                <li>
+                  <a href="/" class="sprite spriteSkin">스킨케어·메이크업</a>
+                </li>
+                <li><a href="/" class="sprite spriteHair">헤어·바디·구강</a></li>
+                <li><a href="/" class="sprite spriteKitchen">주방용품</a></li>
+                <li><a href="/" class="sprite spriteElectronic">가전제품</a></li>
+                <li><a href="/" class="sprite spritePet">반려동물</a></li>
+                <li>
+                  <a href="/" class="sprite spriteBaby">베이비·키즈·완구</a>
+                </li>
+                <li><a href="/" class="sprite spriteTravel">여행·티켓</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__wrapper">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="/views/best.html" class="menu__link">신상품</a>
+            </li>
+            <li class="menu__item">
+              <a href="/views/best.html" class="menu__link">베스트</a>
+            </li>
+            <li class="menu__item">
+              <a href="/views/best.html" class="menu__link">알뜰쇼핑</a>
+            </li>
+            <li class="menu__item">
+              <a href="/views/special.html" class="menu__link">특가/혜택</a>
+            </li>
+          </ul>
+        </div>
+        <div class="deliveryNotice">
+          <a href="/" class="deliveryNotice__link"><span class="deliveryTime">샛별·낮</span><span class="deliveryDetail"> 배송안내</span></a>
+        </div>
+      </div>
+    </nav>
+    
     <section class="signUp">
       <h3 class="signUp__title" tabindex="0">회원가입</h3>
       <p class="signUp__required"><sup class="requiredIcon">&#42;</sup>필수입력항목</p>
@@ -166,5 +290,99 @@
         <button class="signUp__button">가입하기</button>
       </form>
     </section>
+
+    <!-- footer 요소-->
+    <footer class="footer__box">
+      <div class="footer__wrapper">
+        <div class="service__info">
+          <div class="service__inquery">
+            <h3 class="inquery__center">고객행복센터</h3>
+            <h4 class="inquery__number">1644-1107<span class="text__bold">월~토요일 오전 7시 ~오후 6시</span></h4>
+            <dl class="inquery__list">
+              <dt class="inquery__title"><a class="inquery__link" href="#">카카오톡 문의</a></dt>
+              <dd class="inquery__time">
+                <div>월~토요일 | 오전 7시 ~ 오후 6시</div>
+                <div>일/공휴일 | 오전 7시 ~ 오후 1시</div>
+              </dd>
+            </dl>
+            <dl class="inquery__list">
+              <dt class="inquery__title"><a class="inquery__link" href="#">1:1 문의</a></dt>
+              <dd class="inquery__time">
+                <div>365일</div>
+                <div>고객센터 운영시간에 순차적으로 답변드리겠습니다.</div>
+              </dd>
+            </dl>
+            <dl class="inquery__list">
+              <dt class="inquery__title"><a class="inquery__link" href="#">대량주문 문의</a></dt>
+              <dd class="inquery__time">
+                <div>월~금요일 | 오전9시 ~ 오후 6시</div>
+                <div>점심시간 | 낮 12시 ~ 오후 1시</div>
+              </dd>
+            </dl>
+            <div class="inquery__mail">
+              <p class="inquery__email">비회원 문의 : <span class="p__color">help@karlycrop.com</span></p>
+              <p class="inquery__email">비회원 대량주문 문의 : <span class="p__color">help@karlaycorp.com</span></p>
+            </div>
+          </div>
+
+          <div class="address__info">
+            <ul class="info__link">
+              <li><a href="#">칼리소개</a></li>
+              <li><a href="#">칼리소개영상</a></li>
+              <li><a href="#">인재채용</a></li>
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보방침</a></li>
+              <li><a href="#">이용안내</a></li>
+            </ul>
+            <address class="address__data">
+              <p class="address__p">법인명(상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 | <a class="p__color" href="#">사업자정보 확인</a></p>
+              <p class="address__p">통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</p>
+              <p class="address__p">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사 : 김솔아</p>
+              <p class="address__p">입점문의 : 입점문의하기 | 제휴문의 : <span class="p__color">business@karlaycorp.com</span></p>
+              <p class="address__p">채용문의 : <span class="p__color">recruit@karlycrop.com</span></p>
+              <p class="address__p">팩스 : 070-7500-6098</p>
+            </address>
+            <div class="sns__logo">
+              <a href="#"><img src="/images/ico_fb.webp" alt="페이스북 연결 로고" /></a>
+              <a href="#"><img src="/images/ico_instagram.webp" alt="인스타그램 연결 로고" /></a>
+              <a href="#"><img src="/images/ico_naverpost.webp" alt="네이버포스트 연결 로고" /></a>
+              <a href="#"><img src="/images/ico_youtube.webp" alt="유튜브 연결 로고" /></a>
+              <a href="#"><img src="/images/ico_blog.webp" alt="네이버블로그 연결 로고" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__logo">
+          <div class="another__logo">
+            <img src="/images/logo_isms.svg" alt="isms 정보보호 관리체계 인증서" />
+            <div>
+              <p>[인증범위]마켓컬리 쇼핑몰 서비스 개발 운영</p>
+              <p>(심사받지 않은 물지적 인프라 제외)</p>
+              <p>[유효기간]2022.01.19~2025.01.08</p>
+            </div>
+          </div>
+          <div class="another__logo">
+            <img src="/images/logo_privacy.svg" alt="개인정보보호 우수 인증서" />
+            <div>
+              <p>개인정보보호 우수 웹사이트</p>
+              <p>개인정보처리시스템 인증(ePRIVNACY PLUS)</p>
+            </div>
+          </div>
+          <div class="another__logo">
+            <img class="toss__logo" src="./images/logo_tosspayments.svg" alt="토스페이먼츠 에스크로 서비스" />
+            <p class="toss">토스페이언츠 구매안전(에스크로) 서비스 를 이용하실 수 있습니다.</p>
+          </div>
+
+          <div class="another__logo">
+            <img src="/images/logo_wooriBank.svg" alt="우리은행 지급보증서" />
+            <p class="woori">고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보 증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="last__footer">
+        <p>마켓컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+        <p>마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문,품질,교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+        <p class="copyright">© KURLY CORP. ALL RIGHTS RESERVED</p>
+      </div>
+    </footer>
   </body>
 </html>

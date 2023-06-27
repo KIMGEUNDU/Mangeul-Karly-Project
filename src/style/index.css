@@ -709,8 +709,6 @@ legend {
 }
 
 .advert {
-  padding-left: 30px;
-  padding-right: 30px;
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
@@ -1143,6 +1141,7 @@ legend {
   text-align: center;
   line-height: 35px;
   margin-top: 100px;
+  margin-bottom: 80px;
 }
 .best__pageNumContainer {
   display: inline-block;
@@ -1201,6 +1200,8 @@ legend {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .login {
