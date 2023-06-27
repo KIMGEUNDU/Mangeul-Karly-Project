@@ -177,6 +177,15 @@
   color: $font-basic;
 }
 
+.menu__item:hover {
+  width: 150px;
+  text-align: center;
+  color: $primary-color;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-position: under;
+}
+
 .hamberger__wrapper {
   /* position: relative; */
   @include pos;
@@ -187,7 +196,16 @@
   padding-right: 12px;
 }
 
+.hamberger__img:hover {
+  background: url(../../image/Hamburger_purple.svg) no-repeat center;
+}
+
 .hamberger__name {
+  padding-left: 12px;
+}
+
+.hamberger__name:hover {
+  color: $primary-color;
   padding-left: 12px;
 }
 
