@@ -64,7 +64,7 @@
       // 브랜드, 카테고리 리스트 열기
       &:checked +.best__slideList__wrapper > .best__slideList{
         @include slideList;
-        height: 490px;
+        height: 500px;
         opacity: 1;
         } 
     }
