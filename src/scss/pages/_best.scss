@@ -1,0 +1,437 @@
+@use "./../utils" as *;
+
+// 베스트 상품 페이지 컨테이너
+.MKBestPage{
+  @include basicWidth;
+}
+
+.best{
+  // 페이지 이름
+  &__title{
+    @include paddingY(60px);
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  // 베스트 상품 박스
+  &__main{
+    @include pos;
+    @include flexbox{
+      column-gap: 50px;
+    }
+  }
+
+  // 상품 필터 컨테이너
+  &__nav{
+    width: 220px;
+    height: max-content;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+  }
+
+  // 필터 컨테이너 리스트 컨테이너
+  &__listItem{
+    @include pos;
+    border-bottom: 1px solid rgb(232, 232, 232);
+
+    &:first-child{
+    padding-bottom: 5px;
+    }
+
+    // 리스트 제목
+    &Title{
+      font-weight: 600;
+    }
+
+    // 카테고리 열기 input
+    &More{
+      @include posLT;
+      top: 3px;
+      cursor: pointer;
+      appearance: none;
+      width: 100%;
+      height: 100%;
+      background-image: url(/image/Direction=Down.png);
+      background-repeat: no-repeat;
+      background-position: 200px 8px;
+
+      &:checked{
+        background-image: url(/image/Direction=Up.svg);
+      }
+
+      // 브랜드, 카테고리 리스트 열기
+      &:checked+.best__slideList{
+        @include slideList;
+        height: 490px;
+        opacity: 1;
+        } 
+    }
+
+    // 가격 리스트 열기
+    .price:checked+.priceList{
+      @include slideList;
+      height: 190px;
+      opacity: 1;
+    }
+
+    // 혜택, 유형 리스트 열기
+    .benefit:checked+.benefitList{
+      @include slideList;
+      height: 100px;
+      opacity: 1;
+    }
+    
+    // 특정상품 열기
+    .specific:checked+.specificList{
+      @include slideList;
+      height: 50px;
+      opacity: 1;
+    }
+  }
+  
+  // 필터 대제목
+  &__titleBox{
+    @include paddingY(14px);
+    @include pos;
+    
+    .filter__reset{
+      @include posRT;
+      cursor: pointer;
+      height: 100%;
+      background: transparent;
+      text-align: right;
+      font-size: 13px;
+      color : $gray6;
+      border: none;
+      font-weight: 600;
+
+      &:hover{
+        color: $black;
+      }
+    }
+  }
+
+  // 슬라이드 리스트 컨테이너
+  &__slideList{
+    @include slideList;
+    height: 0;
+    opacity: 0;
+    padding-top: 0;
+  }
+
+  &__slideName{
+    @include pos;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    padding-left:30px;
+
+    &Check{
+      @include posLT;
+      appearance: none;
+      background-image: url(/image/Check.svg);
+      background-repeat: no-repeat;
+      background-position: 0 8px;
+      background-size: 20px 20px;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+
+      &:checked{
+        background-image: url(/image/CheckTrue.svg);
+        }
+      }
+    &count{
+        font-size: 10px;
+        color : $gray6;
+      }
+    }
+
+    // 카테고리 더보기, 브랜드 더보기
+  &__slideMore{
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 13px;
+    color : $gray6;
+  }
+}
+
+// 베스트 상품 컨테이너
+.best{
+  &__productContainer{
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  // 베스트 상품 총 284건
+  &__arran{
+    @include flexbox($jc:space-between);
+    padding-bottom: 20px;
+    font-size: 14px;
+
+    &Count{
+    font-weight: 600;
+    }
+
+    // 베스트 상품 정렬 필터
+    &Filter{
+      .filter{
+        &__list{
+          @include flexbox;
+        }
+        // 베스트 상품 정렬 필터 리스트
+        &__listItem{
+          @include paddingX(5px);
+          border-right: 1px solid $gray5;
+          color: $gray5;
+          font-weight: 600;
+
+          &:first-child{
+          color: $black;
+          font-weight: 600;
+          }
+
+          &:hover{
+            color: $primary-color;
+          }
+
+          &:last-child{
+            border-right: 0;
+          }
+
+          // 추천순 툴팁
+          .qui{
+            color: $gray5;
+            font-size: 5px;
+            font-weight: 400;
+            border: 1.3px solid $gray5;
+            border-radius: 50%;
+            @include paddingX(4px);
+            @include paddingY(1px);
+            @include pos;
+
+            &:hover::after{
+              content: attr(data-toltip);
+              @include posLT(-40px, 30px);
+              @include padding(10px);
+              display:inline-block;
+              background: $white;
+              color: $gray7;
+              border: 1px solid $black;
+              font-size: 11px;
+              width: 250px;
+              height: auto;
+              line-height: 1.5;
+              z-index: 10;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // 베스트 상품 리스트 컨테이너
+  &__productBoxline{
+  @include flexbox($fd:column);
+  }
+
+  // 상품 한줄 
+  &__goods{
+    margin-bottom: 40px;
+    @include flexbox{
+      column-gap: 10px;
+    }
+
+    // 베스트 상품 이름름
+    &Title{
+      padding-top: 10px;
+      height: 60px;
+      &:hover{
+        color: $primary-color;
+        font-weight: 600;
+      }
+    }
+    
+    // 상품 한줄 리스트 박스
+    &List{
+      @include flexbox($fd:column);
+    }
+
+    // 샛별 배송
+    &delivery{
+      order: -1;
+      color: $gray5;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 10px;
+    }
+    
+    // 상품 가격 컨테이너
+    &PriceBox{
+      @include flexbox($fd:column);
+      // padding-top: 10px;
+    }
+
+    &delPrice{
+      color: $gray5;
+      font-size: 13px;
+      order: 1;
+    };
+
+    &CurDisBox{
+      @include flexbox;
+      padding-bottom: 10px;
+      width: 100%;
+    }
+
+    &CurrentPrice{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 32px;
+    };
+
+    &DiscountPercent{
+      color: $accent-color;
+      font-size: 22px;
+      font-weight: 600;
+      padding-right: 10px;
+      order: -1;
+    }
+
+    // 상품 간단한 설명
+    &Summary{
+      margin-top: 10px;
+      color: $gray5;
+      font-size: 14px;
+    }
+
+    // 상품 상세페이지 및 장바구니 이미지 컨테이너
+    &ImgBox{
+      @include pos;
+      order: -2;
+    }
+    ;
+
+    // 상품 상세페이지 및 장바구니 이미지
+    &Imges{
+      @include pos;
+    }
+
+    // 상품 상세페이지
+    &Link{
+      @include flexbox;
+      overflow: hidden;
+
+      &:hover>.best__goodsImg{
+        @include ImageScale;
+      }
+    }
+    
+    // 상품 이미지
+    &Img{
+      object-fit: cover;
+      @include transition(transform, 0.5s);
+      transform: scale(100%);
+    };
+
+    // 장바구니 이미지
+    &BasketImg{
+      @include posRB(10px, 10px);
+      z-index: 10;
+      appearance: none;
+      width: 40px;
+      height: 40px;
+      background-image: url(/image/Cart.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(110%);
+      }
+    }
+    
+    // Karly only, 한정수량 스티커
+    &Sticker{
+      margin-top: 15px;
+      font-size: 14px;
+      font-weight: 600;
+
+      .only{
+        @include sticker;
+        color: $primary-color;
+      }
+
+      .limit{
+        @include sticker;
+        color: $gray9;
+      }
+    };
+  }
+
+  // 베스트 상품 페이지 넘버
+  &__pageNum{
+    text-align: center;
+    line-height: 35px;
+    margin-top: 100px;
+
+    &Container{
+      display: inline-block;
+      border-collapse: collapse;
+      font-size: 16px;
+      
+      td{
+        width: 35px;
+        height: 35px;
+        border: 1px solid $gray2;
+
+        &:hover{
+          background: rgb(242, 242, 242);
+        }
+
+        &:nth-child(3){
+          background: rgb(242, 242, 242);
+          color: $primary-color;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &Link{
+      display: block;
+    }
+  }
+  // 장바구니 모달창
+  &__modal{
+    @include padding(20px);
+    @include transition(opacity, 0.5s);
+    background: $white;
+    box-shadow: 0px 0px 0.13rem rgb(149,128,156);
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    z-index: 50;
+    text-align: center;
+    width: 350px;
+    height: 120px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .modalImg{
+    width: 100px;
+  }
+  
+  .modalp{
+    font-size: 18px;
+    color: $gray9;
+    text-shadow: 1px -1px 2px $white;
+  }
+  
+  &__goodsBasketImg:checked+.best__modal{
+  @include showModal;
+  }
+}
