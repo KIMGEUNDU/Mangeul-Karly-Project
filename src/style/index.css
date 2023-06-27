@@ -570,12 +570,18 @@ legend {
   margin-left: auto;
   margin-right: auto;
 <<<<<<< HEAD
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30px;
+=======
+<<<<<<< HEAD
   margin-top: 30px;
   margin-bottom: 50px;
 =======
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 30px;
+>>>>>>> develop
 >>>>>>> develop
 }
 .sugge__name {
@@ -725,6 +731,8 @@ legend {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 .sticky--absolute {
   position: absolute;
   right: 0;
@@ -741,16 +749,22 @@ legend {
   padding-top: 7px;
   padding-bottom: 7px;
 =======
+>>>>>>> develop
 .adBlock {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
+<<<<<<< HEAD
+=======
+>>>>>>> develop
 >>>>>>> develop
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: flex-start;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
   position: sticky;
   top: 0;
@@ -758,11 +772,15 @@ legend {
   width: 80px;
   height: 350px;
 =======
+>>>>>>> develop
   background: #ffffff;
   width: 100px;
   position: fixed;
   right: 30px;
   bottom: 200px;
+<<<<<<< HEAD
+=======
+>>>>>>> develop
 >>>>>>> develop
   border: 1px solid #E1E1E1;
   text-align: center;
@@ -785,9 +803,13 @@ legend {
   padding-top: 8px;
   padding-bottom: 8px;
 <<<<<<< HEAD
+  font-size: 13px;
+=======
+<<<<<<< HEAD
   font-size: 10px;
 =======
   font-size: 13px;
+>>>>>>> develop
 >>>>>>> develop
   font-weight: 600;
   margin-bottom: 10px;
@@ -800,9 +822,13 @@ legend {
 }
 .adBlock__linkImg {
 <<<<<<< HEAD
+  margin-bottom: 8px;
+=======
+<<<<<<< HEAD
   margin-bottom: 3px;
 =======
   margin-bottom: 8px;
+>>>>>>> develop
 >>>>>>> develop
 }
 .adBlock__bottomArrow {
@@ -1480,6 +1506,18 @@ legend {
   color: #333333;
 }
 
+<<<<<<< HEAD
+.menu__item:hover {
+  width: 150px;
+  text-align: center;
+  color: #5F0080;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+  text-underline-position: under;
+}
+
+=======
+>>>>>>> develop
 .hamberger__wrapper {
   /* position: relative; */
   position: relative;
@@ -1490,10 +1528,25 @@ legend {
   padding-right: 12px;
 }
 
+<<<<<<< HEAD
+.hamberger__img:hover {
+  background: url(../../image/Hamburger_purple.svg) no-repeat center;
+}
+
+=======
+>>>>>>> develop
 .hamberger__name {
   padding-left: 12px;
 }
 
+<<<<<<< HEAD
+.hamberger__name:hover {
+  color: #5F0080;
+  padding-left: 12px;
+}
+
+=======
+>>>>>>> develop
 .mainmenu__list {
   color: #333333;
   font-size: 16px;
@@ -1558,12 +1611,17 @@ legend {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
 .service__info {
   display: flex;
   margin-bottom: 10px;
   line-height: 20px;
   border-bottom: 1px solid lightgrey;
   justify-content: space-between;
+<<<<<<< HEAD
+=======
 =======
 .footer__box {
   border-top: 1px solid lightgrey;
@@ -1577,6 +1635,7 @@ legend {
   padding-top: 28px;
   padding-bottom: 28px;
 >>>>>>> develop
+>>>>>>> develop
 }
 
 .footer__wrapper {
@@ -1586,6 +1645,9 @@ legend {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
 h3 {
   font-size: 13px;
   font-weight: 900;
@@ -1604,6 +1666,8 @@ h3 {
 .inquery__time {
   margin: 7px 0 0 10px;
   font-size: 12px;
+<<<<<<< HEAD
+=======
 =======
 .inquery__center {
   font-size: 22px;
@@ -1626,6 +1690,7 @@ h3 {
   margin-left: 16px;
   font-size: 16px;
 >>>>>>> develop
+>>>>>>> develop
 }
 
 .inquery__mail {
@@ -1636,7 +1701,11 @@ h3 {
 <<<<<<< HEAD
   font-size: 12px;
 =======
+<<<<<<< HEAD
+  font-size: 12px;
+=======
   font-size: 16px;
+>>>>>>> develop
 >>>>>>> develop
 }
 
@@ -1649,14 +1718,20 @@ h3 {
   display: flex;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   margin-top: 16px;
   margin-bottom: 16px;
+>>>>>>> develop
 >>>>>>> develop
 }
 
 .inquery__title {
   border: 1px solid rgb(214, 211, 211);
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
   width: 100px;
   height: 30px;
   margin-top: 10px;
@@ -1668,6 +1743,8 @@ h3 {
 .text__bold {
   font-size: 12px;
   margin-left: 5px;
+<<<<<<< HEAD
+=======
 =======
   height: 40px;
   margin-top: 6px;
@@ -1680,6 +1757,7 @@ h3 {
   width: 88px;
   margin: 7px 26px;
 >>>>>>> develop
+>>>>>>> develop
 }
 
 .address__data {
@@ -1687,8 +1765,12 @@ h3 {
 <<<<<<< HEAD
   margin-top: 20px;
 =======
+<<<<<<< HEAD
+  margin-top: 20px;
+=======
   margin-top: 28px;
   margin-bottom: 28px;
+>>>>>>> develop
 >>>>>>> develop
 }
 
@@ -1701,12 +1783,19 @@ h3 {
 <<<<<<< HEAD
   margin-top: 20px;
 =======
+<<<<<<< HEAD
+  margin-top: 20px;
+=======
+>>>>>>> develop
 >>>>>>> develop
   width: 25px;
   height: 25px;
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> develop
 .address__info {
   margin-left: 100px;
 }
@@ -1715,10 +1804,13 @@ h3 {
   display: flex;
   padding: 30px 0 10px;
   font-size: 14px;
+<<<<<<< HEAD
+=======
 =======
 .info__link {
   display: flex;
   font-size: 16px;
+>>>>>>> develop
 >>>>>>> develop
   letter-spacing: 1px;
   column-gap: 10px;
@@ -1731,7 +1823,10 @@ h3 {
   line-height: 160%;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   padding: 20px 0 32px 0;
+>>>>>>> develop
 >>>>>>> develop
 }
 
@@ -1740,6 +1835,10 @@ h3 {
 <<<<<<< HEAD
   margin-top: 10px;
 =======
+<<<<<<< HEAD
+  margin-top: 10px;
+=======
+>>>>>>> develop
 >>>>>>> develop
   flex-wrap: nowrap;
 }
@@ -1766,6 +1865,10 @@ h3 {
 <<<<<<< HEAD
   margin: 30px 0 0 0;
 =======
+<<<<<<< HEAD
+  margin: 30px 0 0 0;
+=======
+>>>>>>> develop
 >>>>>>> develop
   font-size: 10px;
   text-align: center;
@@ -1776,11 +1879,15 @@ h3 {
 <<<<<<< HEAD
   padding: 15px;
 =======
+<<<<<<< HEAD
+  padding: 15px;
+=======
   padding: 20px 4px 40px 4px;
 }
 
 .copyright {
   margin-top: 8px;
+>>>>>>> develop
 >>>>>>> develop
 }
 
