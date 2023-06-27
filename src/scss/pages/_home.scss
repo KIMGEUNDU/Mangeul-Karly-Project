@@ -4,26 +4,14 @@
 .slide{
   @include pos;
   margin-bottom: 30px;
-
-  &__imgWrapper{
-    @include flexbox;
-    @include slideImg;
-    width: 400%;
-
-    &:hover~.slide__arrow--left,
-    &:hover~.slide__arrow--right{
-      @include transition(opacity, 0.5s);
-      opacity: 1;
-    }
-  }
-
+  
+  // 슬라이드 정지 버튼
   &__BtnWrapper{
     @include pos;
     @include posRB(442px, 30px);
     z-index: 1;
-
   }
-
+  
   &__Btn{
     appearance: none; 
     width: 60px;
@@ -31,20 +19,21 @@
     border: 2px solid $white;
     border-radius: 50px;
     background: transparent;
-
+  
+    // 정지버튼 클릭 시 동그라미 슬라이드 및 색 변경
     &:checked+.slide__BtnClick{
       transition: transform, background-color;
       transition-duration: 0.5s, 0.2s;
       transform: translateX(40px);
       background-color: $primary-color;
     }
-
+    // 정지버튼 클릭 시 배경 색 변경
     &:checked~.slide__BtnBg{
       @include transition(background-color, 0.5s);
       background-color: $white;
     }
   }
-
+  
   &__BtnClick{
     @include posLT(2px, 2px);
     @include transition(transform, 0.5s);
@@ -55,7 +44,7 @@
     background: $white;
     z-index: -1;
   }
-
+  
   &__BtnBg{
     @include posLT(1px, 1px);
     @include transition(background-color, 0.5s);
@@ -64,6 +53,20 @@
     height: 20px;
     border-radius: 50px;
     z-index: -2;
+  }
+
+  // 슬라이드 이미지 컨테이너
+  &__imgWrapper{
+    @include flexbox;
+    @include slideImg;
+    width: 400%;
+
+    // 슬라이드 영역에 호버 시 화살표 이미지 생성
+    &:hover~.slide__arrow--left,
+    &:hover~.slide__arrow--right{
+      @include transition(opacity, 0.5s);
+      opacity: 1;
+    }
   }
 
   &__arrow--left{
@@ -81,13 +84,13 @@
   }
 }
 
-
-// 메인영역상품 설명 컨테이너
+// 상품 리스트 컨테이너
 .sugge{
   @include basicWidth;
   @include paddingX(20px);
   margin-top: 30px;
 
+  // 이 상품 어때요, 놓치면 후회할 가격
   &__name{
     font-size: 30px;
     font-weight: 700;
@@ -96,16 +99,19 @@
   }
 
   &__goods{
-    &List{
-      @include flexbox($fd:column);
-    }
-
+    // 상품 컨테이너
     &Box{
       @include flexbox{
         column-gap: 20px;
       };
     }
 
+    // 상품 리스트
+    &List{
+      @include flexbox($fd:column);
+    }
+
+    // 상품 이름
     &Title{
       padding-top: 15px;
       height: 45px;
@@ -115,21 +121,7 @@
       }
     }
     
-    &Link{
-      @include flexbox;
-      overflow: hidden;
-
-      &:hover>.sugge__goodsImg{
-        @include ImageScale;
-      }
-    }
-    
-    &Img{
-      object-fit: cover;
-      @include transition(transform, 0.5s);
-      transform: scale(100%);
-    };
-
+    // 상품 가격 컨테이너
     &PriceBox{
       padding-top: 20px;
       @include flexbox($fd:column);
@@ -160,20 +152,44 @@
       order: -1;
     }
 
+    // 상품 이미지 박스
+    &Link{
+      @include flexbox;
+      overflow: hidden;
+
+      &:hover>.sugge__goodsImg{
+        @include ImageScale;
+      }
+    }
+    
+    // 상품 이미지 영역 컨테이너
     &ImgBox{
       @include pos;
       order: -1;
     };
 
+    // 상품 이미지 박스
     &Imges{
       @include pos;
     };;
-
-    &BasketLink{
-    @include posRB(20px, 15px);
-    z-index: 10;
+    
+    &Img{
+      object-fit: cover;
+      @include transition(transform, 0.5s);
+      transform: scale(100%);
     };
     
+    // 장바구니 이미지
+    &BasketImg{
+      width: 40px;
+      height: auto;
+
+      &:hover{
+        transform: scale(110%);
+      }
+    }
+
+    // 상품 더보기 화살표
     .sugge__arrow{
       @include posRT(-25px, 43%);
       background: $white;
@@ -188,26 +204,48 @@
       -1px 1px 8px $gray2,
       1px -1px 8px $gray2,;
     }
-    
-    &BasketImg{
-      width: 40px;
-      height: auto;
+  }
 
-      &:hover{
-        transform: scale(110%);
-      }
-    };
+  // 장바구니 모달창
+  &__modal{
+    @include padding(20px);
+    @include transition(opacity, 0.5s);
+    background: $white;
+    box-shadow: 0px 0px 0.13rem rgb(149,128,156);
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    z-index: 50;
+    text-align: center;
+    width: 350px;
+    height: 120px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+
+  .modalImg{
+    width: 100px;
+  }
+
+  .modalp{
+    font-size: 18px;
+    color: $gray9;
+    text-shadow: 1px -1px 2px $white;
+  }
+
+  .best__goodsBasketImg:checked+.sugge__modal{
+    @include showModal;
   }
 }
 
-// 중간 광고 영역
+// 중간 광고 컨테이너
 .advert{
   @include paddingX(30px);
   @include basicWidth;
   @include marginY(100px);
 }
 
-//에드블록 영역
+//에드블록 컨테이너
 .adBlock{
   @include padding(8px);
   @include flexbox($fd:column);
@@ -266,36 +304,3 @@
     }
   }
 }
-
-// 장바구니 모달창
-.sugge__modal{
-  @include padding(20px);
-  @include transition(opacity, 0.5s);
-  background: $white;
-  box-shadow: 0px 0px 0.13rem rgb(149,128,156);
-  position: fixed;
-  right: 30px;
-  bottom: 10px;
-  z-index: 50;
-  text-align: center;
-  width: 350px;
-  height: 120px;
-  border-radius: 10px;
-  opacity: 0;
-}
-
-.modalImg{
-  width: 100px;
-}
-
-.modalp{
-  font-size: 18px;
-  color: $gray9;
-  text-shadow: 1px -1px 2px $white;
-}
-
-.best__goodsBasketImg:checked+.sugge__modal{
-  @include showModal;
-}
-
-// 임시주석
