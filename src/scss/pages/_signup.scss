@@ -124,7 +124,7 @@
 }
 
 .info__selectRadio:checked + .info__radioLabel .iconRadio {
-    background: url(/image/radio-is-selected.svg)
+  background: url(/image/radio-is-selected.svg);
 }
 
 // .select--recommender, .select--eventname {
@@ -134,7 +134,6 @@
 // #userRecommenderButton:checked + .select--recommender {
 //   display: block;
 // }
-
 
 /* 이용약관동의 */
 .consent__container {

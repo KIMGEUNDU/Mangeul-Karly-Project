@@ -1,13 +1,13 @@
 @use "./../utils" as *;
 
 // 베스트 상품 페이지 컨테이너
-.MKBestPage{
+.MKBestPage {
   @include basicWidth;
 }
 
-.best{
+.best {
   // 페이지 이름
-  &__title{
+  &__title {
     @include paddingY(60px);
     text-align: center;
     font-weight: bold;
@@ -15,15 +15,15 @@
   }
 
   // 베스트 상품 박스
-  &__main{
+  &__main {
     @include pos;
-    @include flexbox{
+    @include flexbox {
       column-gap: 50px;
     }
   }
 
   // 상품 필터 컨테이너
-  &__nav{
+  &__nav {
     width: 220px;
     height: max-content;
     font-size: 14px;
@@ -32,21 +32,21 @@
   }
 
   // 필터 컨테이너 리스트 컨테이너
-  &__listItem{
+  &__listItem {
     @include pos;
     border-bottom: 1px solid rgb(232, 232, 232);
 
-    &:first-child{
-    padding-bottom: 5px;
+    &:first-child {
+      padding-bottom: 5px;
     }
 
     // 리스트 제목
-    &Title{
+    &Title {
       font-weight: 600;
     }
 
     // 카테고리 열기 input
-    &More{
+    &More {
       @include posLT;
       top: 3px;
       cursor: pointer;
@@ -57,77 +57,77 @@
       background-repeat: no-repeat;
       background-position: 200px 8px;
 
-      &:checked{
+      &:checked {
         background-image: url(/image/Direction=Up.svg);
       }
 
       // 브랜드, 카테고리 리스트 열기
-      &:checked+.best__slideList{
+      &:checked +.best__slideList__wrapper > .best__slideList{
         @include slideList;
-        height: 490px;
+        height: 500px;
         opacity: 1;
-        } 
+      }
     }
 
     // 가격 리스트 열기
-    .price:checked+.priceList{
+    .price:checked+.best__slideList__wrapper >.priceList{
       @include slideList;
       height: 190px;
       opacity: 1;
     }
 
     // 혜택, 유형 리스트 열기
-    .benefit:checked+.benefitList{
+    .benefit:checked+.best__slideList__wrapper >.benefitList{
       @include slideList;
       height: 100px;
       opacity: 1;
     }
-    
+
     // 특정상품 열기
-    .specific:checked+.specificList{
+    .specific:checked+.best__slideList__wrapper >.specificList{
       @include slideList;
       height: 50px;
       opacity: 1;
     }
   }
-  
+
   // 필터 대제목
-  &__titleBox{
+  &__titleBox {
     @include paddingY(14px);
     @include pos;
-    
-    .filter__reset{
+
+    .filter__reset {
       @include posRT;
       cursor: pointer;
       height: 100%;
       background: transparent;
       text-align: right;
       font-size: 13px;
-      color : $gray6;
+      color: $gray6;
       border: none;
       font-weight: 600;
 
-      &:hover{
+      &:hover {
         color: $black;
       }
     }
   }
 
   // 슬라이드 리스트 컨테이너
-  &__slideList{
+  &__slideList {
     @include slideList;
     height: 0;
     opacity: 0;
     padding-top: 0;
   }
 
-  &__slideName{
+  &__slideName {
     @include pos;
     padding-top: 8px;
     padding-bottom: 16px;
-    padding-left:30px;
+    padding-left: 30px;
 
-    &Check{
+    &Check {
       @include posLT;
       appearance: none;
       background-image: url(/image/Check.svg);
@@ -138,72 +138,72 @@
       height: 100%;
       margin-bottom: 10px;
 
-      &:checked{
+      &:checked {
         background-image: url(/image/CheckTrue.svg);
-        }
-      }
-    &count{
-        font-size: 10px;
-        color : $gray6;
       }
     }
+    &count {
+      font-size: 10px;
+      color: $gray6;
+    }
+  }
 
-    // 카테고리 더보기, 브랜드 더보기
-  &__slideMore{
+  // 카테고리 더보기, 브랜드 더보기
+  &__slideMore {
     display: block;
     padding-top: 6px;
     padding-bottom: 12px;
     text-align: center;
     font-size: 13px;
-    color : $gray6;
+    color: $gray6;
   }
 }
 
 // 베스트 상품 컨테이너
-.best{
-  &__productContainer{
+.best {
+  &__productContainer {
     flex-grow: 1;
     flex-basis: 50%;
   }
 
   // 베스트 상품 총 284건
-  &__arran{
-    @include flexbox($jc:space-between);
+  &__arran {
+    @include flexbox($jc: space-between);
     padding-bottom: 20px;
     font-size: 14px;
 
-    &Count{
-    font-weight: 600;
+    &Count {
+      font-weight: 600;
     }
 
     // 베스트 상품 정렬 필터
-    &Filter{
-      .filter{
-        &__list{
+    &Filter {
+      .filter {
+        &__list {
           @include flexbox;
         }
         // 베스트 상품 정렬 필터 리스트
-        &__listItem{
+        &__listItem {
           @include paddingX(5px);
           border-right: 1px solid $gray5;
           color: $gray5;
           font-weight: 600;
 
-          &:first-child{
-          color: $black;
-          font-weight: 600;
+          &:first-child {
+            color: $black;
+            font-weight: 600;
           }
 
-          &:hover{
+          &:hover {
             color: $primary-color;
           }
 
-          &:last-child{
+          &:last-child {
             border-right: 0;
           }
 
           // 추천순 툴팁
-          .qui{
+          .qui {
             color: $gray5;
             font-size: 5px;
             font-weight: 400;
@@ -213,11 +213,11 @@
             @include paddingY(1px);
             @include pos;
 
-            &:hover::after{
+            &:hover::after {
               content: attr(data-toltip);
               @include posLT(-40px, 30px);
               @include padding(10px);
-              display:inline-block;
+              display: inline-block;
               background: $white;
               color: $gray7;
               border: 1px solid $black;
@@ -233,68 +233,67 @@
     }
   }
 
-
   // 베스트 상품 리스트 컨테이너
-  &__productBoxline{
-  @include flexbox($fd:column);
+  &__productBoxline {
+    @include flexbox($fd: column);
   }
 
-  // 상품 한줄 
-  &__goods{
+  // 상품 한줄
+  &__goods {
     margin-bottom: 40px;
-    @include flexbox{
+    @include flexbox {
       column-gap: 10px;
     }
 
     // 베스트 상품 이름름
-    &Title{
+    &Title {
       padding-top: 10px;
       height: 60px;
-      &:hover{
+      &:hover {
         color: $primary-color;
         font-weight: 600;
       }
     }
-    
+
     // 상품 한줄 리스트 박스
-    &List{
-      @include flexbox($fd:column);
+    &List {
+      @include flexbox($fd: column);
     }
 
     // 샛별 배송
-    &delivery{
+    &delivery {
       order: -1;
       color: $gray5;
       font-size: 13px;
       font-weight: 600;
       margin-top: 10px;
     }
-    
+
     // 상품 가격 컨테이너
-    &PriceBox{
-      @include flexbox($fd:column);
+    &PriceBox {
+      @include flexbox($fd: column);
       // padding-top: 10px;
     }
 
-    &delPrice{
+    &delPrice {
       color: $gray5;
       font-size: 13px;
       order: 1;
-    };
+    }
 
-    &CurDisBox{
+    &CurDisBox {
       @include flexbox;
       padding-bottom: 10px;
       width: 100%;
     }
 
-    &CurrentPrice{
+    &CurrentPrice {
       font-size: 18px;
       font-weight: 600;
       line-height: 32px;
-    };
+    }
 
-    &DiscountPercent{
+    &DiscountPercent {
       color: $accent-color;
       font-size: 22px;
       font-weight: 600;
@@ -303,43 +302,41 @@
     }
 
     // 상품 간단한 설명
-    &Summary{
+    &Summary {
       margin-top: 10px;
       color: $gray5;
       font-size: 14px;
     }
 
     // 상품 상세페이지 및 장바구니 이미지 컨테이너
-    &ImgBox{
+    &ImgBox {
       @include pos;
       order: -2;
     }
-    ;
-
     // 상품 상세페이지 및 장바구니 이미지
-    &Imges{
+    &Imges {
       @include pos;
     }
 
     // 상품 상세페이지
-    &Link{
+    &Link {
       @include flexbox;
       overflow: hidden;
 
-      &:hover>.best__goodsImg{
+      &:hover > .best__goodsImg {
         @include ImageScale;
       }
     }
-    
+
     // 상품 이미지
-    &Img{
+    &Img {
       object-fit: cover;
       @include transition(transform, 0.5s);
       transform: scale(100%);
-    };
+    }
 
     // 장바구니 이미지
-    &BasketImg{
+    &BasketImg {
       @include posRB(10px, 10px);
       z-index: 10;
       appearance: none;
@@ -350,50 +347,51 @@
       background-size: 100%;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         transform: scale(110%);
       }
     }
-    
+
     // Karly only, 한정수량 스티커
-    &Sticker{
+    &Sticker {
       margin-top: 15px;
       font-size: 14px;
       font-weight: 600;
 
-      .only{
+      .only {
         @include sticker;
         color: $primary-color;
       }
 
-      .limit{
+      .limit {
         @include sticker;
         color: $gray9;
       }
-    };
+    }
   }
 
   // 베스트 상품 페이지 넘버
-  &__pageNum{
+  &__pageNum {
     text-align: center;
     line-height: 35px;
     margin-top: 100px;
+    margin-bottom: 80px;
 
-    &Container{
+    &Container {
       display: inline-block;
       border-collapse: collapse;
       font-size: 16px;
-      
-      td{
+
+      td {
         width: 35px;
         height: 35px;
         border: 1px solid $gray2;
 
-        &:hover{
+        &:hover {
           background: rgb(242, 242, 242);
         }
 
-        &:nth-child(3){
+        &:nth-child(3) {
           background: rgb(242, 242, 242);
           color: $primary-color;
           font-weight: 500;
@@ -401,16 +399,16 @@
       }
     }
 
-    &Link{
+    &Link {
       display: block;
     }
   }
   // 장바구니 모달창
-  &__modal{
+  &__modal {
     @include padding(20px);
     @include transition(opacity, 0.5s);
     background: $white;
-    box-shadow: 0px 0px 0.13rem rgb(149,128,156);
+    box-shadow: 0px 0px 0.13rem rgb(149, 128, 156);
     position: fixed;
     right: 30px;
     bottom: 10px;
@@ -421,17 +419,85 @@
     border-radius: 10px;
     opacity: 0;
   }
-  .modalImg{
+  .modalImg {
     width: 100px;
   }
-  
-  .modalp{
+
+  .modalp {
     font-size: 18px;
     color: $gray9;
     text-shadow: 1px -1px 2px $white;
   }
-  
-  &__goodsBasketImg:checked+.best__modal{
-  @include showModal;
+
+  &__goodsBasketImg:checked + .best__modal {
+    @include showModal;
+  }
+}
+
+//에드블록 컨테이너
+.stickyBest--absolute{
+  @include posRT;
+  right: 20px;
+  top: 160px;
+  width: 80px;
+  height: 3600px;
+}
+
+.adBlock{
+  @include padding(7px);
+  @include flexbox($fd:column);
+  position: sticky;
+  top: 250px;
+  background: $white;
+  width:  80px;
+  height: 350px;
+  border: 1px solid $gray2;
+  text-align: center;
+  z-index: 500;
+
+  &__topArrow{
+    @include autoMargin;
+    width: 10px;
+    order: -1;
+    transform: rotate(270deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
+  }
+
+  &__title{
+    @include paddingY(8px);
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__ImgBox{
+    width: 100%;
+    height: 300px;
+    text-overflow: clip;
+    overflow: hidden;
+  }
+
+  &__linkImg{
+    margin-bottom: 3px;
+  }
+
+  &__bottomArrow{
+    @include autoMargin;
+    width: 10px;
+    margin-top: 10px;
+    transform: rotate(90deg);
+    color: $gray4;
+    font-weight: 600;
+
+    &:hover{
+      cursor: pointer;
+      color: $black;
+    }
   }
 }
