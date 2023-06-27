@@ -1,11 +1,16 @@
 @use "./../utils" as *;
 
+.footer__box {
+    border-top: 1px solid lightgrey;
+}
+
 .service__info {
     display: flex;
-    margin-bottom: 10px;
-    line-height: 20px;
+    line-height: 1.6;
     border-bottom: 1px solid lightgrey;
     justify-content: space-between;
+    @include paddingY(28px);
+
 
 }
 
@@ -13,25 +18,26 @@
     @include basicWidth;
 }
 
-h3 {
-    font-size: 13px;
-    font-weight: 900;
-   
-}
 
 .inquery__center {
-    margin: 20px 0 30px;
+   font-size: 22px;
+   font-weight: 700;
+   margin-bottom: 16px;
 }
 
 .inquery__number {
-    font-size: 25px;
-    font-weight: 900;
-    padding-bottom: 15px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.text__bold {
+    font-size: 16px;
+    margin-left: 8px;
+    font-weight: 600px;
 }
 
 .inquery__time {
-    margin: 7px 0 0 10px;
-    font-size: 12px;
+    margin-left: 16px;
+    font-size: 16px;
 }
 
 .inquery__mail {
@@ -39,8 +45,7 @@ h3 {
 }
 
 .inquery__email {
-    font-size: 12px;
-
+    font-size: 16px;
 }
 
 .p__color {
@@ -50,28 +55,26 @@ h3 {
 
 .inquery__list {
     display: flex;
+    @include marginY(16px);
 }
 
 .inquery__title {
     border: 1px solid rgb(214, 211, 211);
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    font-size: 12px;
-    text-align: center;
-    line-height: 2.5;
+    height: 40px;
+    @include marginY(6px);
 }
 
-.text__bold {
-    font-size: 12px;
-    margin-left: 5px;
-
+.inquery__link {
+    display: inline-block;
+    text-align: center;
+    width: 88px;
+    margin: 7px 26px;
+    
 }
 
 .address__data {
     font-size: 12px;
-    margin-top: 20px;
-
+    @include marginY(28px);
 }
 
 .sns__logo {
@@ -81,20 +84,14 @@ h3 {
 }
 
 .sns__logo img {
-    margin-top: 20px;
     width: 25px;
     height: 25px;
 
 }
 
-.address__info {
-    margin-left: 100px;
-}
-
 .info__link {
     display: flex;
-    padding: 30px 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     column-gap: 10px;
 }
@@ -104,12 +101,12 @@ h3 {
     justify-content: space-between;
     font-size: 10px;
     line-height: 160%;
+    padding: 20px 0 32px 0;
 
 }
 
 .another__logo {
     display: flex;
-    margin-top: 10px;
     flex-wrap: nowrap;
 
 }
@@ -134,12 +131,14 @@ h3 {
 }
 
 .last__footer {
-    margin: 30px 0 0 0;
     font-size: 10px;
     text-align: center;
     height: 100px;
     background: #f7f7f7;
     line-height: 10px;
     line-height: 160%;
-    padding: 15px;
+    padding: 20px 4px 40px 4px;
+}
+.copyright {
+    margin-top: 8px;
 }
