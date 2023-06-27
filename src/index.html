@@ -1,17 +1,182 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>망글망글 마켓칼리</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://res.kurly.com/icons/favicon-16x16.png"
+    />
+    <script
+      src="http://kit.fontawesome.com//77ad8525ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+  <header class="appHeader">
+    <h1 class="logo">
+      <a href="/" class="logo__link" aria-label="market karly"></a>
+    </h1>
+    <div class="pageCategory">
+      <h2 class="marketPage">
+        <a href="/">마켓칼리 </a>
+      </h2>
+      <h2 class="beautyPage">
+        <span class="beauty__divider" aria-hidden="true">ㅣ</span
+        ><a href="/">뷰티칼리</a><sup class="beautyPage__new">N</sup>
+      </h2>
+    </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-  <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png">
-  <link rel="stylesheet" href="/style/index.css" />
-  <title>망글망글 마켓칼리</title>
-</head>
+    <ul class="memberOnly">
+      <li class="memberOnly__membership">
+        <a href="/">회원가입</a>
+      </li>
+      <li class="memberOnly__login">
+        <span class="divider" aria-hidden="true">ㅣ</span
+        ><a href="/">로그인 </a>
+      </li>
+      <li class="memberOnly__help">
+        <span class="divider" aria-hidden="true">ㅣ</span
+        ><a href="/"> 고객센터 <i class="fas fa-caret-down"></i></a>
+      </li>
+    </ul>
 
-<body>
+    <form
+      action="https://formspree.io/f/xeqwwbwk"
+      method="POST"
+      class="searchForm"
+    >
+      <fieldset>
+        <legend>검색 폼</legend>
+        <div class="searchForm__group">
+          <div class="formInput">
+            <label for="search" class="a11y formInput__label">검색어</label>
+            <input
+              type="search"
+              id="search"
+              name="search"
+              required
+              class="formInput__input"
+              placeholder="검색어를 입력해주세요"
+            />
+            <button id="submit" class="submit"></button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+
+    <ul class="memberOnly__icon">
+      <li class="icon__location">
+        <a href="/" class="icon__link" aria-label="location"
+          ><img src="./image/Location.svg" alt="위치 아이콘"
+        /></a>
+      </li>
+      <li class="icon__heart">
+        <a href="/" class="icon__link" aria-label="heart"
+          ><img src="./image/Heart.svg" alt="좋아요 아이콘"
+        /></a>
+      </li>
+      <li class="icon__cart">
+        <a href="/" class="icon__link" aria-label="cart"
+          ><img src="./image/Cart_header.svg" alt="장바구니 아이콘"
+        /></a>
+      </li>
+    </ul>
+  </header>
+
+  <nav class="main__menu">
+    <h2 class="a11y">메인 메뉴</h2>
+    <div class="container" role="menu">
+      <div class="hamberger__wrapper">
+        <ul class="mainmenu__list">
+          <li class="mainmenu__name">
+            <a href="" class="haberger__link">
+              <span class="hamberger__img"></span>
+              <span class="hamberger__name">카테고리</span>
+            </a>
+            <ul class="sidemenu__list">
+              <li>
+                <a href="/" class="sprite spriteGift" aria-hidden="true"
+                  >선물하기</a
+                >
+              </li>
+              <li><a href="/" class="sprite spriteVegetable">채소</a></li>
+              <li><a href="/" class="sprite spriteFruits">과일·견과·쌀</a></li>
+              <li>
+                <a href="/" class="sprite spriteFish">수산·해산·건어물</a>
+              </li>
+              <li><a href="/" class="sprite spriteMeat">정육·계란</a></li>
+              <li>
+                <a href="/" class="sprite spriteMain">국·반찬·메인요리</a>
+              </li>
+              <li><a href="/" class="sprite spriteSalad">샐러드·간편식</a></li>
+              <li><a href="/" class="sprite spriteNoodle">면·양념·오일</a></li>
+              <li>
+                <a href="/" class="sprite spriteWater">생수·음료·우유·커피</a>
+              </li>
+              <li>
+                <a href="/" class="sprite spriteDessert">간식·과자·떡</a>
+              </li>
+              <li>
+                <a href="/" class="sprite spriteBakery">베이커리·치즈·델리</a>
+              </li>
+              <li><a href="/" class="sprite spriteHealth">건강식품</a></li>
+              <li><a href="/" class="sprite spriteWine">와인</a></li>
+              <li><a href="/" class="sprite spriteTraditional">전통주</a></li>
+              <li>
+                <a href="/" class="sprite spriteLiving">생활용품·리빙·캠핑</a>
+              </li>
+              <li>
+                <a href="/" class="sprite spriteSkin">스킨케어·메이크업</a>
+              </li>
+              <li><a href="/" class="sprite spriteHair">헤어·바디·구강</a></li>
+              <li><a href="/" class="sprite spriteKitchen">주방용품</a></li>
+              <li><a href="/" class="sprite spriteElectronic">가전제품</a></li>
+              <li><a href="/" class="sprite spritePet">반려동물</a></li>
+              <li>
+                <a href="/" class="sprite spriteBaby">베이비·키즈·완구</a>
+              </li>
+              <li><a href="/" class="sprite spriteTravel">여행·티켓</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="menu__wrapper">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">신상품</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">베스트</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">알뜰쇼핑</a>
+          </li>
+          <li class="menu__item">
+            <a href="/" class="menu__link" tabindex="-1">특가/혜택</a>
+          </li>
+        </ul>
+      </div>
+      <div class="deliveryNotice">
+        <a href="/" class="deliveryNotice__link"
+          ><span class="deliveryTime">샛별·낮</span
+          ><span class="deliveryDetail"> 배송안내</span></a
+        >
+      </div>
+    </div>
+  </nav>
+  
+
   <main class="MKmain">
     <!-- 슬라이드 영역 컨테이너 -->
     <section class="slide">
@@ -382,6 +547,7 @@
       <p class="adBlock__bottomArrow" aria-label="최근 본 상품 더보기 아래로" tabindex="0">〉</p>
     </aside>
   </main>
+  <!-- footer 요소-->
   <footer>
     <div class="footer__wrapper">
       <div class="service__info">
@@ -480,4 +646,5 @@
   </footer>
 </body>
 
+  
 </html>
