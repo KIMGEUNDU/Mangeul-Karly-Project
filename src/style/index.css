@@ -569,14 +569,8 @@ legend {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
   margin-top: 30px;
   margin-bottom: 50px;
-=======
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 30px;
->>>>>>> develop
 }
 .sugge__name {
   font-size: 30px;
@@ -724,7 +718,6 @@ legend {
   margin-bottom: 100px;
 }
 
-<<<<<<< HEAD
 .sticky--absolute {
   position: absolute;
   right: 0;
@@ -740,30 +733,15 @@ legend {
   padding-right: 7px;
   padding-top: 7px;
   padding-bottom: 7px;
-=======
-.adBlock {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
->>>>>>> develop
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-content: flex-start;
-<<<<<<< HEAD
   position: sticky;
   top: 0;
   background: #ffffff;
   width: 80px;
   height: 350px;
-=======
-  background: #ffffff;
-  width: 100px;
-  position: fixed;
-  right: 30px;
-  bottom: 200px;
->>>>>>> develop
   border: 1px solid #E1E1E1;
   text-align: center;
   z-index: 500;
@@ -784,11 +762,7 @@ legend {
 .adBlock__title {
   padding-top: 8px;
   padding-bottom: 8px;
-<<<<<<< HEAD
   font-size: 10px;
-=======
-  font-size: 13px;
->>>>>>> develop
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -799,11 +773,7 @@ legend {
   overflow: hidden;
 }
 .adBlock__linkImg {
-<<<<<<< HEAD
   margin-bottom: 3px;
-=======
-  margin-bottom: 8px;
->>>>>>> develop
 }
 .adBlock__bottomArrow {
   margin-left: auto;
@@ -1227,6 +1197,77 @@ legend {
   animation-duration: 2.5s;
 }
 
+.stickyBest--absolute {
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 20px;
+  top: 160px;
+  width: 80px;
+  height: 3500px;
+}
+
+.adBlock {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: sticky;
+  top: 200px;
+  background: #ffffff;
+  width: 80px;
+  height: 350px;
+  border: 1px solid #E1E1E1;
+  text-align: center;
+  z-index: 500;
+}
+.adBlock__topArrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  order: -1;
+  transform: rotate(270deg);
+  color: #A6A6A6;
+  font-weight: 600;
+}
+.adBlock__topArrow:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.adBlock__title {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.adBlock__ImgBox {
+  width: 100%;
+  height: 300px;
+  text-overflow: clip;
+  overflow: hidden;
+}
+.adBlock__linkImg {
+  margin-bottom: 3px;
+}
+.adBlock__bottomArrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10px;
+  margin-top: 10px;
+  transform: rotate(90deg);
+  color: #A6A6A6;
+  font-weight: 600;
+}
+.adBlock__bottomArrow:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
 .MKspecialPage {
   max-width: 1024px;
   margin-left: auto;
@@ -1557,14 +1598,6 @@ legend {
   color: #5F0080;
 }
 
-<<<<<<< HEAD
-.service__info {
-  display: flex;
-  margin-bottom: 10px;
-  line-height: 20px;
-  border-bottom: 1px solid lightgrey;
-  justify-content: space-between;
-=======
 .footer__box {
   border-top: 1px solid lightgrey;
 }
@@ -1576,7 +1609,6 @@ legend {
   justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 28px;
->>>>>>> develop
 }
 
 .footer__wrapper {
@@ -1585,26 +1617,6 @@ legend {
   margin-right: auto;
 }
 
-<<<<<<< HEAD
-h3 {
-  font-size: 13px;
-  font-weight: 900;
-}
-
-.inquery__center {
-  margin: 20px 0 30px;
-}
-
-.inquery__number {
-  font-size: 25px;
-  font-weight: 900;
-  padding-bottom: 15px;
-}
-
-.inquery__time {
-  margin: 7px 0 0 10px;
-  font-size: 12px;
-=======
 .inquery__center {
   font-size: 22px;
   font-weight: 700;
@@ -1625,7 +1637,6 @@ h3 {
 .inquery__time {
   margin-left: 16px;
   font-size: 16px;
->>>>>>> develop
 }
 
 .inquery__mail {
@@ -1633,11 +1644,7 @@ h3 {
 }
 
 .inquery__email {
-<<<<<<< HEAD
-  font-size: 12px;
-=======
   font-size: 16px;
->>>>>>> develop
 }
 
 .p__color {
@@ -1647,28 +1654,12 @@ h3 {
 
 .inquery__list {
   display: flex;
-<<<<<<< HEAD
-=======
   margin-top: 16px;
   margin-bottom: 16px;
->>>>>>> develop
 }
 
 .inquery__title {
   border: 1px solid rgb(214, 211, 211);
-<<<<<<< HEAD
-  width: 100px;
-  height: 30px;
-  margin-top: 10px;
-  font-size: 12px;
-  text-align: center;
-  line-height: 2.5;
-}
-
-.text__bold {
-  font-size: 12px;
-  margin-left: 5px;
-=======
   height: 40px;
   margin-top: 6px;
   margin-bottom: 6px;
@@ -1679,17 +1670,12 @@ h3 {
   text-align: center;
   width: 88px;
   margin: 7px 26px;
->>>>>>> develop
 }
 
 .address__data {
   font-size: 12px;
-<<<<<<< HEAD
-  margin-top: 20px;
-=======
   margin-top: 28px;
   margin-bottom: 28px;
->>>>>>> develop
 }
 
 .sns__logo {
@@ -1698,28 +1684,13 @@ h3 {
 }
 
 .sns__logo img {
-<<<<<<< HEAD
-  margin-top: 20px;
-=======
->>>>>>> develop
   width: 25px;
   height: 25px;
 }
 
-<<<<<<< HEAD
-.address__info {
-  margin-left: 100px;
-}
-
-.info__link {
-  display: flex;
-  padding: 30px 0 10px;
-  font-size: 14px;
-=======
 .info__link {
   display: flex;
   font-size: 16px;
->>>>>>> develop
   letter-spacing: 1px;
   column-gap: 10px;
 }
@@ -1729,18 +1700,11 @@ h3 {
   justify-content: space-between;
   font-size: 10px;
   line-height: 160%;
-<<<<<<< HEAD
-=======
   padding: 20px 0 32px 0;
->>>>>>> develop
 }
 
 .another__logo {
   display: flex;
-<<<<<<< HEAD
-  margin-top: 10px;
-=======
->>>>>>> develop
   flex-wrap: nowrap;
 }
 
@@ -1763,25 +1727,17 @@ h3 {
 }
 
 .last__footer {
-<<<<<<< HEAD
-  margin: 30px 0 0 0;
-=======
->>>>>>> develop
   font-size: 10px;
   text-align: center;
   height: 100px;
   background: #f7f7f7;
   line-height: 10px;
   line-height: 160%;
-<<<<<<< HEAD
-  padding: 15px;
-=======
   padding: 20px 4px 40px 4px;
 }
 
 .copyright {
   margin-top: 8px;
->>>>>>> develop
 }
 
 /*# sourceMappingURL=index.css.map */
