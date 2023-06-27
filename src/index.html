@@ -95,7 +95,7 @@
 
   <nav class="main__menu">
     <h2 class="a11y">메인 메뉴</h2>
-    <div class="container">
+    <div class="container" role="menu">
       <div class="hamberger__wrapper">
         <ul class="mainmenu__list">
           <li class="mainmenu__name">
@@ -104,7 +104,11 @@
               <span class="hamberger__name">카테고리</span>
             </a>
             <ul class="sidemenu__list">
-              <li><a href="/" class="sprite spriteGift">선물하기</a></li>
+              <li>
+                <a href="/" class="sprite spriteGift" aria-hidden="true"
+                  >선물하기</a
+                >
+              </li>
               <li><a href="/" class="sprite spriteVegetable">채소</a></li>
               <li><a href="/" class="sprite spriteFruits">과일·견과·쌀</a></li>
               <li>

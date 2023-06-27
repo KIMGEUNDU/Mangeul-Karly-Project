@@ -3,13 +3,13 @@
 // 헤더
 
 .appHeader {
-  /* background: pink; */
-  display: grid;
-  padding: 12px 0 12px 0; /*paddingY update */
+  @include gridbox(12, 1fr, 32px, 12px);
+  @include paddingY(12px);
+  /* display: grid;
   column-gap: 12px;
   row-gap: 32px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto; */
   @include basicWidth;
 }
 
@@ -36,12 +36,12 @@
 // 공통 멤버 서비스
 
 .pageCategory {
-  /* background: green; */
   @include flexbox;
   grid-area: 2/2/2/5;
   justify-content: flex-start;
   padding-top: 10px;
-  position: relative;
+  /* position: relative; */
+  @include pos;
   font-size: 21px;
 }
 
@@ -81,8 +81,9 @@
 }
 
 .memberOnly__login a {
-  padding-left: 6px;
-  padding-right: 6px;
+  /* padding-left: 6px;
+  padding-right: 6px; */
+  @include paddingX(6px);
 }
 
 .memberOnly__help a {
@@ -106,17 +107,20 @@
 }
 
 .searchForm__group {
-  position: relative;
+  /* position: relative; */
+  @include pos;
 }
 
 .formInput__input {
   width: 400px;
-  padding: 12px 20px 12px 20px;
   border-radius: 4px;
   border: 1px solid var(--primary, #5f0080);
   background: transparent;
-  padding: 12px 20px 12px 20px;
-  position: relative;
+  /* padding: 12px 20px 12px 20px; */
+  @include paddingX(20px);
+  @include paddingY(12px);
+  /* position: relative; */
+  @include pos;
 }
 
 .submit {
@@ -170,7 +174,8 @@
 }
 
 .hamberger__wrapper {
-  position: relative;
+  /* position: relative; */
+  @include pos;
 }
 
 .hamberger__img {
@@ -210,7 +215,8 @@
 }
 
 .sidemenu__list li {
-  padding: 8px 0px 8px 12px;
+  padding-left: 12px;
+  @include paddingY(8px);
 }
 
 .sidemenu__list li a {
