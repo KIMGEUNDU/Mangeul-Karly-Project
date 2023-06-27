@@ -843,28 +843,28 @@ legend {
 .best__listItemMore:checked {
   background-image: url(/image/Direction=Up.svg);
 }
-.best__listItemMore:checked + .best__slideList {
+.best__listItemMore:checked + .best__slideList__wrapper > .best__slideList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   height: 490px;
   opacity: 1;
 }
-.best__listItem .price:checked + .priceList {
+.best__listItem .price:checked + .best__slideList__wrapper > .priceList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   height: 190px;
   opacity: 1;
 }
-.best__listItem .benefit:checked + .benefitList {
+.best__listItem .benefit:checked + .best__slideList__wrapper > .benefitList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   height: 100px;
   opacity: 1;
 }
-.best__listItem .specific:checked + .specificList {
+.best__listItem .specific:checked + .best__slideList__wrapper > .specificList {
   transition-property: height, opacity, padding-top;
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
