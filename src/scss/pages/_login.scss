@@ -28,6 +28,7 @@
   &__userId:focus,
   &__userPassword:focus {
     border: $primary-color 2px solid;
+    @include padding(11px);
   }
 
   &__search {
