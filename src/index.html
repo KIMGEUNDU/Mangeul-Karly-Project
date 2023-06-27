@@ -4,31 +4,378 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>망글망글 마켓칼리</title>
   <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png">
   <link rel="stylesheet" href="/style/index.css" />
-  <link rel="stylesheet" href="./scss/layout/_footer.scss" />
+  <title>망글망글 마켓칼리</title>
 </head>
 
 <body>
   <main class="MKmain">
+    <!-- 슬라이드 영역 컨테이너 -->
     <section class="slide">
-      <h2 class="slide__title a11y">슬라이드 광고</h2>
+      <h3 class="slide__title a11y" tabindex="0">슬라이드 광고</h3>
 
-      <article class="slide__imgWrapper">
-        <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게" />
-        <img class="slide__img" src="image/banner02.svg" alt="이달의 카드 혜택" />
-        <img class="slide__img" src="image/banner03.svg" alt="컬리 퍼플 위크" />
-        <img class="slide__img" src="image/banner05.svg" alt="이 주의 특가 한눈에 보기" />
-      </article>
+      <!-- 슬라이드 정지 버튼 -->
+      <div class="slide__BtnWrapper">
+        <input class="slide__Btn" type="checkbox" aria-label="슬라이드 정지하기" />
+        <span class="slide__BtnClick" aria-hidden="true"></span>
+        <span class="slide__BtnBg" aria-hidden="true"></span>
+      </div>
 
-      <article class="slide__arrow">
-        <img src="image/Arrow.svg" alt="왼쪽 화살표" class="slide__arrow--left" />
-        <img src="image/Arrow.svg" alt="오른쪽 화살표" class="slide__arrow--right" />
-      </article>
+      <div class="slide__imgWrapper">
+        <!-- 이미지에 링크 -->
+        <a href="#" class="slide__imgLink">
+          <img class="slide__img" src="image/banner01.svg" alt="컬리 과일 과게 앵콜 특가 보러가기" />
+        </a>
+        <a href="#" class="slide__imgLink">
+          <img class="slide__img" src="image/banner02.svg" alt="이달의 카드 혜택 최대 10&#37; 카드 쿠폰 받기" />
+        </a>
+        <a href="#" class="slide__imgLink">
+          <img class="slide__img" src="image/banner03.svg" alt="컬리 퍼플 위크 보러가기" />
+        </a>
+        <a href="#" class="slide__imgLink">
+          <img class="slide__img" src="image/banner05.svg" alt="이번주 특가/혜택 보러가기">
+        </a>
+      </div>
+
+      <img class="slide__arrow--left" src="image/Arrow.svg" alt="이전 배너로 이동" tabindex="0" />
+      <img class="slide__arrow--right" src="image/Arrow.svg" alt="다음 배너로 이동" tabindex="0" />
     </section>
+
+    <!-- 상품 설명 컨테이너 -->
+    <section class="sugge">
+      <h3 class="sugge__title a11y" tabindex="0">상품 추천</h3>
+      <p class="sugge__name">이 상품 어때요&quest;</p>
+
+      <div class="sugge__goodsBox">
+
+        <!-- 탱탱쫄면 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;
+              </a>
+            </dt>
+            <!-- 탱쫄 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+              <p class="sugge__goodsCurrentPrice" tabindex="0">4,980 원</p>
+            </dd>
+            <!-- 탱쫄 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product01.svg" alt="탱탱쫄면 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- 선쿠션 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;온더바디&#93; 죠르디 시카 자석 선쿠션
+              </a>
+            </dt>
+            <!-- 쿠션 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+              <p class="sugge__goodsCurrentPrice" tabindex="0">32,500 원</p>
+            </dd>
+            <!-- 쿠션 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product02.svg" alt="죠르디 시카 자석 선쿠션 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- 유기농 현미 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                유기농 밀키퀸 현미 4kg
+              </a>
+            </dt>
+            <!-- 현미 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+              <p class="sugge__goodsCurrentPrice" tabindex="0">25,000 원</p>
+            </dd>
+            <!-- 현미 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product03.svg" alt="유기농 밀키퀸 현미 상세 페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- 베이비 세탁세제 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;프로쉬&#93; 베이비 세탁세제
+              </a>
+            </dt>
+            <!-- 세제 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+              <p class="sugge__goodsdelPrice" tabindex="0"><del>24,000 원</del></p>
+              <div class="sugge__goodsCurDisBox">
+                <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                <p class="sugge__goodsCurrentPrice" tabindex="0">18,900 원</p>
+                <p class="sugge__goodsDiscount a11y" tabindex="0">할인율</p>
+                <p class="sugge__goodsDiscountPercent" tabindex="0">24&#37;</p>
+              </div>
+            </dd>
+            <!-- 세제 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg" src="image/product04.svg" alt="베이비 세탁세제 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+              <p class="sugges__goodsArrow">
+                <a href="#" class="arrow__link">
+                  <span class="sugge__arrow" aria-label="상품 더보기">&rsaquo;</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 중간 광고 컨테이너 -->
+    <section class="advert">
+      <a href="#" class="advert__link">
+        <img class="advert__img" src="image/line-banner1.svg" alt="더욱 풍성해진 10월의 퍼플 위크 보러가기" />
+      </a>
+    </section>
+
+
+    <!-- 상품 추천 컨테이너 -->
+    <section class="sugge">
+      <h3 class="sugge__title a11y" tabindex="0">할인 상품 추천</h3>
+      <p class="sugge__name">놓치면 후회할 가격</p>
+
+      <div class="sugge__goodsBox">
+        <!-- 삼각주먹밥 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;탄단지&#93; 닭가슴살 현미 삼각주먹밥 500g 3종 &#40;택1&#41;
+              </a>
+            </dt>
+            <!-- 삼각주먹밥 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+              <p class="sugge__goodsdelPrice" tabindex="0"><del>6,500 원</del></p>
+              <div class="sugge__goodsCurDisBox">
+                <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                <p class="sugge__goodsCurrentPrice" tabindex="0">4,950 원</p>
+                <p class="sugge__goodsDiscount a11y" tabindex="0">할인율</p>
+                <p class="sugge__goodsDiscountPercent" tabindex="0">23&#37;</p>
+              </div>
+            </dd>
+            <!-- 삼각주먹밥 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg"
+                    src="https://product-image.kurly.com/product/image/ee5543e6-fb2f-4803-80f8-23704176d3ea.jpg"
+                    alt="닭가슴살 현미 삼각주먹밥 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!--클린잇제로 클렌지밤 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;프로쉬&#93; 클린잇제로 클렌징밤 트래블 오리지널 키트 &#8211; 3ML &#42; 16개입
+              </a>
+            </dt>
+            <!-- 클렌지밤 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+              <p class="sugge__goodsdelPrice" tabindex="0"><del>12,000 원</del></p>
+              <div class="sugge__goodsCurDisBox">
+                <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                <p class="sugge__goodsCurrentPrice" tabindex="0">7,900 원</p>
+                <p class="sugge__goodsDiscount a11y" tabindex="0">할인율</p>
+                <p class="sugge__goodsDiscountPercent" tabindex="0">34&#37;</p>
+              </div>
+            </dd>
+            <!-- 클렌지밤 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg"
+                    src="https://product-image.kurly.com/product/image/5d3a6853-1e50-4552-80cb-74e51e4e953b.jpg"
+                    alt="클린잇제로 클렌징밤 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- 아임리얼 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;풀무원&#93; 아임리얼 700mL 7종
+              </a>
+            </dt>
+            <!-- 아임리얼 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+              <p class="sugge__goodsdelPrice" tabindex="0"><del>10,980 원</del></p>
+              <div class="sugge__goodsCurDisBox">
+                <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                <p class="sugge__goodsCurrentPrice" tabindex="0">7,137 원</p>
+                <p class="sugge__goodsDiscount a11y" tabindex="0">할인율</p>
+                <p class="sugge__goodsDiscountPercent" tabindex="0">35&#37;</p>
+              </div>
+            </dd>
+            <!-- 아임리얼 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg"
+                    src="https://product-image.kurly.com/product/image/0a67a9e8-3af2-4e58-a288-4110f81199fb.jpg"
+                    alt="아임리얼 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <!-- 간식용 떡 -->
+        <div class="sugge__goods">
+          <dl class="sugge__goodsList">
+            <dt class="sugge__goodsTitle">
+              <a href="#" class="sugge__goodsTitleLink">
+                &#91;떡편&#93; 간식용 떡 골라담기 3종 &#40;택1&#41;
+              </a>
+            </dt>
+            <!-- 간식용 떡 가격 컨테이너 -->
+            <dd class="sugge__goodsPriceBox">
+              <p class="sugge__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+              <p class="sugge__goodsdelPrice" tabindex="0"><del>7,500 원</del></p>
+              <div class="sugge__goodsCurDisBox">
+                <p class="sugge__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                <p class="sugge__goodsCurrentPrice" tabindex="0">5,250 원</p>
+                <p class="sugge__goodsDiscount a11y" tabindex="0">할인율</p>
+                <p class="sugge__goodsDiscountPercent" tabindex="0">30&#37;</p>
+              </div>
+            </dd>
+            <!-- 간식용 떡 상품 이미지 -->
+            <dd class="sugge__goodsImgBox">
+              <div class="sugge__goodsImges">
+                <a href="#" class="sugge__goodsLink">
+                  <img class="sugge__goodsImg"
+                    src="https://product-image.kurly.com/product/image/d5b17f4f-3dd8-4111-98c0-cae6ad5e7fc0.jpg"
+                    alt="간식용 떡 상세페이지" />
+                </a>
+                <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                <div class="sugge__modal">
+                  <img class="modalImg" src="./image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                  <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                </div>
+              </div>
+              <p class="sugges__goodsArrow">
+                <a href="#" class="arrow__link">
+                  <span class="sugge__arrow" aria-label="상품 더보기">&rsaquo;</span>
+                </a>
+              </p>
+            </dd>
+          </dl>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 에드블록 -->
+    <aside class="adBlock">
+      <h4 class="adBlock__title" tabindex="0">최근 본 상품</h4>
+      <div class="adBlock__ImgBox">
+        <a href="#" class="adBlock__link">
+          <img class="adBlock__linkImg" src="https://img-cf.kurly.com/shop/data/goods/165304054045l0.jpeg"
+            alt="대구막창 상세페이지" />
+        </a>
+        <a href="#" class="adBlock__link">
+          <img class="adBlock__linkImg"
+            src="https://3p-image.kurly.com/product-image/07cbf1ab-4d3f-4874-aeee-f76581003d2b/eb3a34b6-abed-42ec-8930-f6ed903412f4.jpg"
+            alt="벌룬 민소매 상세페이지" />
+        </a>
+        <a href="#" class="adBlock__link">
+          <img class="adBlock__linkImg" src="https://img-cf.kurly.com/shop/data/goods/1653041332575l0.jpg"
+            alt="바리스타 돌체라떼 상세페이지" />
+        </a>
+      </div>
+      <p class="adBlock__topArrow" aria-label="최근 본 상품 더보기 위로" tabindex="0"> 〉</p>
+      <p class="adBlock__bottomArrow" aria-label="최근 본 상품 더보기 아래로" tabindex="0">〉</p>
+    </aside>
   </main>
   <footer>
     <div class="footer__wrapper">
