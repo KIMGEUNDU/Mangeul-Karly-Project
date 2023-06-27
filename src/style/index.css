@@ -736,7 +736,7 @@ legend {
   justify-content: flex-start;
   align-content: flex-start;
   position: sticky;
-  top: 0;
+  top: 40%;
   background: #ffffff;
   width: 80px;
   height: 350px;
@@ -1505,6 +1505,11 @@ legend {
   margin-right: auto;
 }
 
+.headSection {
+  border-bottom: #E1E1E1 solid 1px;
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
 .appHeader {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -1513,14 +1518,46 @@ legend {
   grid-column-gap: 0.75rem;
   padding-top: 12px;
   padding-bottom: 12px;
-  /* display: grid;
-  column-gap: 12px;
-  row-gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto; */
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
+  background: #ffffff;
+}
+
+.popSignup {
+  background: #5F0080;
+  color: #ffffff;
+}
+
+.popSignup__box {
+  position: relative;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popSignup__link {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 8px;
+}
+
+.popSignup__closeBtn {
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url(/image/x-mark.png);
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+}
+
+.textBold {
+  font-weight: bold;
 }
 
 .logo {
@@ -1663,7 +1700,7 @@ legend {
   display: flex;
   justify-content: space-between;
   max-width: 1024px;
-  height: 72px;
+  height: 60px;
   align-items: center;
   font-size: 16px;
   font-weight: 600;
