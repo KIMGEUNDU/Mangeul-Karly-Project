@@ -147,6 +147,10 @@
 
 // 메인 메뉴
 
+.main__menu {
+  @include basicWidth;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -203,6 +207,8 @@
     display: block;
     @include slideList;
     opacity: 1;
+    z-index: 1;
+    background: white;
   }
 }
 .sidemenu__list {

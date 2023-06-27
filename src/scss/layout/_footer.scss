@@ -1,1 +1,145 @@
-// footer.scss
+@use "./../utils" as *;
+
+.service__info {
+    display: flex;
+    margin-bottom: 10px;
+    line-height: 20px;
+    border-bottom: 1px solid lightgrey;
+    justify-content: space-between;
+
+}
+
+.footer__wrapper {
+    @include basicWidth;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 900;
+   
+}
+
+.inquery__center {
+    margin: 20px 0 30px;
+}
+
+.inquery__number {
+    font-size: 25px;
+    font-weight: 900;
+    padding-bottom: 15px;
+}
+
+.inquery__time {
+    margin: 7px 0 0 10px;
+    font-size: 12px;
+}
+
+.inquery__mail {
+    margin: 20px 0;
+}
+
+.inquery__email {
+    font-size: 12px;
+
+}
+
+.p__color {
+    color: $primary_color;
+    font-weight: 600;
+}
+
+.inquery__list {
+    display: flex;
+}
+
+.inquery__title {
+    border: 1px solid rgb(214, 211, 211);
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 2.5;
+}
+
+.text__bold {
+    font-size: 12px;
+    margin-left: 5px;
+
+}
+
+.address__data {
+    font-size: 12px;
+    margin-top: 20px;
+
+}
+
+.sns__logo {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.sns__logo img {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+
+}
+
+.address__info {
+    margin-left: 100px;
+}
+
+.info__link {
+    display: flex;
+    padding: 30px 0 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    column-gap: 10px;
+}
+
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    line-height: 160%;
+
+}
+
+.another__logo {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: nowrap;
+
+}
+
+.another__logo img {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 0 0;
+}
+
+.another__logo .toss__logo {
+    width: 80px;
+
+}
+
+.toss {
+    width: 190px;
+}
+
+.woori {
+    width: 240px;
+}
+
+.last__footer {
+    margin: 30px 0 0 0;
+    font-size: 10px;
+    text-align: center;
+    height: 100px;
+    background: #f7f7f7;
+    line-height: 10px;
+    line-height: 160%;
+    padding: 15px;
+}
