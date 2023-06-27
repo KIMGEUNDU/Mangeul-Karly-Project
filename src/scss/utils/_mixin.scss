@@ -16,15 +16,18 @@
 
 //Margin
 @mixin margin($xy){
-  margin: $xy;
+  @include marginX($xy);
+  @include marginY($xy);
 }
 
 @mixin marginY($tb){
-  margin: $tb;
+  margin-top: $tb;
+  margin-bottom: $tb;
 }
 
 @mixin marginX($lr){
-  margin: $lr;
+  margin-left: $lr;
+  margin-right: $lr;
 }
 
 // Center
@@ -40,7 +43,7 @@
 
 
 // Flex
-@mixin flexbox( $fd:row, $fw: nowrap, $jc:flex-start, $ac:flex-start){
+@mixin flexbox($fd:row, $fw: nowrap, $jc:flex-start, $ac:flex-start){
   display: flex;
   flex-flow : $fd $fw;
   justify-content: $jc;

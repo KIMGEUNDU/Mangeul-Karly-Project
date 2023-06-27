@@ -1,10 +1,12 @@
 @use "../utils" as *;
 
 .signUp {
+  /* 섹션 max-width 설정 */
   @include basicWidth;
   @include paddingY(rem(80px));
   width: rem(640px);
-  
+
+  /* 타이틀 및 텍스트 스타일 설정 */
   &__title {
     font-size: rem(24px);
     text-align: center;
@@ -25,8 +27,8 @@
 }
 
 .info__list {
-  border-top: 2px solid $gray10;
-  border-bottom: 2px solid $gray10;
+  border-top: 2px solid $black;
+  border-bottom: 1px solid $black;
 
   .info__item {
     @include paddingY(rem(20px));
@@ -35,23 +37,172 @@
   }
 }
 
-.info__item > label {
-  width: rem(140px);
+.info__item > label,
+.consent__label {
+  width: rem(132px);
+  font-size: rem(14px);
   font-weight: 600;
   @include paddingX(rem(4px));
-  @include paddingY(rem(10px));
+  @include paddingY(rem(12px));
 }
 
 .info__item > input {
-  width: rem(334px);
+  width: rem(348px);
+  height: rem(44px);
   font-weight: 600;
   @include paddingX(rem(20px));
-  @include paddingY(rem(10px));
+  @include paddingY(rem(1px));
   line-height: 160%;
+  border: $gray4 1px solid;
+  border-radius: 5px;
+  outline: none;
+}
+
+.info__item > input:focus {
+  border: $primary-color 2px solid;
+  @include paddingX(rem(19px));
 }
 
 .info__item > button {
   width: rem(144px);
   font-weight: 600;
+  background: none;
+  color: $primary-color;
+  border: $primary-color 2px solid;
+  border-radius: 5px;
 }
 
+.userAddress__search {
+  width: rem(348px);
+  height: rem(44px);
+  font-weight: 600;
+  @include paddingX(rem(20px));
+  line-height: 160%;
+  background: none;
+  border: $primary-color 2px solid;
+  color: $primary-color;
+  border-radius: 5px;
+}
+
+.userAddress__detail {
+  font-size: rem(12px);
+  margin-top: rem(4px);
+}
+
+/* radio 선택 요소 */
+.info__userGender {
+  @include flexbox($jc: space-between);
+  width: rem(348px);
+  padding-top: rem(10px);
+}
+
+.info__userOption {
+  @include flexbox($jc: space-between);
+  width: rem(348px);
+  padding-top: rem(10px);
+}
+
+.info__radioLabel {
+  @include flexbox;
+  gap: rem(6px);
+  font-weight: 600;
+}
+
+.info__selectRadio {
+  position: absolute;
+  width: rem(24px);
+  height: rem(24px);
+  appearance: none;
+}
+
+.info__radioLabel .iconRadio {
+  background: url(/image/radio-select.svg);
+  z-index: 1;
+  width: rem(24px);
+  height: rem(24px);
+  display: block;
+}
+
+.info__selectRadio:checked + .info__radioLabel .iconRadio {
+    background: url(/image/radio-is-selected.svg)
+}
+
+.select--recommender, .select--eventname {
+  display: none;
+}
+
+// #userRecommenderButton:checked + .select--recommender {
+//   display: block;
+// }
+
+
+/* 이용약관동의 */
+.consent__container {
+  @include paddingY(rem(20px));
+  @include flexbox;
+  gap: rem(8px);
+  border-bottom: 1px solid $gray4;
+}
+
+.consent__list {
+  @include flexbox($fd: column);
+}
+
+.consent__item {
+  @include paddingY(12px);
+  @include flexbox($jc: space-between);
+}
+
+.consent__all__detail {
+  font-size: rem(12px);
+  color: $gray4;
+}
+
+.consent__checkbox {
+  position: absolute;
+  width: rem(24px);
+  height: rem(24px);
+  appearance: none;
+}
+
+.consent__checkLabel {
+  @include flexbox;
+  gap: rem(8px);
+}
+
+.consent__checkLabel .iconCheck {
+  background: url(/image/checkbox-check.svg);
+  z-index: 1;
+  width: rem(24px);
+  height: rem(24px);
+  display: block;
+}
+
+.consent__checkbox:checked + .consent__checkLabel .iconCheck {
+  background: url(/image/checkbox-is-checked.svg);
+}
+
+.consent__all__detail {
+  @include marginY(rem(4px));
+  padding-left: rem(32px);
+}
+
+.consent__link {
+  text-align: right;
+  color: $primary-color;
+  font-size: rem(12px);
+}
+
+/* 가입하기 버튼 */
+.signUp__button {
+  display: block;
+  width: rem(340px);
+  height: rem(54px);
+  margin-top: rem(40px);
+  background: $primary-color;
+  color: $white;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  @include autoMargin;
+}
