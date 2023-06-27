@@ -2,4 +2,5 @@
 
 .MKspecialPage{
   @include basicWidth;
+  @include marginY(80px);
 }
