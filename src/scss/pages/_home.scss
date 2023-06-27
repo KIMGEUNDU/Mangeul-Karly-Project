@@ -255,7 +255,7 @@
   @include padding(7px);
   @include flexbox($fd: column);
   position: sticky;
-  top: 0;
+  top: 40%;
   background: $white;
   width: 80px;
   height: 350px;
