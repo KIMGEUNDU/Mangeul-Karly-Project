@@ -19,7 +19,7 @@
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png" />
-    <link rel="stylesheet" href="/style/index.css" />
+    <link rel="stylesheet" href="/style/main.css" />
   </head>
 
   <body>
@@ -152,1062 +152,1021 @@
       </nav>
     </section>
 
-  <!-- 알뜰쇼핑 페이지 컨테이너 -->
-  <section class="MKBestPage">
-    <h3 class="best__title" aria-label="알뜰쇼핑 페이지">알뜰쇼핑</h3>
+    <!-- 알뜰쇼핑 페이지 컨테이너 -->
+    <section class="MKBestPage">
+      <h3 class="best__title" aria-label="알뜰쇼핑 페이지">알뜰쇼핑</h3>
 
-    <!-- 알뜰쇼핑 박스 -->
-    <div class="best__main">
-      <!-- 필터 컨테이너 -->
-      <section class="best__nav">
-        <h4 class="best__navTitle a11y" tabindex="0">알뜰쇼핑 필터 설정</h4>
+      <!-- 알뜰쇼핑 박스 -->
+      <div class="best__main">
+        <!-- 필터 컨테이너 -->
+        <section class="best__nav">
+          <h4 class="best__navTitle a11y" tabindex="0">알뜰쇼핑 필터 설정</h4>
 
-        <ul class="best__listWrapper">
-          <!-- 필터 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle" aria-label="상품 조건 필터" tabindex="0">필터</h5>
-              <button class="filter__reset" type="reset" aria-label="상품 조건 필터 초기화" tabindex="0">초기화</button>
-            </div>
-          </li>
-
-          <!-- 카테고리 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle">카테고리</h5>
-              <input class="best__listItemMore" type="checkbox" aria-label="상품별 필터 카테고리" />
-              <div class="best__slideList__wrapper" role="group">
-                <ul class="best__slideList">
-                  <li class="best__slideName">
-                    샐러드&#183;간편식 <span class="best__slideNamecount">75</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="샐러드·간편식 제품 개수 75개" />
-                  </li>
-                  <li class="best__slideName">
-                    국&#183;반찬&#183;메인요리 <span class="best__slideNamecount">56</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="국·반찬·메인요리 제품 개수 56개" />
-                  </li>
-                  <li class="best__slideName">
-                    정육&#183;계란 <span class="best__slideNamecount">39</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="정육·계란 제품 개수 39개" />
-                  </li>
-                  <li class="best__slideName">
-                    과일&#183;견과&#183;쌀 <span class="best__slideNamecount">30</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="과일·견과·쌀 제품 개수 30개" />
-                  </li>
-                  <li class="best__slideName">
-                    간식&#183;과자&#183;떡 <span class="best__slideNamecount">19</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="간식·과자·떡 제품 개수 19개" />
-                  </li>
-                  <li class="best__slideName">
-                    베이커리&#183;치즈&#183;델리 <span class="best__slideNamecount">18</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="베이커리·치즈·델리 제품 개수 18개" />
-                  </li>
-                  <li class="best__slideName">
-                    수산&#183;해산&#183;건어물 <span class="best__slideNamecount">15</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="수산·해산·건어물 제품 개수 15개" />
-                  </li>
-                  <li class="best__slideName">
-                    생수&#183;음료&#183;우유&#183;커피 <span class="best__slideNamecount">13</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="생수·음료·우유·커피 제품 개수 13개" />
-                  </li>
-                  <li class="best__slideName">
-                    헤어&#183;바디&#183;구강 <span class="best__slideNamecount" aria-label="헤어·바디·구강 제품 개수 11개">11</span>
-                    <input class="best__slideNameCheck" type="checkbox" />
-                  </li>
-                  <li class="best__slideName">
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="면·양념·오일 제품 개수 11개" />
-                    면양념&#183;오일 <span class="best__slideNamecount">11</span>
-                  </li>
-                  <li class="best__slideMore">
-                    <a href="#" aria-label="카테고리 더보기"> 카테고리 더보기 &#8250; </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <!-- 브랜드 -->
-          <li class="best__listItem">
-            <div class="best__brandtitle">
+          <ul class="best__listWrapper">
+            <!-- 필터 -->
+            <li class="best__listItem">
               <div class="best__titleBox">
-                <h5 class="best__listItemTitle">브랜드</h5>
-                <input class="best__listItemMore brand" type="checkbox" aria-label="브랜드별 필터" />
+                <h5 class="best__listItemTitle" aria-label="상품 조건 필터" tabindex="0">필터</h5>
+                <button class="filter__reset" type="reset" aria-label="상품 조건 필터 초기화" tabindex="0">초기화</button>
+              </div>
+            </li>
+
+            <!-- 카테고리 -->
+            <li class="best__listItem">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">카테고리</h5>
+                <input class="best__listItemMore" type="checkbox" aria-label="상품별 필터 카테고리" />
                 <div class="best__slideList__wrapper" role="group">
                   <ul class="best__slideList">
                     <li class="best__slideName">
-                      감자밭 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="감자밭 제품 개수 1개" />
+                      샐러드&#183;간편식 <span class="best__slideNamecount">75</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="샐러드·간편식 제품 개수 75개" />
                     </li>
                     <li class="best__slideName">
-                      강남면옥 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="강남면옥 제품 개수 1개" />
+                      국&#183;반찬&#183;메인요리 <span class="best__slideNamecount">56</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="국·반찬·메인요리 제품 개수 56개" />
                     </li>
                     <li class="best__slideName">
-                      경남제약 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="경남제약 제품 개수 1개" />
+                      정육&#183;계란 <span class="best__slideNamecount">39</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="정육·계란 제품 개수 39개" />
                     </li>
                     <li class="best__slideName">
-                      경복궁 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="경복궁 제품 개수 1개" />
+                      과일&#183;견과&#183;쌀 <span class="best__slideNamecount">30</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="과일·견과·쌀 제품 개수 30개" />
                     </li>
                     <li class="best__slideName">
-                      고래사 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="고래사 제품 개수 1개" />
+                      간식&#183;과자&#183;떡 <span class="best__slideNamecount">19</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="간식·과자·떡 제품 개수 19개" />
                     </li>
                     <li class="best__slideName">
-                      고메공방 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="고메공방 제품 개수 1개" />
+                      베이커리&#183;치즈&#183;델리 <span class="best__slideNamecount">18</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="베이커리·치즈·델리 제품 개수 18개" />
                     </li>
                     <li class="best__slideName">
-                      고온어다이어트 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="고온어다이어트 제품 개수 1개" />
+                      수산&#183;해산&#183;건어물 <span class="best__slideNamecount">15</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="수산·해산·건어물 제품 개수 15개" />
                     </li>
                     <li class="best__slideName">
-                      교토마블 <span class="best__slideNamecount">1</span>
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="교토마블 제품 개수 1개" />
+                      생수&#183;음료&#183;우유&#183;커피 <span class="best__slideNamecount">13</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="생수·음료·우유·커피 제품 개수 13개" />
                     </li>
                     <li class="best__slideName">
-                      그래놀라 하우스 <span class="best__slideNamecount" aria-label="그래놀라 하우스 제품 개수 1개">1</span>
+                      헤어&#183;바디&#183;구강 <span class="best__slideNamecount" aria-label="헤어·바디·구강 제품 개수 11개">11</span>
                       <input class="best__slideNameCheck" type="checkbox" />
                     </li>
                     <li class="best__slideName">
-                      <input class="best__slideNameCheck" type="checkbox" aria-label="그리츠 시그니처 램 제품 개수 1개" />
-                      그리츠 시그니처 램 <span class="best__slideNamecount">1</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="면·양념·오일 제품 개수 11개" />
+                      면양념&#183;오일 <span class="best__slideNamecount">11</span>
                     </li>
                     <li class="best__slideMore">
-                      <a href="#" aria-label="브랜드 더보기"> 브랜드 더보기 &#8250; </a>
+                      <a href="#" aria-label="카테고리 더보기"> 카테고리 더보기 &#8250; </a>
                     </li>
                   </ul>
                 </div>
               </div>
-            </div>
-          </li>
-          <!-- 가격 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle">가격</h5>
-              <input class="best__listItemMore price" type="checkbox" aria-label="가격별 필터" />
-              <div class="best__slideList__wrapper" role="group">
-                <ul class="best__slideList priceList">
-                  <li class="best__slideName">
-                    7&#44;640원 미만 <span class="best__slideNamecount">72</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="7&#44;640원 미만 제품 개수 72개" />
-                  </li>
-                  <li class="best__slideName">
-                    7&#44;640원&#126;11&#44;000원 <span class="best__slideNamecount">72</span>
-                    <input class="best__slideNameCheck" type="checkbox"
-                      aria-label="7&#44;640원&#126;11&#44;000원 제품 개수 72개" />
-                  </li>
-                  <li class="best__slideName">
-                    11&#44;000원&#126;15&#44;900원 <span class="best__slideNamecount">73</span>
-                    <input class="best__slideNameCheck" type="checkbox"
-                      aria-label="11&#44;000원&#126;15&#44;900원 제품 개수 73개" />
-                  </li>
-                  <li class="best__slideName">
-                    15&#44;900원 이상 <span class="best__slideNamecount">73</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="15&#44;900원 이상 제품 개수 73개" />
-                  </li>
-                </ul>
+            </li>
+            <!-- 브랜드 -->
+            <li class="best__listItem">
+              <div class="best__brandtitle">
+                <div class="best__titleBox">
+                  <h5 class="best__listItemTitle">브랜드</h5>
+                  <input class="best__listItemMore brand" type="checkbox" aria-label="브랜드별 필터" />
+                  <div class="best__slideList__wrapper" role="group">
+                    <ul class="best__slideList">
+                      <li class="best__slideName">
+                        감자밭 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="감자밭 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        강남면옥 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="강남면옥 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        경남제약 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="경남제약 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        경복궁 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="경복궁 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        고래사 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="고래사 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        고메공방 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="고메공방 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        고온어다이어트 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="고온어다이어트 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        교토마블 <span class="best__slideNamecount">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="교토마블 제품 개수 1개" />
+                      </li>
+                      <li class="best__slideName">
+                        그래놀라 하우스 <span class="best__slideNamecount" aria-label="그래놀라 하우스 제품 개수 1개">1</span>
+                        <input class="best__slideNameCheck" type="checkbox" />
+                      </li>
+                      <li class="best__slideName">
+                        <input class="best__slideNameCheck" type="checkbox" aria-label="그리츠 시그니처 램 제품 개수 1개" />
+                        그리츠 시그니처 램 <span class="best__slideNamecount">1</span>
+                      </li>
+                      <li class="best__slideMore">
+                        <a href="#" aria-label="브랜드 더보기"> 브랜드 더보기 &#8250; </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </li>
-          <!-- 혜택 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle">혜택</h5>
-              <input class="best__listItemMore benefit" type="checkbox" aria-label="혜택별 필터" />
-              <div class="best__slideList__wrapper" role="group">
-                <ul class="best__slideList benefitList">
-                  <li class="best__slideName">
-                    할인상품 <span class="best__slideNamecount">106</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="할인상품 제품 개수 106개" />
-                  </li>
-                  <li class="best__slideName">
-                    한정수량 <span class="best__slideNamecount">4</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="한정수량 제품 개수 4개" />
-                  </li>
-                </ul>
+            </li>
+            <!-- 가격 -->
+            <li class="best__listItem">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">가격</h5>
+                <input class="best__listItemMore price" type="checkbox" aria-label="가격별 필터" />
+                <div class="best__slideList__wrapper" role="group">
+                  <ul class="best__slideList priceList">
+                    <li class="best__slideName">
+                      7&#44;640원 미만 <span class="best__slideNamecount">72</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="7&#44;640원 미만 제품 개수 72개" />
+                    </li>
+                    <li class="best__slideName">
+                      7&#44;640원&#126;11&#44;000원 <span class="best__slideNamecount">72</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="7&#44;640원&#126;11&#44;000원 제품 개수 72개" />
+                    </li>
+                    <li class="best__slideName">
+                      11&#44;000원&#126;15&#44;900원 <span class="best__slideNamecount">73</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="11&#44;000원&#126;15&#44;900원 제품 개수 73개" />
+                    </li>
+                    <li class="best__slideName">
+                      15&#44;900원 이상 <span class="best__slideNamecount">73</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="15&#44;900원 이상 제품 개수 73개" />
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <!-- 유형 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle">유형</h5>
-              <input class="best__listItemMore benefit" type="checkbox" aria-label="유형별 필터" />
-              <div class="best__slideList__wrapper" role="group">
-                <ul class="best__slideList benefitList">
-                  <li class="best__slideName">
-                    Karly Only <span class="best__slideNamecount">121</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="Karly Only 제품 개수 121개" />
-                  </li>
-                  <li class="best__slideName">
-                    희소가치 프로젝트 <span class="best__slideNamecount">2</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="희소가치 프로젝트 제품 개수 2개" />
-                  </li>
-                </ul>
+            </li>
+            <!-- 혜택 -->
+            <li class="best__listItem">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">혜택</h5>
+                <input class="best__listItemMore benefit" type="checkbox" aria-label="혜택별 필터" />
+                <div class="best__slideList__wrapper" role="group">
+                  <ul class="best__slideList benefitList">
+                    <li class="best__slideName">
+                      할인상품 <span class="best__slideNamecount">106</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="할인상품 제품 개수 106개" />
+                    </li>
+                    <li class="best__slideName">
+                      한정수량 <span class="best__slideNamecount">4</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="한정수량 제품 개수 4개" />
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <!-- 특정상품 제외 -->
-          <li class="best__listItem">
-            <div class="best__titleBox">
-              <h5 class="best__listItemTitle">특정상품 제외</h5>
-              <input class="best__listItemMore specific" type="checkbox" aria-label="특정상품 제외 필터" />
-              <div class="best__slideList__wrapper" role="group">
-                <ul class="best__slideList specificList">
-                  <li class="best__slideName">
-                    반려동물 상품 <span class="best__slideNamecount">2</span>
-                    <input class="best__slideNameCheck" type="checkbox" aria-label="반려동물 상품 제품 개수 2개" />
-                  </li>
-                </ul>
+            </li>
+            <!-- 유형 -->
+            <li class="best__listItem">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">유형</h5>
+                <input class="best__listItemMore benefit" type="checkbox" aria-label="유형별 필터" />
+                <div class="best__slideList__wrapper" role="group">
+                  <ul class="best__slideList benefitList">
+                    <li class="best__slideName">
+                      Karly Only <span class="best__slideNamecount">121</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="Karly Only 제품 개수 121개" />
+                    </li>
+                    <li class="best__slideName">
+                      희소가치 프로젝트 <span class="best__slideNamecount">2</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="희소가치 프로젝트 제품 개수 2개" />
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </section>
+            </li>
+            <!-- 특정상품 제외 -->
+            <li class="best__listItem">
+              <div class="best__titleBox">
+                <h5 class="best__listItemTitle">특정상품 제외</h5>
+                <input class="best__listItemMore specific" type="checkbox" aria-label="특정상품 제외 필터" />
+                <div class="best__slideList__wrapper" role="group">
+                  <ul class="best__slideList specificList">
+                    <li class="best__slideName">
+                      반려동물 상품 <span class="best__slideNamecount">2</span>
+                      <input class="best__slideNameCheck" type="checkbox" aria-label="반려동물 상품 제품 개수 2개" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
 
-      <!-- 알뜰쇼핑 상품 컨테이너 -->
-      <div class="best__productContainer">
-        <!-- 상품 정보 정리 -->
-        <div class="best__arran">
-          <div class="best__arranCount" aria-label="알뜰쇼핑 상품 총 284건" tabindex="0">총 284건</div>
-          <!-- 상품 정보 필터 -->
-          <div class="best__arranFilter">
-            <div class="best__slideList__wrapper" role="group">
-              <ul class="filter__list">
-                <li class="filter__listItem">
-                  <a href="#">추천순</a>
-                  <sup class="qui"
-                    data-toltip="소비자 인기도&#40;판매량&#44; 판매금액&#44; 조회수 등&#41;&#44; 상품 출시일&#44; 수요 적합성&#44; 상품 운영상 필요 등을 종합적으로 고려한 순서입니다."
-                    tabindex="0"
-                    aria-label="추천순은 소비자 인기도&#40;판매량&#44; 판매금액&#44; 조회수 등&#41;&#44; 상품 출시일&#44; 수요 적합성&#44; 상품 운영상 필요 등을 종합적으로 고려한 순서입니다.">?</sup>
-                </li>
-                <li class="filter__listItem"><a href="#">신상품순</a></li>
-                <li class="filter__listItem"><a href="#">판매량순</a></li>
-                <li class="filter__listItem"><a href="#">혜택순</a></li>
-                <li class="filter__listItem"><a href="#">낮은 가격순</a></li>
-                <li class="filter__listItem"><a href="#">높은 가격순</a></li>
-              </ul>
+        <!-- 알뜰쇼핑 상품 컨테이너 -->
+        <div class="best__productContainer">
+          <!-- 상품 정보 정리 -->
+          <div class="best__arran">
+            <div class="best__arranCount" aria-label="알뜰쇼핑 상품 총 284건" tabindex="0">총 284건</div>
+            <!-- 상품 정보 필터 -->
+            <div class="best__arranFilter">
+              <div class="best__slideList__wrapper" role="group">
+                <ul class="filter__list">
+                  <li class="filter__listItem">
+                    <a href="#">추천순</a>
+                    <sup
+                      class="qui"
+                      data-toltip="소비자 인기도&#40;판매량&#44; 판매금액&#44; 조회수 등&#41;&#44; 상품 출시일&#44; 수요 적합성&#44; 상품 운영상 필요 등을 종합적으로 고려한 순서입니다."
+                      tabindex="0"
+                      aria-label="추천순은 소비자 인기도&#40;판매량&#44; 판매금액&#44; 조회수 등&#41;&#44; 상품 출시일&#44; 수요 적합성&#44; 상품 운영상 필요 등을 종합적으로 고려한 순서입니다."
+                      >?</sup
+                    >
+                  </li>
+                  <li class="filter__listItem"><a href="#">신상품순</a></li>
+                  <li class="filter__listItem"><a href="#">판매량순</a></li>
+                  <li class="filter__listItem"><a href="#">혜택순</a></li>
+                  <li class="filter__listItem"><a href="#">낮은 가격순</a></li>
+                  <li class="filter__listItem"><a href="#">높은 가격순</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- 알뜰쇼핑 상품 리스트 컨테이너 -->
-        <div class="best__productBox">
-          <div class="best__productBOXline">
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>냉동 슈가애플 1개</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!-- 아이스크림 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>7,490 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">4,868 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 아이스크림 설명 -->
-                <dd class="best__goodsSummary" tabindex="0">향긋하고 달콤한 열대과일</dd>
-                <!-- 아이스크림 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/5d04248c-1ba5-45f6-8781-3ea699bc0c97.jpg"
-                        alt="냉동 슈가애플 상세페이지" />
+          <!-- 알뜰쇼핑 상품 리스트 컨테이너 -->
+          <div class="best__productBox">
+            <div class="best__productBOXline">
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>냉동 슈가애플 1개</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!-- 아이스크림 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>7,490 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">4,868 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 아이스크림 설명 -->
+                  <dd class="best__goodsSummary" tabindex="0">향긋하고 달콤한 열대과일</dd>
+                  <!-- 아이스크림 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/5d04248c-1ba5-45f6-8781-3ea699bc0c97.jpg" alt="냉동 슈가애플 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>자숙랍스터 600g 내외</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!-- 소불고기 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>41,000 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">26,650 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 삼각주먹밥 설명 -->
-                <dd class="best__goodsSummary">손쉽게 마련하는 홈 파티 메뉴</dd>
-                <!-- 소불고기 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/c5def333-a791-46dd-b9c2-236fd389c204.jpg"
-                        alt="자숙 랍스터 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>자숙랍스터 600g 내외</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!-- 소불고기 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>41,000 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">26,650 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 삼각주먹밥 설명 -->
+                  <dd class="best__goodsSummary">손쉽게 마련하는 홈 파티 메뉴</dd>
+                  <!-- 소불고기 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/c5def333-a791-46dd-b9c2-236fd389c204.jpg" alt="자숙 랍스터 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;허쉬&#93; 비마이 러브 기프트 세트 475g</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!--이연복 짬뽕 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>14,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">9,685 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 이연복 짬뽕 설명 -->
-                <dd class="best__goodsSummary">달콤한 가득 꾸려 담은 선물</dd>
-                <!-- 이연복 짬뽕 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/f42d6d68-cfd2-43cc-a591-01519b97a91c.jpg"
-                        alt="비 마이 러브 기프트 세트 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;허쉬&#93; 비마이 러브 기프트 세트 475g</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!--이연복 짬뽕 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>14,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">9,685 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
+                  </dd>
+                  <!-- 이연복 짬뽕 설명 -->
+                  <dd class="best__goodsSummary">달콤한 가득 꾸려 담은 선물</dd>
+                  <!-- 이연복 짬뽕 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/f42d6d68-cfd2-43cc-a591-01519b97a91c.jpg" alt="비 마이 러브 기프트 세트 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
 
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;심원&#93; 간장숙성 연잎 굴비 200g (냉동)</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!-- 모나카 아이스크림 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>13,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">9,035 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 모나카 아이스크림 설명 -->
-                <dd class="best__goodsSummary">연잎으로 향긋한 마무리</dd>
-                <!-- 모나카 아이스크림상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/8f319ab7-f921-4c8b-8d03-61b0320f8f83.jpg"
-                        alt="간장숙성 연잎 굴비 상세페이지" />
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;심원&#93; 간장숙성 연잎 굴비 200g (냉동)</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!-- 모나카 아이스크림 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>13,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">9,035 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 모나카 아이스크림 설명 -->
+                  <dd class="best__goodsSummary">연잎으로 향긋한 마무리</dd>
+                  <!-- 모나카 아이스크림상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/8f319ab7-f921-4c8b-8d03-61b0320f8f83.jpg" alt="간장숙성 연잎 굴비 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;속초해품&#93; 오징어젓 160g (냉장)</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!--고구마칩 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>7,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">6,320 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
-                  </div>
-                </dd>
-                <!-- 고구마칩 설명 -->
-                <dd class="best__goodsSummary">깔끔하게 매운 밥반찬</dd>
-                <!-- 고구마칩 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1657849772217l0.jpg"
-                        alt="오징어젓 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;속초해품&#93; 오징어젓 160g (냉장)</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!--고구마칩 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>7,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">6,320 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 고구마칩 설명 -->
+                  <dd class="best__goodsSummary">깔끔하게 매운 밥반찬</dd>
+                  <!-- 고구마칩 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1657849772217l0.jpg" alt="오징어젓 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;건어물상회&#93; 제철에 잡은 볶음조림멸치 250g</div>
-                  </a>
-                </dt>
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-                <!-- 과일잼 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>8,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">8,010 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">10&#37;</p>
-                  </div>
-                </dd>
-                <!-- 과일잼 설명 -->
-                <dd class="best__goodsSummary">꼭꼭 씹을수록 고소한 맛</dd>
-                <!-- 과일잼 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/d296702e-bd93-4312-b022-3399d0e64bf2.jpg"
-                        alt="볶음조림 멸치 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;건어물상회&#93; 제철에 잡은 볶음조림멸치 250g</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+                  <!-- 과일잼 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>8,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">8,010 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">10&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 과일잼 설명 -->
+                  <dd class="best__goodsSummary">꼭꼭 씹을수록 고소한 맛</dd>
+                  <!-- 과일잼 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/d296702e-bd93-4312-b022-3399d0e64bf2.jpg" alt="볶음조림 멸치 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
-            </div>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
+              </div>
 
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;브레드가든&#93; 동물 친구들 초콜릿 만들기 세트</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 골드키위 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>6,600 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">5,940 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">10&#37;</p>
-                  </div>
-                </dd>
-                <!-- 골드키위 설명 -->
-                <dd class="best__goodsSummary">직접 그려 넣는 재미난 표정</dd>
-                <!-- 골드키위 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1615271133360l0.jpg"
-                        alt="동물 친구들 초콜릿 만들기 세트 상세페이지" />
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;브레드가든&#93; 동물 친구들 초콜릿 만들기 세트</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 골드키위 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>6,600 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">5,940 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">10&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 골드키위 설명 -->
+                  <dd class="best__goodsSummary">직접 그려 넣는 재미난 표정</dd>
+                  <!-- 골드키위 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1615271133360l0.jpg" alt="동물 친구들 초콜릿 만들기 세트 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;속초해품&#93; 국내산 양념새우젓 160g</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 블루베리 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>5,500 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">3,575 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 블루베리 설명 -->
-                <dd class="best__goodsSummary">매콤 짭짤한 감칠맛을 톡톡</dd>
-                <!-- 블루베리 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/4862b336-0587-4345-8fc6-d653deb69588.jpg"
-                        alt="양념새우젓 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;속초해품&#93; 국내산 양념새우젓 160g</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 블루베리 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>5,500 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">3,575 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 블루베리 설명 -->
+                  <dd class="best__goodsSummary">매콤 짭짤한 감칠맛을 톡톡</dd>
+                  <!-- 블루베리 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/4862b336-0587-4345-8fc6-d653deb69588.jpg" alt="양념새우젓 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;셰프의 장&#93; 최인선셰프 순살게장 (간장) 500g</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 목초육 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>23,800 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">23,840 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
-                  </div>
-                </dd>
-                <!-- 목초육 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/828fa90f-b739-484c-b735-9c1fe1306cfc.jpg"
-                        alt="순살게장 간장맛 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;셰프의 장&#93; 최인선셰프 순살게장 (간장) 500g</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 목초육 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>23,800 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">23,840 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 목초육 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/828fa90f-b739-484c-b735-9c1fe1306cfc.jpg" alt="순살게장 간장맛 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                </dd>
-              </dl>
-            </div>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                  </dd>
+                </dl>
+              </div>
 
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;비오젠트라&#93; 야채 스톡</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 유정란 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>3,800 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">2,660 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">30&#37;</p>
-                  </div>
-                </dd>
-                <!-- 유정란 설명 -->
-                <dd class="best__goodsSummary">한 알로 완성하는 향긋한 풍미</dd>
-                <!-- 유정란 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1569909265946l0.jpg"
-                        alt="야채 스톡 상세페이지" />
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;비오젠트라&#93; 야채 스톡</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 유정란 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>3,800 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">2,660 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">30&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 유정란 설명 -->
+                  <dd class="best__goodsSummary">한 알로 완성하는 향긋한 풍미</dd>
+                  <!-- 유정란 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1569909265946l0.jpg" alt="야채 스톡 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;리틀넥&#93; 비프 머쉬룸 리조또</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 닭갈비 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>14,500 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">11,600 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
-                  </div>
-                </dd>
-                <!-- 닭갈비 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/94674fcf-deed-4331-babb-5b42cc84f388.jpg"
-                        alt="비프 머쉬룸 리조또 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;리틀넥&#93; 비프 머쉬룸 리조또</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 닭갈비 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>14,500 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">11,600 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 닭갈비 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/94674fcf-deed-4331-babb-5b42cc84f388.jpg" alt="비프 머쉬룸 리조또 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;상하목장&#93; 우유 레이어 케이크</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 떡볶이 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>26,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">18,830 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">30&#37;</p>
-                  </div>
-                </dd>
-                <!-- 떡볶이 설명 -->
-                <dd class="best__goodsSummary">우유 레이어 케이크</dd>
-                <!-- 떡볶이 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/7fb0e538-c137-49c3-8933-8a2aa321da79.jpg"
-                        alt="우유 레이어 케이크 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;상하목장&#93; 우유 레이어 케이크</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 떡볶이 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>26,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">18,830 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">30&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 떡볶이 설명 -->
+                  <dd class="best__goodsSummary">우유 레이어 케이크</dd>
+                  <!-- 떡볶이 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/7fb0e538-c137-49c3-8933-8a2aa321da79.jpg" alt="우유 레이어 케이크 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
-            </div>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
+              </div>
 
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;속초어명&#93; 고등어구이</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 삼선짬뽕 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>4,980 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">4,233 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">15&#37;</p>
-                  </div>
-                </dd>
-                <!-- 삼각주먹밥 설명 -->
-                <dd class="best__goodsSummary">2분 완성 생선 구이</dd>
-                <!-- 삼선짬뽕 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/a7b388be-17db-4681-b1d0-b69c14aa3ef6.jpg"
-                        alt="고등어구이 상세페이지" />
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;속초어명&#93; 고등어구이</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 삼선짬뽕 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>4,980 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">4,233 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">15&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 삼각주먹밥 설명 -->
+                  <dd class="best__goodsSummary">2분 완성 생선 구이</dd>
+                  <!-- 삼선짬뽕 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/a7b388be-17db-4681-b1d0-b69c14aa3ef6.jpg" alt="고등어구이 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;마즈&#93; 몰티져스 다크 버켓</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 파스타 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>16,800 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">10,920 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 파스타 설명 -->
-                <dd class="best__goodsSummary">마음껏 즐기는 다크 몰티져스</dd>
-                <!-- 파스타 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1638765573235l0.jpg"
-                        alt="몰티져스 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;마즈&#93; 몰티져스 다크 버켓</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 파스타 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>16,800 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">10,920 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 파스타 설명 -->
+                  <dd class="best__goodsSummary">마음껏 즐기는 다크 몰티져스</dd>
+                  <!-- 파스타 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1638765573235l0.jpg" alt="몰티져스 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;목우촌&#93; 뽀로로와 친구들 비엔나소시지 270g</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 마제소바 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>8,980 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">8,531 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">5&#37;</p>
-                  </div>
-                </dd>
-                <!-- 마제소바 설명 -->
-                <dd class="best__goodsSummary">귀여운 얼굴이 그려진 소시지</dd>
-                <!-- 마제소바 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1619773320303l0.jpg"
-                        alt="뽀로로와 친구들 비엔나 소시지 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;목우촌&#93; 뽀로로와 친구들 비엔나소시지 270g</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 마제소바 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>8,980 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">8,531 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">5&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
-            </div>
+                  </dd>
+                  <!-- 마제소바 설명 -->
+                  <dd class="best__goodsSummary">귀여운 얼굴이 그려진 소시지</dd>
+                  <!-- 마제소바 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1619773320303l0.jpg" alt="뽀로로와 친구들 비엔나 소시지 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
 
-            <div class="best__goods">
-              <!-- 첫번째상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;풀무원&#93; 토이쿠키 만들기 버라이어티팩</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 홈런볼 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>12,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">10,320 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
-                  </div>
-                </dd>
-                <!-- 홈런볼 설명 -->
-                <dd class="best__goodsSummary">손쉽게 만드는 나만의 쿠키</dd>
-                <!-- 홈런볼 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/8328ffde-82ed-4337-bbfa-839b330424d2.jpg"
-                        alt="토이쿠키 만들기 상세페이지" />
+              <div class="best__goods">
+                <!-- 첫번째상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;풀무원&#93; 토이쿠키 만들기 버라이어티팩</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 홈런볼 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>12,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">10,320 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">20&#37;</p>
                     </div>
-                  </div>
-                </dd>
-              </dl>
+                  </dd>
+                  <!-- 홈런볼 설명 -->
+                  <dd class="best__goodsSummary">손쉽게 만드는 나만의 쿠키</dd>
+                  <!-- 홈런볼 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/8328ffde-82ed-4337-bbfa-839b330424d2.jpg" alt="토이쿠키 만들기 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
 
-              <!-- 두번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;프레시지&#93; 밀푀유나베</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 오!그래놀라 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>16,900 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">14,872 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">12&#37;</p>
-                  </div>
-                </dd>
-                <!-- 오!그래놀라 설명 -->
-                <dd class="best__goodsSummary">꽃처럼 피어나는 전골 요리</dd>
-                <!-- 오!그래놀라 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/5aed1b86-a2a7-42cd-b404-8ed1e097caef.jpg"
-                        alt="밀푀유나베 상세페이지" />
+                <!-- 두번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;프레시지&#93; 밀푀유나베</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 오!그래놀라 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>16,900 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">14,872 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">12&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 오!그래놀라 설명 -->
+                  <dd class="best__goodsSummary">꽃처럼 피어나는 전골 요리</dd>
+                  <!-- 오!그래놀라 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/5aed1b86-a2a7-42cd-b404-8ed1e097caef.jpg" alt="밀푀유나베 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="only">Karly only</span>
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="only">Karly only</span>
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
 
-              <!-- 세번째 상품 -->
-              <dl class="best__goodsList">
-                <dt class="best__goodsTitle">
-                  <a href="#" class="best__goodsTitleLink">
-                    <div>&#91;청담동 정식 카페&#93; 트러플 치즈케이크</div>
-                  </a>
-                </dt>
-
-                <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
-
-                <!-- 생새우살 가격 컨테이너 -->
-                <dd class="best__goodsPriceBox">
-                  <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
-                  <p class="best__goodsdelPrice" tabindex="0"><del>46,500 원</del></p>
-                  <div class="best__goodsCurDisBox">
-                    <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
-                    <p class="best__goodsCurrentPrice" tabindex="0">30,225 원</p>
-                    <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
-                    <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
-                  </div>
-                </dd>
-                <!-- 생새우살 설명 -->
-                <dd class="best__goodsSummary">트러플의 진한 향긋함을 품은</dd>
-                <!-- 생새우살 상품 이미지 -->
-                <dd class="best__goodsImgBox">
-                  <div class="best__goodsImges">
-                    <a href="#" class="best__goodsLink">
-                      <img class="best__goodsImg"
-                        src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/99f48b49-7974-4aaa-b58e-ad43bed0324c.jpg"
-                        alt="트러플 치즈케이크 상세페이지" />
+                <!-- 세번째 상품 -->
+                <dl class="best__goodsList">
+                  <dt class="best__goodsTitle">
+                    <a href="#" class="best__goodsTitleLink">
+                      <div>&#91;청담동 정식 카페&#93; 트러플 치즈케이크</div>
                     </a>
-                    <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
-                    <div class="best__modal">
-                      <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
-                      <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                  </dt>
+
+                  <dd class="best__goodsdelivery" tabindex="0">샛별배송</dd>
+
+                  <!-- 생새우살 가격 컨테이너 -->
+                  <dd class="best__goodsPriceBox">
+                    <p class="best__goodsLastPrice a11y" tabindex="0">원래 가격</p>
+                    <p class="best__goodsdelPrice" tabindex="0"><del>46,500 원</del></p>
+                    <div class="best__goodsCurDisBox">
+                      <p class="best__goodsCurrentPrice a11y" tabindex="0">현재 가격</p>
+                      <p class="best__goodsCurrentPrice" tabindex="0">30,225 원</p>
+                      <p class="best__goodsDiscount a11y" tabindex="0">할인율</p>
+                      <p class="best__goodsDiscountPercent" tabindex="0">35&#37;</p>
                     </div>
-                  </div>
-                </dd>
+                  </dd>
+                  <!-- 생새우살 설명 -->
+                  <dd class="best__goodsSummary">트러플의 진한 향긋함을 품은</dd>
+                  <!-- 생새우살 상품 이미지 -->
+                  <dd class="best__goodsImgBox">
+                    <div class="best__goodsImges">
+                      <a href="#" class="best__goodsLink">
+                        <img class="best__goodsImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/99f48b49-7974-4aaa-b58e-ad43bed0324c.jpg" alt="트러플 치즈케이크 상세페이지" />
+                      </a>
+                      <input class="best__goodsBasketImg" type="checkbox" aria-label="장바구니 담기" />
+                      <div class="best__modal">
+                        <img class="modalImg" src="/image/logo.svg" alt="마켓칼리 로고" aria-hidden="true" />
+                        <p class="modalp">선택한 상품이 장바구니에 담겼습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
 
-                <dd class="best__goodsSticker" tabindex="0">
-                  <span class="limit">한정수량</span>
-                </dd>
-              </dl>
-            </div>
+                  <dd class="best__goodsSticker" tabindex="0">
+                    <span class="limit">한정수량</span>
+                  </dd>
+                </dl>
+              </div>
 
-            <!-- 알뜰쇼핑 상품 페이지 넘버 -->
-            <div class="best__pageNum">
-              <table class="best__pageNumContainer">
-                <tr>
-                  <td><a class="best__pageNumLink" href="#" aria-label="첫번째 페이지로 이동">≪</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="이전 페이지로 이동">＜</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="첫번째 페이지">1</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="두번째 페이지">2</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="세번째 페이지">3</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="네번째 페이지">4</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="다음 페이지로 이동">＞</a></td>
-                  <td><a class="best__pageNumLink" href="#" aria-label="마지막 페이지로 이동">≫</a></td>
-                </tr>
-              </table>
+              <!-- 알뜰쇼핑 상품 페이지 넘버 -->
+              <div class="best__pageNum">
+                <table class="best__pageNumContainer">
+                  <tr>
+                    <td><a class="best__pageNumLink" href="#" aria-label="첫번째 페이지로 이동">≪</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="이전 페이지로 이동">＜</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="첫번째 페이지">1</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="두번째 페이지">2</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="세번째 페이지">3</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="네번째 페이지">4</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="다음 페이지로 이동">＞</a></td>
+                    <td><a class="best__pageNumLink" href="#" aria-label="마지막 페이지로 이동">≫</a></td>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- 에드블록 -->
+    <div class="stickyBest--absolute">
+      <aside class="adBlock">
+        <h4 class="adBlock__title" tabindex="0">최근 본 상품</h4>
+        <div class="adBlock__ImgBox">
+          <a href="#" class="adBlock__link">
+            <img class="adBlock__linkImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653457964381l0.jpg" alt="노티드 초콜릿 봉봉 상세페이지" />
+          </a>
+          <a href="#" class="adBlock__link">
+            <img class="adBlock__linkImg" src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/2e7217cb-698d-4f4a-8f54-1dc66de78cb7.jpg" alt="뱡뱡멘 상세페이지" />
+          </a>
+          <a href="#" class="adBlock__link">
+            <img class="adBlock__linkImg" src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1641804041596l0.jpg" alt="비오비타 키즈 상세페이지" />
+          </a>
+        </div>
+        <p class="adBlock__topArrow" tabindex="0" aria-label="최근 본 상품 더보기 위로">〉</p>
+        <p class="adBlock__bottomArrow" tabindex="0" aria-label="최근 본 상품 더보기 아래로">〉</p>
+      </aside>
     </div>
-  </section>
-
-  <!-- 에드블록 -->
-  <div class="stickyBest--absolute">
-    <aside class="adBlock">
-      <h4 class="adBlock__title" tabindex="0">최근 본 상품</h4>
-      <div class="adBlock__ImgBox">
-        <a href="#" class="adBlock__link">
-          <img class="adBlock__linkImg"
-            src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1653457964381l0.jpg"
-            alt="노티드 초콜릿 봉봉 상세페이지" />
-        </a>
-        <a href="#" class="adBlock__link">
-          <img class="adBlock__linkImg"
-            src="https://product-image.kurly.com/cdn-cgi/image/quality=85,width=676/product/image/2e7217cb-698d-4f4a-8f54-1dc66de78cb7.jpg"
-            alt="뱡뱡멘 상세페이지" />
-        </a>
-        <a href="#" class="adBlock__link">
-          <img class="adBlock__linkImg"
-            src="https://img-cf.kurly.com/cdn-cgi/image/quality=85,width=676/shop/data/goods/1641804041596l0.jpg"
-            alt="비오비타 키즈 상세페이지" />
-        </a>
-      </div>
-      <p class="adBlock__topArrow" tabindex="0" aria-label="최근 본 상품 더보기 위로">〉</p>
-      <p class="adBlock__bottomArrow" tabindex="0" aria-label="최근 본 상품 더보기 아래로">〉</p>
-    </aside>
-  </div>
 
     <!-- footer 요소-->
     <footer class="footer__box">
