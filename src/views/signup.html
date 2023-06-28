@@ -167,7 +167,7 @@
           <li class="info__item">
             <label for="userId">아이디<sup class="requiredIcon" aria-label="필수 입력 항목입니다">&#42;</sup></label>
             <input type="text" class="info__userId" id="userId" aria-label="아이디 입력란" placeholder="아이디를 입력해주세요&#46;" maxlength="24" />
-            <button>중복확인</button>
+            <button type="button">중복확인</button>
           </li>
 
           <!-- 비밀번호 -->
@@ -198,6 +198,9 @@
 
           <!-- 이메일 -->
           <li class="info__item">
+            <label for="userEmail">이메일<sup class="requiredIcon">&#42;</sup></label>
+            <input type="email" class="info__userEmail" id="userEmail" aria-label="이메일 입력란" placeholder="예) marketkarly@karly&#46;com" />
+            <button type="button">중복확인</button>
             <label for="userEmail">이메일<sup class="requiredIcon" aria-label="필수 입력 항목입니다">&#42;</sup></label>
             <input type="email" class="info__userEmail" id="userEmail" aria-label="입력란" placeholder="예) marketkarly@karly&#46;com" />
             <button>중복확인</button>
@@ -205,6 +208,9 @@
 
           <!-- 휴대폰 -->
           <li class="info__item">
+            <label for="userPhone">휴대폰<sup class="requiredIcon">&#42;</sup></label>
+            <input type="tel" class="info__userPhone" id="userPhone" aria-label="휴대폰 번호 입력란" placeholder="숫자만 입력해주세요&#46;" />
+            <button type="button">인증번호 받기</button>
             <label for="userPhone">휴대폰<sup class="requiredIcon" aria-label="필수 입력 항목입니다">&#42;</sup></label>
             <input type="tel" class="info__userPhone" id="userPhone" aria-label="입력란" placeholder="숫자만 입력해주세요&#46;" />
             <button>인증번호 받기</button>
@@ -242,7 +248,7 @@
           <!-- 생년월일 -->
           <li class="info__item">
             <label for="userBirth">생년월일</label>
-            <input type="date" class="info__userBirth" id="userBirth" data-placeholder="YYYY / MM / DD" />
+            <input type="text" class="info__userBirth" id="userBirth" placeholder="YYYY  /  MM  /  DD" />
           </li>
 
           <!-- 추가입력 사항 -->
@@ -264,7 +270,7 @@
           <!-- <div class="select--recommender">
               <input type="text" class="info__userRecommenderId" id="userRecommenderId" placeholder="추천인 아이디를 입력해 주세요&#46;" />
               <p>가입 후 7일 내 첫 주문 배송완료 시&#44; 친구초대 이벤트 적립금이 지급됩니다&#46;</p>
-              <button>아이디 확인</button>
+              <button type="button">아이디 확인</button>
             </div> -->
           <!-- 참여 이벤트명 -->
           <!-- <div class="select--eventname">

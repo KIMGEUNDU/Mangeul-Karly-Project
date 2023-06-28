@@ -64,6 +64,7 @@
 }
 
 .info__item > button {
+  cursor: pointer;
   width: rem(144px);
   font-weight: 600;
   background: none;
@@ -88,6 +89,10 @@
 .userAddress__detail {
   font-size: rem(12px);
   margin-top: rem(4px);
+}
+
+.info__userBirth {
+  text-align: center;
 }
 
 /* radio 선택 요소 */
