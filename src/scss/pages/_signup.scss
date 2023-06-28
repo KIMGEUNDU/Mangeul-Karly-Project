@@ -46,7 +46,9 @@
   @include paddingY(rem(12px));
 }
 
-.info__item > input {
+.info__item > input,
+.info__recommender > input,
+.info__eventname > input {
   width: rem(348px);
   height: rem(44px);
   font-weight: 600;
@@ -63,9 +65,11 @@
   @include paddingX(rem(19px));
 }
 
-.info__item > button {
+.info__item > button,
+.info__recommender > button {
   cursor: pointer;
   width: rem(144px);
+  height: rem(44px);
   font-weight: 600;
   background: none;
   color: $primary-color;
@@ -103,9 +107,36 @@
 }
 
 .info__userOption {
-  @include flexbox($jc: space-between);
+  @include flexbox($fw: wrap, $jc: space-between);
+  row-gap: rem(20px);
   width: rem(348px);
   padding-top: rem(10px);
+
+  height: 36px;
+  overflow: hidden;
+}
+
+.info__recommender > input,
+.info__eventname > input {
+  @include pos;
+  margin-right: 8px;
+}
+
+.info__recommender > button,
+.info__eventname > button {
+  position: absolute;
+}
+
+.info__recommender > p,
+.info__eventname > p {
+  width: rem(500px);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info__recommender,
+.info__eventname {
+  display: none;
 }
 
 .info__radioLabel {
@@ -132,14 +163,6 @@
 .info__selectRadio:checked + .info__radioLabel .iconRadio {
   background: url(/image/radio-is-selected.svg);
 }
-
-// .select--recommender, .select--eventname {
-//   display: none;
-// }
-
-// #userRecommenderButton:checked + .select--recommender {
-//   display: block;
-// }
 
 /* 이용약관동의 */
 .consent__container {

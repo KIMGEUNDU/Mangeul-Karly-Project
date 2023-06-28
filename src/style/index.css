@@ -476,14 +476,12 @@ legend {
 }
 
 .slide {
-  position: relative;
   margin-bottom: 30px;
 }
 .slide__BtnWrapper {
-  position: relative;
   position: absolute;
-  right: 442px;
-  bottom: 30px;
+  right: 5%;
+  bottom: 5%;
   z-index: 1;
 }
 .slide__Btn {
@@ -529,6 +527,13 @@ legend {
   height: 20px;
   border-radius: 50px;
   z-index: -2;
+}
+.slide__box {
+  position: relative;
+  max-width: 1760px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 .slide__imgWrapper {
   display: flex;
@@ -1395,7 +1400,9 @@ legend {
   padding-bottom: 0.75rem;
 }
 
-.info__item > input {
+.info__item > input,
+.info__recommender > input,
+.info__eventname > input {
   width: 21.75rem;
   height: 2.75rem;
   font-weight: 600;
@@ -1415,8 +1422,11 @@ legend {
   padding-right: 1.1875rem;
 }
 
-.info__item > button {
+.info__item > button,
+.info__recommender > button {
+  cursor: pointer;
   width: 9rem;
+  height: 2.75rem;
   font-weight: 600;
   background: none;
   color: #5F0080;
@@ -1443,6 +1453,10 @@ legend {
   margin-top: 0.25rem;
 }
 
+.info__userBirth {
+  text-align: center;
+}
+
 /* radio 선택 요소 */
 .info__userGender {
   display: flex;
@@ -1455,11 +1469,37 @@ legend {
 
 .info__userOption {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-start;
+  row-gap: 1.25rem;
   width: 21.75rem;
   padding-top: 0.625rem;
+  height: 36px;
+  overflow: hidden;
+}
+
+.info__recommender > input,
+.info__eventname > input {
+  position: relative;
+  margin-right: 8px;
+}
+
+.info__recommender > button,
+.info__eventname > button {
+  position: absolute;
+}
+
+.info__recommender > p,
+.info__eventname > p {
+  width: 31.25rem;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info__recommender,
+.info__eventname {
+  display: none;
 }
 
 .info__radioLabel {
@@ -1951,7 +1991,6 @@ legend {
 
 .inquery__title {
   border: 1px solid rgb(214, 211, 211);
-  height: 40px;
   margin-top: 6px;
   margin-bottom: 6px;
 }
@@ -1959,8 +1998,9 @@ legend {
 .inquery__link {
   display: inline-block;
   text-align: center;
-  width: 88px;
-  margin: 7px 26px;
+  width: 140px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .address__data {
