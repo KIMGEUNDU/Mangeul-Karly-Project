@@ -57,15 +57,14 @@
 
 .inquery__title {
   border: 1px solid rgb(214, 211, 211);
-  height: 40px;
   @include marginY(6px);
 }
 
 .inquery__link {
   display: inline-block;
   text-align: center;
-  width: 88px;
-  margin: 7px 26px;
+  width: 140px;
+  @include paddingY(7px);
 }
 
 .address__data {
