@@ -1883,7 +1883,7 @@ legend {
   transition-duration: 0.5s, 0.2s, 0.5s;
   padding-top: 15px;
   opacity: 1;
-  z-index: 1;
+  z-index: 5000;
   background: white;
 }
 
