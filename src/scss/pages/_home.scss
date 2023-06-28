@@ -2,13 +2,11 @@
 
 // 메인영역 슬라이드 컨테이너
 .slide {
-  @include pos;
   margin-bottom: 30px;
 
   // 슬라이드 정지 버튼
   &__BtnWrapper {
-    @include pos;
-    @include posRB(442px, 30px);
+    @include posRB(5%, 5%);
     z-index: 1;
   }
 
@@ -56,6 +54,13 @@
   }
 
   // 슬라이드 이미지 컨테이너
+  &__box {
+    @include pos;
+    max-width: 1760px;
+    @include autoMargin;
+    overflow: hidden;
+  }
+
   &__imgWrapper {
     @include flexbox;
     @include slideImg;
