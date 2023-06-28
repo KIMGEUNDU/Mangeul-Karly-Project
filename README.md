@@ -1,5 +1,6 @@
 # 멋쟁이사자처럼 FE 6기 바닐라프로젝트 ( HTML/CSS ) - 망글망글망글조
-![망글망글](https://github.com/KIMGEUNDU/Mangeul-Karly-Project/assets/126174401/11047b5f-094a-49d1-a1fc-ec70388f8807)
+
+![망글망글](https://github.com/KIMGEUNDU/Mangeul-Karly-Project/assets/126174401/179e0d03-fa65-45cd-9fd6-366ea1882369)
 
 
 ## 목차
