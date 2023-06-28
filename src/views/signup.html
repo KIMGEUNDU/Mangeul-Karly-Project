@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="칼리 - 마켓칼리/뷰티칼리" />
+    <meta property="og:image" content="/image/logo.svg" />
+    <meta name="keywords" content="다이어트, 식단, 닭가슴살, 요리, 치아바타, 레시피, 상차림, 다이어트음식, 이유식, 건강이유식, 뷰티, 화장품" />
+    <meta name="description" content="회원가입하고 더 많은 서비스를 이용해보세요." />
+    <meta property="og:title" content="회원가입 - 칼리" />
+    <meta property="og:description" content="지금 가입하고 인기상품 100원에 받아가세요!" />
+    <meta property="og:url" content="https://mangeul-karly.netlify.app/views/signup.html" />
+    <meta name="author" content="프로젝트 7조 망글망글망글" />
+    <meta name="application-name" content="칼리" />
+    <meta name="referrer" content="same-origin" />
+    <meta name="format-detection" content="telephone=no" />
     <title>망글망글 마켓칼리 - 회원가입</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
@@ -186,7 +198,7 @@
 
           <!-- 주소 -->
           <li class="info__item">
-            <label for="userAddress">주소<sup class="requiredIcon">&#42;</sup></label>
+            <label>주소<sup class="requiredIcon">&#42;</sup></label>
             <div class="userAddress__wrapper">
               <input type="hidden" class="info__userAddress" id="userAddress" />
               <button class="userAddress__search"><span class="fas fa-search fa-xs" aria-hidden="true"></span> 주소 검색</button>
@@ -266,13 +278,13 @@
 
             <!-- 이용약관 동의(필수) -->
             <li class="consent__item">
-              <input type="checkbox" class="consent__checkbox" id="termsUse" required />
+              <input type="checkbox" class="consent__checkbox" id="termsUse" />
               <label for="termsUse" class="consent__checkLabel"><span class="iconCheck"></span>이용약관 동의</label>
               <a href="#" class="consent__link">약관보기 <span class="fas fa-chevron-right fa-xs"></span></a>
             </li>
             <!-- 개인정보 수집 이용 동의(필수) -->
             <li class="consent__item">
-              <input type="checkbox" class="consent__checkbox" id="privacy" required />
+              <input type="checkbox" class="consent__checkbox" id="privacy" />
               <label for="privacy" class="consent__checkLabel"><span class="iconCheck"></span>개인정보 수집&middot;이용 동의 <span class="text-gray">&#40;필수&#41;</span></label>
               <a href="#" class="consent__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
             </li>
@@ -284,7 +296,7 @@
             </li>
             <!-- 나이 확인 -->
             <li class="consent__item">
-              <input type="checkbox" class="consent__checkbox" id="ageCheck" required />
+              <input type="checkbox" class="consent__checkbox" id="ageCheck" />
               <label for="ageCheck" class="consent__checkLabel"><span class="iconCheck"></span>본인은 만 14세 이상입니다&#46; <span class="text-gray">&#40;필수&#41;</span></label>
               <a href="#" class="consent__link">약관보기 <span class="fas fa-chevron-right fa-xs" aria-hidden="true"></span></a>
             </li>
