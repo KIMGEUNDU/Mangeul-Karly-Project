@@ -17,7 +17,12 @@
     <meta name="format-detection" content="telephone=no" />
     <title>망글망글 마켓칼리 - 로그인</title>
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="icon" type="image/png" sizes="16x16" href="https://res.kurly.com/icons/favicon-16x16.png" />
     <link rel="stylesheet" href="/style/index.css" />
   </head>
@@ -32,14 +37,27 @@
       </div>
       <header class="appHeader">
         <h1 class="logo">
-          <a href="/" class="logo__link" aria-label="market karly"></a>
+          <a href="/" class="logo__link" aria-label="마켓칼리 로고"></a>
         </h1>
         <div class="pageCategory">
           <h2 class="marketPage">
-            <a href="/">마켓칼리 </a>
+            <a href="/" aria-label="마켓칼리 페이지로 이동">마켓칼리 </a>
           </h2>
-          <h2 class="beautyPage"><span class="beauty__divider" aria-hidden="true">ㅣ</span><a href="/">뷰티칼리</a><sup class="beautyPage__new">N</sup></h2>
+          <h2 class="beautyPage"><span class="beauty__divider" aria-hidden="true">ㅣ</span><a href="/" aria-label="뷰티칼리 페이지로 이동">뷰티칼리</a><sup class="beautyPage__new">N</sup></h2>
         </div>
+
+        <form action="https://formspree.io/f/xeqwwbwk" method="POST" class="searchForm">
+          <fieldset>
+            <legend>검색 폼</legend>
+            <div class="searchForm__group">
+              <div class="formInput">
+                <label for="search" class="a11y formInput__label">검색창</label>
+                <input type="search" id="search" name="search" required class="formInput__input" placeholder="검색어를 입력해주세요" />
+                <button id="submit" class="submit" aria-label="검색하기"></button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
         <ul class="memberOnly">
           <li class="memberOnly__membership">
             <a href="/views/signup.html">회원가입</a>
@@ -49,27 +67,15 @@
             <span class="divider" aria-hidden="true">ㅣ</span><a href="/"> 고객센터 <i class="fas fa-caret-down"></i></a>
           </li>
         </ul>
-        <form action="https://formspree.io/f/xeqwwbwk" method="POST" class="searchForm">
-          <fieldset>
-            <legend>검색 폼</legend>
-            <div class="searchForm__group">
-              <div class="formInput">
-                <label for="search" class="a11y formInput__label">검색어</label>
-                <input type="search" id="search" name="search" required class="formInput__input" placeholder="검색어를 입력해주세요" />
-                <button id="submit" class="submit"></button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
         <ul class="memberOnly__icon">
-          <li class="icon__location">
-            <a href="/" class="icon__link" aria-label="location"><img src="/image/Location.svg" alt="위치 아이콘" /></a>
+          <li class="icon__location" aria-label="배송지 등록 링크">
+            <a href="/" class="icon__link"><img src="/image/Location.svg" alt="위치 아이콘" /></a>
           </li>
-          <li class="icon__heart">
-            <a href="/" class="icon__link" aria-label="heart"><img src="/image/Heart.svg" alt="좋아요 아이콘" /></a>
+          <li class="icon__heart" aria-label="찜하기 링크">
+            <a href="/" class="icon__link"><img src="/image/Heart.svg" alt="좋아요 아이콘" /></a>
           </li>
-          <li class="icon__cart">
-            <a href="/" class="icon__link" aria-label="cart"><img src="/image/Cart_header.svg" alt="장바구니 아이콘" /></a>
+          <li class="icon__cart" aria-label="장바구니 링크">
+            <a href="/" class="icon__link"><img src="/image/Cart_header.svg" alt="장바구니 아이콘" /></a>
           </li>
         </ul>
       </header>
@@ -85,7 +91,7 @@
                 </a>
                 <ul class="sidemenu__list">
                   <li>
-                    <a href="/" class="sprite spriteGift" aria-hidden="true">선물하기</a>
+                    <a href="/" class="sprite spriteGift">선물하기</a>
                   </li>
                   <li><a href="/" class="sprite spriteVegetable">채소</a></li>
                   <li><a href="/" class="sprite spriteFruits">과일·견과·쌀</a></li>
@@ -176,32 +182,32 @@
       <div class="footer__wrapper">
         <div class="service__info">
           <div class="service__inquery">
-            <h3 class="inquery__center">고객행복센터</h3>
-            <h4 class="inquery__number">1644-1107<span class="text__bold">월~토요일 오전 7시 ~오후 6시</span></h4>
+            <h3 class="inquery__center" tabindex="0">고객행복센터</h3>
+            <h4 class="inquery__number" tabindex="0">1644-1107<span class="text__bold">월~토요일 오전 7시 ~오후 6시</span></h4>
             <dl class="inquery__list">
               <dt class="inquery__title"><a class="inquery__link" href="#">카카오톡 문의</a></dt>
-              <dd class="inquery__time">
+              <dd class="inquery__time" tabindex="0">
                 <div>월~토요일 | 오전 7시 ~ 오후 6시</div>
                 <div>일/공휴일 | 오전 7시 ~ 오후 1시</div>
               </dd>
             </dl>
             <dl class="inquery__list">
-              <dt class="inquery__title"><a class="inquery__link" href="#">1:1 문의</a></dt>
-              <dd class="inquery__time">
+              <dt class="inquery__title"><a class="inquery__link" href="#" aria-label="일대일 문의">1:1 문의</a></dt>
+              <dd class="inquery__time" tabindex="0">
                 <div>365일</div>
                 <div>고객센터 운영시간에 순차적으로 답변드리겠습니다.</div>
               </dd>
             </dl>
             <dl class="inquery__list">
               <dt class="inquery__title"><a class="inquery__link" href="#">대량주문 문의</a></dt>
-              <dd class="inquery__time">
+              <dd class="inquery__time" tabindex="0">
                 <div>월~금요일 | 오전9시 ~ 오후 6시</div>
                 <div>점심시간 | 낮 12시 ~ 오후 1시</div>
               </dd>
             </dl>
             <div class="inquery__mail">
-              <p class="inquery__email">비회원 문의 : <span class="p__color">help@karlycrop.com</span></p>
-              <p class="inquery__email">비회원 대량주문 문의 : <span class="p__color">help@karlaycorp.com</span></p>
+              <p class="inquery__email" tabindex="0">비회원 문의 : <span class="p__color">help@karlycrop.com</span></p>
+              <p class="inquery__email" tabindex="0">비회원 대량주문 문의 : <span class="p__color">help@karlycorp.com</span></p>
             </div>
           </div>
 
@@ -215,12 +221,12 @@
               <li><a href="#">이용안내</a></li>
             </ul>
             <address class="address__data">
-              <p class="address__p">법인명(상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 | <a class="p__color" href="#">사업자정보 확인</a></p>
-              <p class="address__p">통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</p>
-              <p class="address__p">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사 : 김솔아</p>
-              <p class="address__p">입점문의 : 입점문의하기 | 제휴문의 : <span class="p__color">business@karlaycorp.com</span></p>
-              <p class="address__p">채용문의 : <span class="p__color">recruit@karlycrop.com</span></p>
-              <p class="address__p">팩스 : 070-7500-6098</p>
+              <p class="address__p" tabindex="0">법인명(상호) : 주식회사 컬리 | 사업자등록번호 : 261-81-23567 | <a class="p__color" href="#">사업자정보 확인</a></p>
+              <p class="address__p" tabindex="0">통신판매업 : 제 2018-서울강남-01646호 | 개인정보보호책임자 : 이원준</p>
+              <p class="address__p" tabindex="0">주소 : 서울특별시 강남구 테헤란로 133, 18층(역삼동) | 대표이사 : 김솔아</p>
+              <p class="address__p" tabindex="0">입점문의 : 입점문의하기 | 제휴문의 : <span class="p__color">business@karlycorp.com</span></p>
+              <p class="address__p" tabindex="0">채용문의 : <span class="p__color">recruit@karlycrop.com</span></p>
+              <p class="address__p" tabindex="0">팩스 : 070-7500-6098</p>
             </address>
             <div class="sns__logo">
               <a href="#"><img src="/image/ico_fb.webp" alt="페이스북 연결 로고" /></a>
@@ -232,7 +238,7 @@
           </div>
         </div>
         <div class="footer__logo">
-          <div class="another__logo">
+          <div class="another__logo" tabindex="0">
             <img src="/image/logo_isms.svg" alt="isms 정보보호 관리체계 인증서" />
             <div>
               <p>[인증범위]마켓컬리 쇼핑몰 서비스 개발 운영</p>
@@ -240,28 +246,28 @@
               <p>[유효기간]2022.01.19~2025.01.08</p>
             </div>
           </div>
-          <div class="another__logo">
+          <div class="another__logo" tabindex="0">
             <img src="/image/logo_privacy.svg" alt="개인정보보호 우수 인증서" />
             <div>
               <p>개인정보보호 우수 웹사이트</p>
               <p>개인정보처리시스템 인증(ePRIVNACY PLUS)</p>
             </div>
           </div>
-          <div class="another__logo">
+          <div class="another__logo" tabindex="0">
             <img class="toss__logo" src="/image/logo_tosspayments.svg" alt="토스페이먼츠 에스크로 서비스" />
             <p class="toss">토스페이언츠 구매안전(에스크로) 서비스 를 이용하실 수 있습니다.</p>
           </div>
 
-          <div class="another__logo">
+          <div class="another__logo" tabindex="0">
             <img src="/image/logo_wooriBank.svg" alt="우리은행 지급보증서" />
             <p class="woori">고객님이 현금으로 결제한 금액에 대해 우리은행과 채무지급보 증 계약을 체결하여 안전거래를 보장하고 있습니다.</p>
           </div>
         </div>
       </div>
       <div class="last__footer">
-        <p>마켓컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
-        <p>마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문,품질,교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
-        <p class="copyright">© KURLY CORP. ALL RIGHTS RESERVED</p>
+        <p tabindex="0">마켓컬리에서 판매되는 상품 중에는 컬리에 입점한 개별 판매자가 판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.</p>
+        <p tabindex="0">마켓플레이스(오픈마켓) 상품의 경우 컬리는 통신판매중개자로서 통신판매의 당사자가 아닙니다. 컬리는 해당 상품의 주문,품질,교환/환불 등 의무와 책임을 부담하지 않습니다.</p>
+        <p class="copyright" tabindex="0">© KURLY CORP. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   </body>

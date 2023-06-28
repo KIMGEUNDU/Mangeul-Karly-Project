@@ -1425,6 +1425,7 @@ legend {
 }
 
 .userAddress__search {
+  cursor: pointer;
   width: 21.75rem;
   height: 2.75rem;
   font-weight: 600;
