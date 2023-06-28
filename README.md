@@ -91,16 +91,16 @@
 
 ## 성능테스트 결과
 1. index.html
-<img src="/image/Lighthouse-index.JPG">
+<img src="/src/image/Lighthouse-index.JPG">
 
 2. best.html
-<img src="/image/Lighthouse-best.JPG">
+<img src="/src/image/Lighthouse-best.JPG">
 
 3. login.html
-<img src="/image/Lighthouse-login.JPG">
+<img src="/src/image/Lighthouse-login.JPG">
 
 4. signup.html
-<img src="/image/Lighthouse-signup.JPG">
+<img src="/src/image/Lighthouse-signup.JPG">
 
 <br>
 
