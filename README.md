@@ -16,7 +16,7 @@
 
 ### 프로젝트명
 > 🐻‍❄️ 망글망글 망글칼리
-> [🔗페이지보러가기]("https://mangeul-karly.netlify.app/")
+> [🔗페이지보러가기](https://mangeul-karly.netlify.app/)
 
 ### 프로젝트 조원
 * 조장 : 김규민
@@ -91,16 +91,16 @@
 
 ## 성능테스트 결과
 1. index.html
-<img src="/src/image/Lighthouse-index.JPG">
+<img src="src/image/Lighthouse-index.JPG">
 
 2. best.html
-<img src="/src/image/Lighthouse-best.JPG">
+<img src="src/image/Lighthouse-best.JPG">
 
 3. login.html
-<img src="/src/image/Lighthouse-login.JPG">
+<img src="src/image/Lighthouse-login.JPG">
 
 4. signup.html
-<img src="/src/image/Lighthouse-signup.JPG">
+<img src="src/image/Lighthouse-signup.JPG">
 
 <br>
 
